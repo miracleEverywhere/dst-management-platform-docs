@@ -18,12 +18,6 @@ export default hopeTheme({
   // 导航栏
   navbar,
 
-  navbarLayout: {
-    start: ["Brand"],
-    center: ["Links"],
-    end: ["Repo", "Outlook", "QQ"]
-  },
-
   // 侧边栏
   sidebar,
 

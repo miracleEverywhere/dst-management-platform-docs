@@ -4,7 +4,7 @@ export default sidebar({
   "/docs/": [
     {
       text: "",
-      children: ["register"],
+      children: ["install", "user", "cluster", "setting", "mod", "player", "tool", "log"],
     },
   ],
   "/project/": [

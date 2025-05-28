@@ -1,6 +1,6 @@
 ---
-title: 贡献指南
-icon: lightbulb
+title: 文件结构
+icon: file
 date: 2025-05-28
 ---
 

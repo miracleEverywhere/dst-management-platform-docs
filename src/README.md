@@ -10,7 +10,7 @@ heroText: 饥荒管理平台
 tagline: 帮助你更好的管理饥荒专用服务器
 actions:
   - text: 使用指南
-    link: ./demo/
+    link: ./docs/
     type: primary
 
   - text: 前往下载
@@ -23,7 +23,9 @@ highlights:
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
     highlights:
       - title: 运行 <code>run.sh</code> 脚本即可一键安装和使用。
+        link: docs/install.html
       - title: 支持Docker部署，多个环境互不干涉。
+        link: docs/install.html
 
   - header: 多种功能
     image: /assets/image/features.svg
@@ -33,91 +35,66 @@ highlights:
       - title: 多房间管理
         icon: network-wired
         details: 支持多房间、多世界管理，提供清晰明了的配置选项
-        link: https://theme-hope.vuejs.press/zh/guide/feature/catalog.html
+        link: docs/cluster.html
 
       - title: 日志查看
-        icon: comment-dots
+        icon: bxs:file
         details: 包含世界日志、聊天日志、请求日志、运行日志
-        link: https://theme-hope.vuejs.press/zh/guide/feature/comment.html
+        link: docs/log.html
 
       - title: 玩家信息
-        icon: circle-info
+        icon: streamline:desktop-game-solid
         details: 可快速的查看玩家的信息，并提供一键添加管理员、白名单、黑名单
-        link: https://theme-hope.vuejs.press/zh/guide/feature/page-info.html
+        link: docs/player.html
 
       - title: 用户体系
-        icon: lock
+        icon: fa6-solid:user
         details: 可实现多个账号登录，不同账号拥有不同权限，由管理员统一配置
-        link: https://theme-hope.vuejs.press/zh/guide/feature/encrypt.html
+        link: docs/user.html
 
       - title: 自动备份
-        icon: code
+        icon: material-symbols:save
         details: 在设定的时间自动备份存档，并提供一键恢复功能
-        link: https://theme-hope.vuejs.press/zh/guide/markdown/code/fence.html
+        link: docs/tool.html
 
       - title: 可视化配置
-        icon: image
+        icon: eva:image-fill
         details: 像游戏中一样，随心所欲的配置世界和模组
-        link: https://theme-hope.vuejs.press/zh/guide/feature/photo-swipe.html
+        link: docs/setting.html
         
-      - title: ......
-        icon: search
+      - title: 更多功能
+        icon: ic:round-more
         details: 更多功能等你来体验
-        link: https://theme-hope.vuejs.press/zh/guide/feature/search.html
+        link: https://github.com/miracleEverywhere/dst-management-platform-api
 
-  - header: 博客
-    description: 通过主题创建个人博客
-    image: /assets/image/blog.svg
+  - header: 技术栈
+    description: 使用Golang和Vue开发
+    image: /assets/image/advanced.svg
     bgImage: https://theme-hope-assets.vuejs.press/bg/5-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/5-dark.svg
     highlights:
-      - title: 博客功能
-        icon: blog
-        details: 通过文章的日期、标签和分类展示文章
-        link: https://theme-hope.vuejs.press/zh/guide/blog/intro.html
+      - title: Golang
+        details: 使用 <code>1.23.1</code> 版本，标准C-S架构，采用Gin轻量级Web框架
 
-      - title: 博客主页
-        icon: house
-        details: 全新博客主页
-        link: https://theme-hope.vuejs.press/zh/guide/blog/home.html
+      - title: Vue
+        details: <code>3.5.2</code> 版本，使用 Axios 进行交互，采用Element-Plus作为UI框架
 
-      - title: 博主信息
-        icon: circle-info
-        details: 自定义名称、头像、座右铭和社交媒体链接
-        link: https://theme-hope.vuejs.press/zh/guide/blog/blogger.html
+      - title: 其他
+        details: 使用JWT进行接口鉴权，Pinia作为前端数据库，支持多语言、明暗切换、移动端自动布局等
 
-      - title: 时间线
-        icon: clock
-        details: 在时间线中浏览和通读博文
-        link: https://theme-hope.vuejs.press/zh/guide/blog/timeline.html
-
-  - header: 高级
-    description: 增强站点与用户体验的高级功能
-    image: /assets/image/advanced.svg
+  - header: 饥荒管理平台App
+    description: 通过使用桌面App对多个饥荒管理平台进行统一管理
+    image: /assets/image/blog.svg
     bgImage: https://theme-hope-assets.vuejs.press/bg/4-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/4-dark.svg
     highlights:
-      - title: SEO 增强
-        icon: dumbbell
-        details: 将最终生成的网页针对搜索引擎进行优化。
-        link: https://theme-hope.vuejs.press/zh/guide/advanced/seo.html
+      - title: 统一管理
+        details: 多个饥荒管理平台，通过令牌的形式进行统一鉴权与管理，无需频繁切换多个网页
 
-      - title: Sitemap
-        icon: sitemap
-        details: 自动为你的网站生成 Sitemap
-        link: https://theme-hope.vuejs.press/zh/guide/advanced/sitemap.html
-
-      - title: Feed 支持
-        icon: rss
-        details: 生成你的 Feed，并通知你的用户订阅它
-        link: https://theme-hope.vuejs.press/zh/guide/advanced/feed.html
-
-      - title: PWA 支持
-        icon: mobile-screen
-        details: 让你的网站更像一个 APP
-        link: https://theme-hope.vuejs.press/zh/guide/advanced/pwa.html
+      - title: 耳目一新
+        details: 使用Vuetify作为UI框架，提供不一样的视觉体验
 
 copyright: false
-footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2019-至今 Mr.Hope
+footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议
 ---
 
