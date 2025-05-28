@@ -1,6 +1,12 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
+  "/quick-start/": [
+    {
+      text: "",
+      children: ["server", "install", "token", "setting"],
+    },
+  ],
   "/docs/": [
     {
       text: "",

@@ -7,7 +7,7 @@ export default hopeTheme({
   hostname: "https://miraclesses.top",
 
   author: {
-    name: "Miracle",
+    name: "miracleEverywhere",
     url: "https://github.com/miracleEverywhere",
   },
 
@@ -81,7 +81,7 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     components: {
-      components: ["Badge", "VPCard"],
+      components: ["Badge", "VPCard", "VPBanner",],
     },
 
     icon: {
