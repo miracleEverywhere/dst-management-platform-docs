@@ -1,13 +1,16 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
-  "/": [
-    "",
+  "/docs/": [
     {
-      text: "文档",
-      icon: "laptop-code",
-      prefix: "docs/",
-      link: "docs/",
+      text: "",
+      children: ["register"],
+    },
+  ],
+  "/project/": [
+    {
+      text: "",
+      children: ["file", "changelog"],
     },
   ],
 });
