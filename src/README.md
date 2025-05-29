@@ -10,7 +10,7 @@ heroText: 饥荒管理平台
 tagline: 帮助你更好的管理饥荒专用服务器
 actions:
   - text: 快速上手
-    link: ./quick-start/
+    link: ./assets/
     type: primary
     
   - text: 阅读文档
@@ -22,8 +22,8 @@ actions:
 highlights:
   - header: 易于安装
     image: /assets/image/box.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    bgImage: /assets/image/3-light.svg
+    bgImageDark: /assets/image/3-dark.svg
     highlights:
       - title: 运行 <code>run.sh</code> 脚本即可一键安装和使用。
         link: docs/install.html
@@ -32,8 +32,8 @@ highlights:
 
   - header: 多种功能
     image: /assets/image/features.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/1-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/1-dark.svg
+    bgImage: /assets/image/1-light.svg
+    bgImageDark: /assets/image/1-dark.svg
     features:
       - title: 多房间管理
         icon: network-wired
@@ -73,8 +73,8 @@ highlights:
   - header: 技术栈
     description: 使用Golang和Vue开发
     image: /assets/image/advanced.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/5-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/5-dark.svg
+    bgImage: /assets/image/5-light.svg
+    bgImageDark: /assets/image/5-dark.svg
     highlights:
       - title: Golang
         details: 使用 <code>1.23.1</code> 版本，标准C-S架构，采用Gin轻量级Web框架
@@ -83,13 +83,13 @@ highlights:
         details: 使用<code>3.5.2</code> 版本，通过 Axios 与服务端交互，采用Element-Plus作为UI框架
 
       - title: 其他
-        details: 使用JWT进行接口鉴权，Pinia作为前端数据库，支持多语言、明暗切换、移动端自动布局等
+        details: 使用JWT进行接口鉴权，Pinia作为前端缓存，支持多语言、明暗切换、移动端自动布局等
 
   - header: 饥荒管理平台App
     description: 通过使用桌面App对多个饥荒管理平台进行统一管理
     image: /assets/image/blog.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/4-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/4-dark.svg
+    bgImage: /assets/image/4-light.svg
+    bgImageDark: /assets/image/4-dark.svg
     highlights:
       - title: 统一管理
         details: 多个饥荒管理平台，通过令牌的形式进行统一鉴权与管理，无需频繁切换多个网页
