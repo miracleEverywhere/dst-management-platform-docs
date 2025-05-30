@@ -10,11 +10,8 @@ heroText: 饥荒管理平台
 tagline: 帮助你更好的管理饥荒专用服务器
 actions:
   - text: 快速上手
-    link: ./assets/
+    link: ./quick-start/
     type: primary
-    
-  - text: 阅读文档
-    link: ./docs/
 
   - text: 前往下载
     link: https://github.com/miracleEverywhere/dst-management-platform-api/releases
