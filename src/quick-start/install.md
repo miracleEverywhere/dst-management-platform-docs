@@ -30,6 +30,10 @@ date: 2025-05-28
 ![run.sh下载](./assets/install/runshdownload.png)
 
 #### 开启SWAP
+::: tip
+饥荒专用服务器比较吃内存，所以需要开启SWAP(虚拟内存)，以避免服务器卡死。
+:::
+
 1. 输入 `./run.sh` 运行脚本
 
 2. 输入 `7` 即可
