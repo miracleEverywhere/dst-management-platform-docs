@@ -1,5 +1,6 @@
 ---
 title: 快速上手
+index: false
 icon: signs-post
 date: 2025-05-28
 ---
