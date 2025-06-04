@@ -9,14 +9,33 @@ export default sidebar({
   ],
   "/docs/": [
     {
-      text: "",
-      children: ["install", "user", "cluster", "setting", "mod", "player", "tool", "log"],
+      text: "安装部署",
+      collapsible: true,
+      children: ["bin-deploy", "docker-deploy"],
+    },
+    {
+      text: "概念解释",
+      link: "words-explain",
+    },
+    {
+      text: "用户体系",
+      link: "user",
+    },
+    {
+      text: "游戏设置",
+      collapsible: true,
+      children: ["room", "player", "import", "mod", "system"],
+    },
+    {
+      text: "平台工具",
+      collapsible: true,
+      children: ["backup", "announce", "install", "statistics", "metrics", "token"],
     },
   ],
   "/project/": [
     {
       text: "",
-      children: ["file", "changelog"],
+      children: ["web", "desktop", "docs"],
     },
   ],
 });
