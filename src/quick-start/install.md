@@ -29,7 +29,7 @@ cd ~ && wget https://github.acmsz.top/https://github.com/miracleEverywhere/dst-m
 
 ## 手动安装
 
-::: tip
+::: info
 因为饥荒管理平台源码及安装包都在Github上，如未进行Github加速可能会导致安装失败。因此，下面的教程不使用`run.sh`脚本的自动化能力，保证顺利安装。
 :::
 
