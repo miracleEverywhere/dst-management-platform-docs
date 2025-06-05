@@ -1,7 +1,7 @@
 ---
 title: 快速上手
 index: false
-icon: signs-post
+icon: wand-magic-sparkles
 date: 2025-05-28
 ---
 

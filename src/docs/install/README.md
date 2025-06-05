@@ -1,7 +1,10 @@
 ---
 title: 安装部署
 index: false
+icon: download
 date: 2025-06-04
+dir:
+  order: 1
 ---
 
 ## 本节目录

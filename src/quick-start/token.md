@@ -1,5 +1,6 @@
 ---
 title: 令牌申请
+icon: square-binary
 order: 3
 date: 2025-05-28
 ---

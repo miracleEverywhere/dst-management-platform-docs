@@ -1,6 +1,7 @@
 ---
 title: 服务器选择
 order: 1
+icon: server
 date: 2025-05-28
 ---
 

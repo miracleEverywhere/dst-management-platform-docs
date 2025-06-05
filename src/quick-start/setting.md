@@ -1,6 +1,7 @@
 ---
 title: 游戏设置
 order: 4
+icon: gear
 date: 2025-05-28
 ---
 

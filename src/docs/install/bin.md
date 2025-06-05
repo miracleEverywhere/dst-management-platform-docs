@@ -1,5 +1,6 @@
 ---
 title: 启动脚本部署
+icon: file-lines
 order: 1
 date: 2025-06-04
 ---

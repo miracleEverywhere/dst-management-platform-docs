@@ -1,5 +1,6 @@
 ---
 title: Docker部署
+icon: fa6-brands:docker
 order: 2
 date: 2025-06-05
 ---
