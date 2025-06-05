@@ -5,4 +5,7 @@ order: 1
 icon: lightbulb
 date: 2025-05-28
 ---
+
 ## 本节目录
+1. [安装部署](install/README.md)
+
