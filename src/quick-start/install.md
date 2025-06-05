@@ -4,8 +4,33 @@ order: 2
 date: 2025-05-28
 ---
 
+::: important
+**自动化安装**和**手动安装**选择其中一种就行，可以先使用自动化安装，如果出现任何下载失败的情况，再使用手动安装
+:::
+
+# 自动化安装
+1. 打开上一节的终端页面，输入下方代码下载run.sh启动脚本
+
+```shell
+# 执行以下命令，下载脚本（使用加速节点）
+cd ~ && wget https://github.acmsz.top/https://github.com/miracleEverywhere/dst-management-platform-api/raw/refs/heads/master/run.sh && chmod +x run.sh && ./run.sh
+```
+
+2. 执行成功后输入0，即可完成安装
+
+![下载并安装](./assets/install/run-sh-0.png)
+
 ::: tip
-因为饥荒管理平台源码及安装包都在Github上，如未进行Github加速可能会导致安装失败。因此，本节教程不使用`run.sh`脚本的自动化能力，保证顺利安装。
+如果出现上图中的启动成功字样，就代表已经安装成功了，可以进入下一节；
+如果出现网络错误，请根据下方手动安装教程进行安装
+:::
+
+---
+
+# 手动安装(默认加速节点失效后使用)
+
+::: tip
+因为饥荒管理平台源码及安装包都在Github上，如未进行Github加速可能会导致安装失败。因此，下面的教程不使用`run.sh`脚本的自动化能力，保证顺利安装。
 :::
 
 ## 下载run.sh脚本
