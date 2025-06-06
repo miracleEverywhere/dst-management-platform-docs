@@ -78,6 +78,12 @@ export default hopeTheme({
     tabs: true,
     tasklist: true,
     vPre: true,
+    highlighter: {
+      type: "shiki", // or "prismjs"
+      collapsedLines: true,
+      // shiki 或 prismjs 选项
+      // ...
+    },
   },
 
   // 在这里配置主题提供的插件
