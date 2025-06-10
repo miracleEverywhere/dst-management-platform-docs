@@ -2,6 +2,7 @@
 title: 用户体系
 icon: user-gear
 date: 2025-06-06
+order: 2
 ---
 
 ## 用户注册

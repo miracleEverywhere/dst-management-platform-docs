@@ -12,3 +12,7 @@ date: 2025-05-28
 2. [用户体系](users.md)
 
 3. [集群设置](cluster.md)
+
+4. [平台首页](home.md)
+
+5. [游戏设置](setting/README.md)
