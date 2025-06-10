@@ -12,7 +12,7 @@ date: 2025-06-06
 每个平台只能注册一次，且登录页面大概率暴露在公网，请在安装完成后尽快注册
 :::
 
-![注册](assets/registy-button.png)
+![注册](assets/user-registy-button.png)
 
 注册完成后，该按钮消失，不会再出现
 
@@ -36,7 +36,7 @@ date: 2025-06-06
 
 修改完成后，会自动跳转至登录页面
 
-![修改密码](assets/update-password.png)
+![修改密码](assets/user-update-password.png)
 
 
 ## 忘记密码
