@@ -16,3 +16,5 @@ date: 2025-05-28
 4. [平台首页](home.md)
 
 5. [游戏设置](setting/README.md)
+
+6. [平台工具](tools/README.md)
