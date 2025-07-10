@@ -7,9 +7,7 @@ date: 2025-05-28
 
 ```component VPBanner
 title: 阅读前提示
-content: 本教程针对那些不熟悉云服务器和饥荒专用服务器的小白。如果你已经有相关的经验，请从<strong>深度文档</strong>开始。
-background: var(--bg-10)
-color: var(--banner-text)
+content: 本教程针对那些不熟悉云服务器和饥荒专用服务器的小白。如果你已经有相关的经验，请从<strong>深度文档</strong>开始。<br>本页面部署在<strong>Github-Pages</strong>，可能出现网页、图片加载慢，请合理解决。
 actions:
   - text: 深度文档
     link: ../docs/

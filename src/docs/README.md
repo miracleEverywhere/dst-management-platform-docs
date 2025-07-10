@@ -6,6 +6,11 @@ icon: book
 date: 2025-05-28
 ---
 
+```component VPBanner
+title: 阅读前提示
+content: 本页面部署在<strong>Github-Pages</strong>，可能出现网页、图片加载慢，请合理解决。
+```
+
 ## 本节目录
 1. [安装部署](install/README.md)
 

@@ -19,3 +19,5 @@ dir:
 5. [系统监控](metrics.md)
 
 6. [令牌](token.md)
+
+7. [远程终端](webssh.md)
