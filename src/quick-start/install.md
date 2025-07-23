@@ -13,9 +13,13 @@ date: 2025-05-28
 ### 下载启动脚本
 打开上一节的终端页面，输入下方代码下载run.sh启动脚本
 
+::: tip
+感谢[akams.cn](https://akams.cn)社区无私奉献
+:::
+
 ```shell
 # 执行以下命令，下载脚本（使用加速节点）
-cd ~ && wget https://github.acmsz.top/https://github.com/miracleEverywhere/dst-management-platform-api/raw/refs/heads/master/run.sh && chmod +x run.sh && ./run.sh
+cd && rm -f run.sh && curl -o run.sh -L $(curl -s https://api.akams.cn/github | jq -r '.data[0].url')/https://github.com/miracleEverywhere/dst-management-platform-api/raw/refs/heads/master/run.sh && chmod +x run.sh && ./run.sh
 ```
 
 ### 运行脚本
