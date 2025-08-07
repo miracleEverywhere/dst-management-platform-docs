@@ -18,8 +18,8 @@ date: 2025-05-28
 :::
 
 ```shell
-# 执行以下命令，下载脚本（使用加速节点）
-cd && rm -f run.sh && curl -o run.sh -L $(curl -s https://api.akams.cn/github | jq -r '.data[0].url')/https://github.com/miracleEverywhere/dst-management-platform-api/raw/refs/heads/master/run.sh && chmod +x run.sh && ./run.sh
+# 执行以下命令，下载脚本（使用加速节点）需要使用jq命令
+cd && rm -f run.sh && curl -o run.sh -L $(curl -s https://api.akams.cn/github | jq -r '.data[0].url')/https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh && chmod +x run.sh && ./run.sh
 ```
 
 ### 运行脚本
@@ -47,7 +47,11 @@ cd && rm -f run.sh && curl -o run.sh -L $(curl -s https://api.akams.cn/github | 
 
 ![加速站点](./assets/install/akams.png)
 
-3. `https://github.com/miracleEverywhere/dst-management-platform-api/raw/refs/heads/master/run.sh` 将这个网址复制到加速站点的输入框中
+3. `https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh` 将下方网址复制到加速站点的输入框中
+
+```text
+https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh
+```
 
 4. 选择 Wget & Curl 后，点击第一个复制
 

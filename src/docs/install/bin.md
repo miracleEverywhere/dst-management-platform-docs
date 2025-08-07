@@ -16,8 +16,8 @@ date: 2025-06-04
 1. 复制下方命令到服务器终端并执行
 
 ```shell
-# 执行以下命令，下载脚本（不使用加速节点）
-cd ~ && wget https://github.com/miracleEverywhere/dst-management-platform-api/raw/refs/heads/master/run.sh && chmod +x run.sh
+# 执行以下命令，下载脚本（不使用加速节点，自带梯子）
+cd ~ && wget https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh && chmod +x run.sh
 ```
 
 如果下载失败，可以通过加速节点下载
@@ -26,8 +26,8 @@ cd ~ && wget https://github.com/miracleEverywhere/dst-management-platform-api/ra
 注意，加速节点可能会失效，如果出现无法下载的情况，前往 https://github.akams.cn 更换加速节点
 :::
 ```shell
-# 执行以下命令，下载脚本（使用加速节点）
-cd && rm -f run.sh && curl -o run.sh -L $(curl -s https://api.akams.cn/github | jq -r '.data[0].url')/https://github.com/miracleEverywhere/dst-management-platform-api/raw/refs/heads/master/run.sh && chmod +x run.sh && ./run.sh
+# 执行以下命令，下载脚本（使用加速节点）需要使用jq命令
+cd && rm -f run.sh && curl -o run.sh -L $(curl -s https://api.akams.cn/github | jq -r '.data[0].url')/https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh && chmod +x run.sh && ./run.sh
 ```
 
 ## 配置启动脚本(可选)
@@ -274,7 +274,7 @@ function update_script() {
     check_curl
     echo_cyan "正在更新脚本..."
     TEMP_FILE="/tmp/run.sh"
-    SCRIPT_GITHUB="https://github.com/miracleEverywhere/dst-management-platform-api/raw/refs/heads/master/run.sh"
+    SCRIPT_GITHUB="https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh"
     # 生成加速链接
     url="$(curl -s https://api.akams.cn/github | jq -r '.data[0].url')/${SCRIPT_GITHUB}"
     if download "${url}" "${TEMP_FILE}" 10; then
@@ -424,7 +424,6 @@ while true; do
         ;;
     esac
 done
-
 ```
 
 #### 修改启动端口
