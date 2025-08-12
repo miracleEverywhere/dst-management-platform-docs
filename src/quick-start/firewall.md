@@ -1,6 +1,6 @@
 ---
 title: 开通防火墙
-icon: globe
+icon: arrow-down-up-lock
 order: 5
 date: 2025-08-05
 ---
