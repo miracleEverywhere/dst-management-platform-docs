@@ -149,6 +149,14 @@ screen -S \"" + world.ScreenName + "\" -p 0 -X stuff \"for i, v in ipairs(TheNet
 为了方便恢复存档，备份文件中还包含一个数据库文件`DstMP.sdb`
 :::
 
+#### 备份清理
+
+该功能默认关闭，会定时清理自动、手动创建的存档备份文件
+
+如果开启此功能，需要设置大于0的数字，如设置30，则会删除30天前创建的备份文件
+
+![备份清理](assets/system-cluster-backup-clean.png)
+
 #### 自动保活
 
 该功能会自动恢复异常的饥荒服务器

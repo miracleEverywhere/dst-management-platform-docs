@@ -23,3 +23,5 @@ content: 本页面部署在<strong>Github-Pages</strong>，可能出现网页、
 5. [游戏设置](setting/README.md)
 
 6. [平台工具](tools/README.md)
+
+7. [日志体系](logs.md)

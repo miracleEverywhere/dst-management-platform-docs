@@ -28,9 +28,9 @@ highlights:
     bgImageDark: /assets/image/3-dark.svg
     highlights:
       - title: 运行 <code>run.sh</code> 脚本即可一键安装和使用。
-        link: docs/install.html
+        link: docs/install/bin.html
       - title: 支持Docker部署，多个环境互不干涉。
-        link: docs/install.html
+        link: docs/install/docker.html
 
   - header: 多种功能
     image: /assets/image/features.svg
@@ -45,27 +45,27 @@ highlights:
       - title: 日志查看
         icon: bxs:file
         details: 包含世界日志、聊天日志、请求日志、运行日志
-        link: docs/log.html
+        link: docs/logs.html
 
       - title: 玩家信息
         icon: streamline:desktop-game-solid
         details: 可快速的查看玩家的信息，并提供一键添加管理员、白名单、黑名单
-        link: docs/player.html
+        link: docs/tools/statistics.html
 
       - title: 用户体系
         icon: fa6-solid:user
         details: 可实现多个账号登录，不同账号拥有不同权限，由管理员统一配置
-        link: docs/user.html
+        link: docs/users.html
 
       - title: 自动备份
         icon: material-symbols:save
         details: 在设定的时间自动备份存档，并提供一键恢复功能
-        link: docs/tool.html
+        link: docs/tools/backup.html
 
       - title: 可视化配置
         icon: eva:image-fill
         details: 像游戏中一样，随心所欲的配置世界和模组
-        link: docs/setting.html
+        link: docs/setting/room.html#世界设置-1
         
       - title: 更多功能
         icon: ic:round-more
@@ -95,9 +95,11 @@ highlights:
     highlights:
       - title: 统一管理
         details: 多个饥荒管理平台，通过令牌的形式进行统一鉴权与管理，无需频繁切换多个网页
+        link: https://github.com/miracleEverywhere/dst-management-platform-desktop
 
       - title: 耳目一新
         details: 使用Vuetify作为UI框架，提供不一样的视觉体验
+        link: https://github.com/miracleEverywhere/dst-management-platform-desktop
 
 copyright: false
 footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议
