@@ -9,7 +9,7 @@ order: 1
 
 原因有很多，99%的概率是当前加速节点异常导致的
 
-如果你是使用这条命令下载失败的话，可以将**.data[0].url**改为**.data[1].url**，使用第二个加速节点，不行就换**.data[2].url**
+如果你是使用这条命令下载失败的话，可以将 **.data[0].url** 改为 **.data[1].url**，使用第二个加速节点，不行就换**.data[2].url**
 
 ```shell
 cd && rm -f run.sh && curl -o run.sh -L $(curl -s https://api.akams.cn/github | jq -r '.data[0].url')/https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh && chmod +x run.sh && ./run.sh
