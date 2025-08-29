@@ -7,6 +7,7 @@ date: 2025-08-12
 
 ::: tip
 项目地址：[https://github.com/miracleEverywhere/dst-search](https://github.com/miracleEverywhere/dst-search)
+预览地址：[http://8.137.107.46:7777](http://8.137.107.46:7777)
 :::
 
 ## 项目介绍
