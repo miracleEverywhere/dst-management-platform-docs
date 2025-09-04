@@ -2,7 +2,7 @@
 title: 系统监控
 icon: chart-simple
 date: 2025-07-23
-order: 5
+order: 6
 ---
 
 :::tip

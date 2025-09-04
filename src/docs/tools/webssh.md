@@ -2,7 +2,7 @@
 title: 远程终端
 icon: terminal
 date: 2025-07-23
-order: 7
+order: 8
 ---
 
 ::: tip

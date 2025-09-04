@@ -16,8 +16,10 @@ dir:
 
 4. [玩家统计](statistics.md)
 
-5. [系统监控](metrics.md)
+5. [世界坐标](location.md)
 
-6. [创建令牌](token.md)
+6. [系统监控](metrics.md)
 
-7. [远程终端](webssh.md)
+7. [创建令牌](token.md)
+
+8. [远程终端](webssh.md)
