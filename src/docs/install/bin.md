@@ -23,12 +23,25 @@ cd ~ && wget https://raw.githubusercontent.com/miracleEverywhere/dst-management-
 如果下载失败，可以通过加速节点下载
 
 ::: tip
-注意，加速节点可能会失效，如果出现无法下载的情况，前往 https://github.akams.cn 更换加速节点
+注意，加速节点可能会失效，如果出现无法下载的情况，请切换加速节点
 :::
+
+1.1 切换加速节点
+
+run.sh脚本提供了切换节点的功能
+
+如执行`./run.sh`，则默认使用`0`号加速节点
+
+如执行`./run.sh 1`，则默认使用`1`号加速节点，以此类推
+
 ```shell
 # 执行以下命令，下载脚本（使用加速节点）需要使用jq命令
 cd && rm -f run.sh && curl -o run.sh -L $(curl -s https://api.akams.cn/github | jq -r '.data[0].url')/https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh && chmod +x run.sh && ./run.sh
 ```
+
+::: warning
+如果提示缺少`jq`命令，ubuntu系统请执行`apt install -y jq`进行安装
+:::
 
 ## 配置启动脚本(可选)
 
@@ -59,6 +72,10 @@ SWAPSIZE=2G
 USER=$(whoami)
 ExeFile="$HOME/dmp"
 
+DMP_GITHUB_HOME_URL="https://github.com/miracleEverywhere/dst-management-platform-api"
+DMP_GITHUB_API_URL="https://api.github.com/repos/miracleEverywhere/dst-management-platform-api/releases/latest"
+SCRIPT_GITHUB="https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh"
+
 cd "$HOME" || exit
 
 function echo_red() {
@@ -77,10 +94,21 @@ function echo_cyan() {
     echo -e "\033[0;36m$*\033[0m"
 }
 
+function echo_red_blink() {
+    echo -e "\033[5;31m$*\033[0m"
+}
+
 # 检查用户，只能使用root执行
 if [[ "${USER}" != "root" ]]; then
-    echo_red "请使用root用户执行此脚本 (Please run this script as the root user)"
+    echo_red "请使用root用户执行此脚本"
     exit 1
+fi
+
+if [ -z "$1" ]; then
+    acceleration_index=0
+
+else
+    acceleration_index=$1
 fi
 
 # 设置全局stderr为红色并添加固定格式
@@ -97,27 +125,32 @@ function unset_tty() {
 function prompt_user() {
     clear
     echo_green "饥荒管理平台(DMP)"
-    echo_green "--- https://github.com/miracleEverywhere/dst-management-platform-api ---"
+    echo_green "--- ${DMP_GITHUB_HOME_URL} ---"
+    if [[ $(echo "${DMP_GITHUB_HOME_URL}" | tr '/' '\n' | grep -vc "^$") != "4" ]] ||
+       [[ $(echo "${DMP_GITHUB_API_URL}" | tr '/' '\n' | grep -vc "^$") != "7" ]] ||
+       [[ $(echo "${SCRIPT_GITHUB}" | tr '/' '\n' | grep -vc "^$") != "6" ]]; then
+        echo_red_blink "饥荒管理平台 run.sh 脚本可能被加速站点篡改，请切换加速站点重新下载"
+    fi
     echo_yellow "————————————————————————————————————————————————————————————"
-    echo_green "[0]: 下载并启动服务(Download and start the service)"
+    echo_green "[0]: 下载并启动饥荒管理平台"
     echo_yellow "————————————————————————————————————————————————————————————"
-    echo_green "[1]: 启动服务(Start the service)"
-    echo_green "[2]: 关闭服务(Stop the service)"
-    echo_green "[3]: 重启服务(Restart the service)"
+    echo_green "[1]: 启动饥荒管理平台"
+    echo_green "[2]: 关闭饥荒管理平台"
+    echo_green "[3]: 重启饥荒管理平台"
     echo_yellow "————————————————————————————————————————————————————————————"
-    echo_green "[4]: 更新管理平台(Update management platform)"
-    echo_green "[5]: 强制更新平台(Force update platform)"
-    echo_green "[6]: 更新启动脚本(Update startup script)"
+    echo_green "[4]: 更新饥荒管理平台"
+    echo_green "[5]: 强制更新饥荒管理平台"
+    echo_green "[6]: 更新run.sh启动脚本"
     echo_yellow "————————————————————————————————————————————————————————————"
-    echo_green "[7]: 设置虚拟内存(Setup swap)"
-    echo_green "[8]: 退出脚本(Exit script)"
+    echo_green "[7]: 设置虚拟内存"
+    echo_green "[8]: 退出脚本"
     echo_yellow "————————————————————————————————————————————————————————————"
-    echo_yellow "请输入选择(Please enter your selection) [0-8]: "
+    echo_yellow "请输入要执行的操作 [0-8]: "
 }
 
 # 检查jq
 function check_jq() {
-    echo_cyan "正在检查jq命令(Checking jq command)"
+    echo_cyan "正在检查jq命令"
     if ! jq --version >/dev/null 2>&1; then
         OS=$(grep -P "^ID=" /etc/os-release | awk -F'=' '{print($2)}' | sed "s/['\"]//g")
         if [[ ${OS} == "ubuntu" ]]; then
@@ -131,7 +164,7 @@ function check_jq() {
 }
 
 function check_curl() {
-    echo_cyan "正在检查curl命令(Checking curl command)"
+    echo_cyan "正在检查curl命令"
     if ! curl --version >/dev/null 2>&1; then
         OS=$(grep -P "^ID=" /etc/os-release | awk -F'=' '{print($2)}' | sed "s/['\"]//g")
         if [[ ${OS} == "ubuntu" ]]; then
@@ -145,7 +178,7 @@ function check_curl() {
 }
 
 function check_strings() {
-    echo_cyan "正在检查strings命令(Checking strings command)"
+    echo_cyan "正在检查strings命令"
     if ! strings --version >/dev/null 2>&1; then
         OS=$(grep -P "^ID=" /etc/os-release | awk -F'=' '{print($2)}' | sed "s/['\"]//g")
         if [[ ${OS} == "ubuntu" ]]; then
@@ -162,7 +195,7 @@ function check_strings() {
 # Ubuntu检查GLIBC, rhel需要下载文件手动安装
 function check_glibc() {
     check_strings
-    echo_cyan "正在检查GLIBC版本(Checking GLIBC version)"
+    echo_cyan "正在检查GLIBC版本"
     OS=$(grep -P "^ID=" /etc/os-release | awk -F'=' '{print($2)}' | sed "s/['\"]//g")
     if [[ ${OS} == "ubuntu" ]]; then
         if ! strings /lib/x86_64-linux-gnu/libc.so.6 | grep GLIBC_2.34 >/dev/null 2>&1; then
@@ -170,7 +203,7 @@ function check_glibc() {
             apt install -y libc6
         fi
     else
-        echo_red "非Ubuntu系统，如GLIBC小于2.34，请手动升级(For systems other than Ubuntu, if the GLIBC version is less than 2.34, please upgrade manually)"
+        echo_red "非Ubuntu系统，如GLIBC小于2.34，请手动升级"
     fi
 }
 
@@ -192,9 +225,12 @@ function install_dmp() {
     check_jq
     check_curl
     # 原GitHub下载链接
-    GITHUB_URL=$(curl -s https://api.github.com/repos/miracleEverywhere/dst-management-platform-api/releases/latest | jq -r '.assets[] | select(.name == "dmp.tgz") | .browser_download_url')
+    github_url_acc=$(curl -s -L ${DMP_GITHUB_API_URL} | jq -r '.assets[] | select(.name == "dmp.tgz") | .browser_download_url')
     # 生成加速链接
-    url="$(curl -s https://api.akams.cn/github | jq -r '.data[0].url')/${GITHUB_URL}"
+    url="$(curl -s -L https://api.akams.cn/github | jq -r --arg idx "$acceleration_index" '.data[$idx | tonumber].url')/${github_url_acc}"
+    echo_yellow "正在使用加速站点[${acceleration_index}]进行下载，如果下载失败，请切换加速站点，切换方式："
+    echo_yellow "./run.sh 大于等于0的数字。例如：./run.sh 2"
+    echo_yellow "如果不输入数字，则默认为0"
     if download "${url}" "dmp.tgz" 10; then
         if [ -e "dmp.tgz" ]; then
             echo_green "DMP下载成功"
@@ -218,9 +254,9 @@ function install_dmp() {
 function check_dmp() {
     sleep 1
     if pgrep dmp >/dev/null; then
-        echo_green "启动成功 (Startup Success)"
+        echo_green "启动成功"
     else
-        echo_red "启动失败 (Startup Fail)"
+        echo_red "启动失败"
         exit 1
     fi
 }
@@ -239,13 +275,13 @@ function start_dmp() {
 # 关闭主程序
 function stop_dmp() {
     pkill -9 dmp
-    echo_green "关闭成功 (Shutdown Success)"
+    echo_green "关闭成功"
     sleep 1
 }
 
 # 删除主程序、请求日志、运行日志、遗漏的压缩包
 function clear_dmp() {
-    echo_cyan "正在执行清理 (Cleaning Files)"
+    echo_cyan "正在执行清理"
     rm -f dmp dmp.log dmpProcess.log
 }
 
@@ -262,9 +298,9 @@ function get_current_version() {
 function get_latest_version() {
     check_jq
     check_curl
-    LATEST_VERSION=$(curl -s https://api.github.com/repos/miracleEverywhere/dst-management-platform-api/releases/latest | jq -r .tag_name)
+    LATEST_VERSION=$(curl -s -L ${DMP_GITHUB_API_URL} | jq -r .tag_name)
     if [[ -z "$LATEST_VERSION" ]]; then
-        echo_red "无法获取最新版本号，请检查网络连接或GitHub API (Failed to fetch the latest version, please check network or GitHub API)"
+        echo_red "无法获取最新版本号，请检查网络连接或GitHub API"
         exit 1
     fi
 }
@@ -274,9 +310,11 @@ function update_script() {
     check_curl
     echo_cyan "正在更新脚本..."
     TEMP_FILE="/tmp/run.sh"
-    SCRIPT_GITHUB="https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh"
     # 生成加速链接
-    url="$(curl -s https://api.akams.cn/github | jq -r '.data[0].url')/${SCRIPT_GITHUB}"
+    url="$(curl -s -L https://api.akams.cn/github | jq -r --arg idx "$acceleration_index" '.data[$idx | tonumber].url')/${SCRIPT_GITHUB}"
+    echo_yellow "正在使用加速站点[${acceleration_index}]进行下载，如果下载失败，请切换加速站点，切换方式："
+    echo_yellow "./run.sh 大于等于0的数字。例如：./run.sh 2"
+    echo_yellow "如果不输入数字，则默认为0"
     if download "${url}" "${TEMP_FILE}" 10; then
         if [ -e "${TEMP_FILE}" ]; then
             echo_green "run.sh下载成功"
@@ -331,7 +369,7 @@ function set_swap() {
     sysctl -w vm.min_free_kbytes=100000
     echo -e 'vm.swappiness = 20\nvm.min_free_kbytes = 100000\n' > /etc/sysctl.d/dmp_swap.conf
 
-    echo_green "系统swap设置成功 (System swap setting completed)"
+    echo_green "系统swap设置成功"
 }
 
 # 使用无限循环让用户输入命令
@@ -369,7 +407,7 @@ while true; do
         stop_dmp
         start_dmp
         check_dmp
-        echo_green "重启成功 (Restart Success)"
+        echo_green "重启成功"
         unset_tty
         break
         ;;
@@ -378,15 +416,15 @@ while true; do
         get_current_version
         get_latest_version
         if [[ "$(echo -e "$CURRENT_VERSION\n$LATEST_VERSION" | sort -V | head -n1)" == "$CURRENT_VERSION" && "$CURRENT_VERSION" != "$LATEST_VERSION" ]]; then
-            echo_yellow "当前版本 ($CURRENT_VERSION) 小于最新版本 ($LATEST_VERSION)，即将更新 (Updating to the latest version)"
+            echo_yellow "当前版本 ($CURRENT_VERSION) 小于最新版本 ($LATEST_VERSION)，即将更新"
             stop_dmp
             clear_dmp
             install_dmp
             start_dmp
             check_dmp
-            echo_green "更新完成 (Update completed)"
+            echo_green "更新完成"
         else
-            echo_green "当前版本 ($CURRENT_VERSION) 已是最新版本，无需更新 (No update needed)"
+            echo_green "当前版本 ($CURRENT_VERSION) 已是最新版本，无需更新"
         fi
         unset_tty
         break
@@ -398,7 +436,7 @@ while true; do
         install_dmp
         start_dmp
         check_dmp
-        echo_green "强制更新完成 (Force update completed)"
+        echo_green "强制更新完成"
         unset_tty
         break
         ;;
@@ -419,7 +457,7 @@ while true; do
         break
         ;;
     *)
-        echo_red "请输入正确的数字 [0-8](Please enter the correct number [0-8])"
+        echo_red "请输入正确的数字 [0-8]"
         continue
         ;;
     esac
@@ -449,7 +487,7 @@ done
 
 ![启动脚本](assets/running-run-sh.png)
 
-#### [0] 下载并启动服务
+- [0] 下载并启动服务
 1. 脚本会自动检查使用到的系统依赖是否正确安装，如果缺失的话，会进行自动安装并给出相应的提示
 
 2. 自动从Github下载最新版本的饥荒管理平台安装包
@@ -458,22 +496,22 @@ done
 
 4. 自动检查平台是否正常启动，并给出相应的提示
 
-#### [1] 启动服务
+- [1] 启动服务
 1. 脚本会检测是否含有`dmp`二进制文件，如果没有的话，会执行[0]操作
 
 2. 如果含有`dmp`二进制文件则会据定义好的端口(`PORT`变量)启动平台
 
 3. 自动检查平台是否正常启动，并给出相应的提示
 
-#### [2] 关闭服务
+- [2] 关闭服务
 1. 脚本会关闭正在运行的饥荒管理平台
 
-#### [3] 重启服务
+- [3] 重启服务
 1. 脚本执行[2]
 
 2. 脚本执行[1]
 
-#### [4] 更新管理平台
+- [4] 更新管理平台
 1. 脚本获取Github上饥荒管理平台的最新版本
 
 2. 脚本获取当前运行平台的版本
@@ -482,17 +520,17 @@ done
 
 4. 下载最新版本并及启动，即[0]
 
-#### [5] 强制更新平台
+- [5] 强制更新平台
 1. 脚本不检查最新版本与当前运行版本，直接执行清理、下载和启动
 
-#### [6] 更新启动脚本
+- [6] 更新启动脚本
 1. 下载最新版本的启动脚本到`/tmp/run.sh`
 
 2. 如果上一步成功，则会将新下载的脚本替换当前运行的脚本
 
 3. 运行新脚本
 
-#### [7] 设置虚拟内存
+- [7] 设置虚拟内存
 1. 检查 `/swapfile` 文件是否存在，如果存在则跳过设置
 
 2. 创建虚拟内存文件并启用
@@ -565,3 +603,32 @@ systemctl stop dmp
 ```shell
 systemctl restart dmp
 ```
+
+## 更新饥荒管理平台
+
+#### 自动更新
+运行启动脚本，输入4即可
+
+#### 手动更新
+1. 手动下载最新版本的发行版，[下载地址](https://github.com/miracleEverywhere/dst-management-platform-api/releases)
+
+2. 删除旧dmp二进制文件
+
+3. 解压下载好的文件
+
+4. 执行run.sh脚本，输入3重启平台
+
+## 更新run.sh脚本
+
+#### 自动更新
+运行启动脚本，输入6即可
+
+#### 手动更新
+删除旧脚本并下载新脚本
+```shell
+cd && rm -f run.sh && curl -o run.sh -L $(curl -s https://api.akams.cn/github | jq -r '.data[0].url')/https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh && chmod +x run.sh && ./run.sh
+```
+
+::: warning
+自动更新脚本会保留用户自定义脚本设置，手动更新则会下载一个默认的最新版本脚本
+:::
