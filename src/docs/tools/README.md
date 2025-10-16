@@ -16,7 +16,7 @@ dir:
 
 4. [玩家统计](statistics.md)
 
-5. [世界坐标](location.md)
+5. [世界预览](location.md)
 
 6. [系统监控](metrics.md)
 
