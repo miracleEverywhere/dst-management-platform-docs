@@ -3,7 +3,7 @@ title: 深度文档
 index: false
 order: 1
 icon: book
-date: 2025-05-28
+date: 2025-12-27
 ---
 
 ```component VPBanner
@@ -16,7 +16,7 @@ content: 本页面部署在<strong>Github-Pages</strong>，可能出现网页、
 
 2. [用户体系](users.md)
 
-3. [集群设置](cluster.md)
+3. [房间设置](cluster.md)
 
 4. [平台首页](home.md)
 
