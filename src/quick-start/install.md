@@ -2,7 +2,7 @@
 title: 部署安装
 order: 2
 icon: download
-date: 2025-05-28
+date: 2025-12-26
 ---
 
 ::: important
