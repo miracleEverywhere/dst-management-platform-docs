@@ -2,7 +2,7 @@
 title: 日志体系
 icon: file-lines
 date: 2025-08-26
-order: 7
+order: 8
 ---
 
 在日志页面，可以更便捷的查看和管理日志
