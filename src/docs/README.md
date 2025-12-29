@@ -26,4 +26,10 @@ content: 本页面部署在<strong>Github-Pages</strong>，可能出现网页、
 
 7. [平台工具](tools/README.md)
 
-8. [日志体系](logs.md)
+8. [日志管理](logs.md)
+
+9. [存档导入](import.md)
+
+10. [游戏安装](install.md)
+
+11. [平台管理](platform.md)
