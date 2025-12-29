@@ -3,7 +3,7 @@ title: 深度文档
 index: false
 order: 1
 icon: book
-date: 2025-05-28
+date: 2025-12-27
 ---
 
 ```component VPBanner
@@ -14,14 +14,22 @@ content: 本页面部署在<strong>Github-Pages</strong>，可能出现网页、
 ## 本节目录
 1. [安装部署](install/README.md)
 
-2. [用户体系](users.md)
+2. [界面简介](ui.md)
 
-3. [集群设置](cluster.md)
+3. [用户体系](users.md)
 
-4. [平台首页](home.md)
+4. [房间总览](rooms.md)
 
-5. [游戏设置](setting/README.md)
+5. [控制面板](dashboard.md)
 
-6. [平台工具](tools/README.md)
+6. [游戏设置](setting/README.md)
 
-7. [日志体系](logs.md)
+7. [平台工具](tools/README.md)
+
+8. [日志管理](logs.md)
+
+9. [存档导入](import.md)
+
+10. [游戏安装](install.md)
+
+11. [平台管理](platform.md)
