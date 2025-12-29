@@ -9,7 +9,7 @@ date: 2025-12-26
 
 首先打开 **平台管理** 页面，并切换到**房间总览**标签页
 
-![直连端口](assets/firewall/cluster_ports.png)
+![直连端口](assets/firewall/room_ports.png)
 
 这个页面会展示你需要开通的所有饥荒端口，如上图中的: 
 **11001,11002**
