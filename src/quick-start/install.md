@@ -15,13 +15,14 @@ date: 2025-12-26
 ### 下载启动脚本
 打开上一节的终端页面，输入下方代码下载run.sh启动脚本
 
-::: tip
-感谢[akams.cn](https://akams.cn)社区无私奉献
-:::
-
 ```shell
 # 执行以下命令，下载脚本（使用加速节点）需要使用jq命令
-cd && rm -f run.sh && curl -o run.sh -L $(curl -s https://api.akams.cn/github | jq -r '.data[0].url')/https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh && chmod +x run.sh && ./run.sh
+cd ~ && rm -f  run.sh  && wget  https://gh.llkk.cc/https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh  && chmod +x  run.sh  && ./ run.sh
+```
+
+```shell
+# 也可以使用这个加速节点
+rm -f  run.sh  && wget  https://ghfast.top/https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh  && chmod +x  run.sh  && ./ run.sh
 ```
 
 ::: warning
@@ -590,6 +591,11 @@ chmod +x run.sh
 ### 下载run.sh脚本
 <code>run.sh</code> 脚本保存在Github上，直接下载有概率会失败，因此需要加速
 ##### 获取加速链接
+
+::: tip
+感谢[akams.cn](https://akams.cn)社区无私奉献
+:::
+
 1. 首先打开 [github.akams.cn](https://github.akams.cn) 加速站点，<strong>感谢社区无私奉献</strong>
 
 2. 需要等待网页完全加载完毕，即网页标签页不再显示旋转的加载图标，以及下图中的红框出现网站
