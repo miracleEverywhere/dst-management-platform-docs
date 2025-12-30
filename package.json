@@ -1,7 +1,7 @@
 {
   "name": "dst-management-platform-docs",
   "description": "饥荒管理平台文档",
-  "version": "1.0.1",
+  "version": "v3",
   "license": "MIT",
   "type": "module",
   "scripts": {
