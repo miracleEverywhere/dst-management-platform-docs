@@ -6,42 +6,12 @@ date: 2025-12-26
 ---
 
 ::: important
-**自动安装**和**手动安装**选择其中一种就行，可以先使用自动安装，如果出现任何下载失败的情况，再使用手动安装
-
-两者都失败的话，可加群获取群文件，进行**离线安装**
+请在安装前再次确认系统版本，饥荒管理平台支持的系统有**Ubuntu24**、**Rocky9**、**Debian13**
 :::
 
-## 自动安装
-### 下载启动脚本
-打开上一节的终端页面，输入下方代码下载run.sh启动脚本
+复制下方代码，粘贴到终端并执行
 
-```shell
-# 执行以下命令，下载脚本（使用加速节点）需要使用jq命令
-cd ~ && rm -f  run.sh  && wget  https://gh.llkk.cc/https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh  && chmod +x  run.sh  && ./ run.sh
-```
-
-```shell
-# 也可以使用这个加速节点
-rm -f  run.sh  && wget  https://ghfast.top/https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh  && chmod +x  run.sh  && ./ run.sh
-```
-
-::: warning
-如果提示缺少`jq`命令，ubuntu系统请执行`apt install -y jq`进行安装
-:::
-
-<br>
-
----
-
-<br>
-
-::: caution
-如果上方命令下载成功，请进入下一小节：**运行脚本**
-
-如果出现下载异常，也可以手动创建 `run.sh` 脚本，将甲方代码复制粘贴到终端即可
-:::
-
-```shell title="手动创建run.sh" :collapsed-lines=10
+```shell title="点击右侧复制按钮" :collapsed-lines=10
 cat > run.sh << 'EOF'
 #!/bin/bash
 
@@ -572,86 +542,16 @@ chmod +x run.sh
 ./run.sh
 ```
 
-### 运行脚本
-执行成功后输入0，即可完成安装
+如果无异常，你将会看到如下选项
 
-![下载并安装](./assets/install/run-sh-0.png)
+![运行中的run.sh脚本](assets/install/run-sh-exec.png)
 
-::: tip
-如果出现上图中的启动成功字样，就代表已经安装成功了，可以进入下一节；
-如果出现网络错误，请根据下方手动安装教程进行安装
-:::
+输入`0`安装饥荒管理平台
 
-## 手动安装
+![选择一个加速节点](assets/install/acc-select.png)
 
-::: info
-因为饥荒管理平台源码及安装包都在Github上，如未进行Github加速可能会导致安装失败。因此，下面的教程不使用`run.sh`脚本的自动化能力，保证顺利安装。
-:::
+这里我们输入`1`，选择1号加速节点
 
-### 下载run.sh脚本
-<code>run.sh</code> 脚本保存在Github上，直接下载有概率会失败，因此需要加速
-##### 获取加速链接
+![安装完成](assets/install/install-complete.png)
 
-::: tip
-感谢[akams.cn](https://akams.cn)社区无私奉献
-:::
-
-1. 首先打开 [github.akams.cn](https://github.akams.cn) 加速站点，<strong>感谢社区无私奉献</strong>
-
-2. 需要等待网页完全加载完毕，即网页标签页不再显示旋转的加载图标，以及下图中的红框出现网站
-
-![加速站点](./assets/install/akams.png)
-
-3. `https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh` 将下方网址复制到加速站点的输入框中
-
-```text
-https://raw.githubusercontent.com/miracleEverywhere/dst-management-platform-api/master/run.sh
-```
-
-4. 选择 Wget & Curl 后，点击第一个复制
-
-![run.sh加速](./assets/install/runshproxy.png)
-
-##### 开始下载
-1. 将复制的命令输入上一节打开的终端中，并按回车键执行
-
-2. 并为下载好的`run.sh`添加执行权限：`chmod +x run.sh`
-
-![run.sh下载](./assets/install/runshdownload.png)
-
-##### 开启SWAP
-::: tip
-饥荒专用服务器比较吃内存，所以需要开启SWAP(虚拟内存)，以避免服务器卡死。
-:::
-
-1. 输入 `./run.sh` 运行脚本
-
-2. 输入 `7` 即可
-
-![设置SWAP](./assets/install/swap.png)
-
-### 部署饥荒管理平台
-##### 获取最新版本
-1. 在浏览器中打开这个页面：[获取饥荒管理平台最新版本](https://api.github.com/repos/miracleEverywhere/dst-management-platform-api/releases/latest)
-
-2. 打开后输入 ctrl+f(MacOS为 command+f) 打开页面搜索，输入`browser_download_url`
-
-![获取最新版本](./assets/install/latestdmp.png)
-
-##### 获取加速链接
-1. 会出先两个结果，我们找到以 `dmp.tgz` 结尾的那个链接，复制下来
-
-2. 回到加速站点，将复制的链接粘贴进输入框，并点击第一个复制
-
-![获取加速链接](./assets/install/dmpproxy.png)
-
-##### 下载并启动
-1. 将复制好的命令粘贴到终端，按回车键运行
-
-![执行下载](./assets/install/downloaddmp.png)
-
-2. 输入命令解压下载好的压缩包：`tar zxvf dmp.tgz`，解压完成后输入：`./run.sh` 并输入：`1` 启动饥荒管理平台
-
-![解压并启动](./assets/install/startup.png)
-
-到目前为止，饥荒管理平台就算部署成功，下一节我们将进行令牌申请
+如果看到**启动成功**字样，那就代表安装完成了，可以进入下一步[令牌申请](token.md)了
