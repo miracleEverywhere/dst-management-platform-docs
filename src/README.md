@@ -12,10 +12,6 @@ actions:
   - text: 快速上手
     icon: wand-magic-sparkles
     link: ./quick-start/
-
-  - text: 前往下载
-    icon: download
-    link: https://github.com/miracleEverywhere/dst-management-platform-api/releases
     
   - text: 欢迎加群
     icon: fa6-brands:qq
