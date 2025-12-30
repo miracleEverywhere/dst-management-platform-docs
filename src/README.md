@@ -19,7 +19,7 @@ actions:
     
   - text: 欢迎加群
     icon: fa6-brands:qq
-    link: /faq/group
+    link: faq/group.md
 
 highlights:
   - header: 易于安装
@@ -79,10 +79,10 @@ highlights:
     bgImageDark: /assets/image/5-dark.svg
     highlights:
       - title: Golang
-        details: 使用 <code>1.23.1</code> 版本，标准C-S架构，采用Gin轻量级Web框架
+        details: 使用 <code>1.25.4</code> 版本，标准C-S架构，采用Gin轻量级Web框架
 
       - title: Vue
-        details: 使用<code>3.5.2</code> 版本，通过 Axios 与服务端交互，采用Element-Plus作为UI框架
+        details: 使用<code>3.5.13</code> 版本，通过 Axios 与服务端交互，采用Element-Plus作为UI框架
 
       - title: 其他
         details: 使用JWT进行接口鉴权，Pinia作为前端缓存，支持多语言、明暗切换、移动端自动布局等

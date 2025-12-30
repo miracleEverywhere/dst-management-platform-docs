@@ -1,7 +1,7 @@
 ---
-title: 模组
+title: 模组设置
 icon: file-code
-order: 4
+order: 2
 date: 2025-06-12
 ---
 

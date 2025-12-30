@@ -15,8 +15,6 @@ order: 3
 
 ![注册](assets/user-registy-button.png)
 
-注册完成后，该按钮消失，不会再出现
-
 ::: tip
 通过注册创建的用户默认为管理员角色
 :::
@@ -57,14 +55,24 @@ apt install sqlite3
 
 3. 更新密码 
 
-```shell
-cd ~/data/ && sqlite3 dmp.db "UPDATE users SET password='ba3253876aed6bc22d4a6ff53d8406c6ad864195ed144ab5c87621b6c233b548baeae6956df346ec8c17f5ea10f35ee3cbc514797ed7ddd3145464e2a0bab413';"
+```shell title="设置所有人的密码为 123456"
+cd ~/data/ && sqlite3 dmp.db <<EOF
+UPDATE users SET password='ba3253876aed6bc22d4a6ff53d8406c6ad864195ed144ab5c87621b6c233b548baeae6956df346ec8c17f5ea10f35ee3cbc514797ed7ddd3145464e2a0bab413';
+.exit
+EOF
+```
+
+```shell title="设置指定用户的密码为 123456 自行修改用户名"
+cd ~/data/ && sqlite3 dmp.db <<EOF
+UPDATE users SET password='ba3253876aed6bc22d4a6ff53d8406c6ad864195ed144ab5c87621b6c233b548baeae6956df346ec8c17f5ea10f35ee3cbc514797ed7ddd3145464e2a0bab413' WHERE username='用户名';
+.exit
+EOF
 ```
 
 4. 启动平台
 
 ::: warning
-更新密码会更改所有用户的密码，更新后的密码是弱密码 `123456`，更改后尽快登录平台修改密码💀
+更新后的密码是弱密码 `123456`，更改后尽快登录平台修改密码💀
 :::
 
 ## 用户管理

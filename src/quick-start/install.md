@@ -16,6 +16,8 @@ date: 2025-12-26
 复制下方代码，粘贴到终端并执行
 
 ```shell title="点击右侧复制按钮" :collapsed-lines=10
+rm -f run.sh
+
 cat > run.sh << 'EOF'
 #!/bin/bash
 
@@ -543,6 +545,7 @@ done
 EOF
 
 chmod +x run.sh
+
 ./run.sh
 ```
 

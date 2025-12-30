@@ -17,7 +17,7 @@ docker pull ghcr.io/miracleeverywhere/dst-management-platform-api:latest
 
 也可以通过版本号进行拉取
 ```shell
-docker pull ghcr.io/miracleeverywhere/dst-management-platform-api:v2.0.3
+docker pull ghcr.io/miracleeverywhere/dst-management-platform-api:v3.0.2
 ```
 
 ## 启动容器
@@ -29,7 +29,7 @@ docker pull ghcr.io/miracleeverywhere/dst-management-platform-api:v2.0.3
 ```shell
 # 将容器内部的目录映射到/app目录下
 docker run -itd --name dmp -p 80:80 \
--v /app/config:/root/config \
+-v /app/data:/root/data \
 -v /app/dst:/root/dst \
 -v /app/.klei:/root/.klei \
 -v /app/dmp_files:/root/dmp_files \
@@ -42,7 +42,7 @@ ghcr.io/miracleeverywhere/dst-management-platform-api:latest
 绑定宿主机8000端口
 ```shell
 docker run -itd --name dmp -p 8000:80 \
--v /app/config:/root/config \
+-v /app/data:/root/data \
 -v /app/dst:/root/dst \
 -v /app/.klei:/root/.klei \
 -v /app/dmp_files:/root/dmp_files \
@@ -57,7 +57,7 @@ ghcr.io/miracleeverywhere/dst-management-platform-api:latest
 # 使用host网络，并绑定8080端口
 docker run -itd --name dmp --net=host \
 -e DMP_PORT=8080 \
--v /app/config:/root/config \
+-v /app/data:/root/data \
 -v /app/dst:/root/dst \
 -v /app/.klei:/root/.klei \
 -v /app/dmp_files:/root/dmp_files \
@@ -66,32 +66,6 @@ docker run -itd --name dmp --net=host \
 -v /etc/timezone:/etc/timezone:ro \
 ghcr.io/miracleeverywhere/dst-management-platform-api:latest
 ```
-
-使用host网络，限制CPU2个核心，内存4G
-
-::: tip
-如果限制了CPU和内存，在首页显示的**系统信息**则会相应的适配容器被限制的资源，而不会显示宿主机的资源使用百分比
-:::
-
-```shell
-docker run -itd --name dmp --net=host \
--e DMP_PORT=8080 \
---cpus=2 --memory=4G \
--v /app/config:/root/config \
--v /app/dst:/root/dst \
--v /app/.klei:/root/.klei \
--v /app/dmp_files:/root/dmp_files \
--v /app/steamcmd:/root/steamcmd \
--v /etc/localtime:/etc/localtime:ro \
--v /etc/timezone:/etc/timezone:ro \
-ghcr.io/miracleeverywhere/dst-management-platform-api:latest
-```
-::: tip
-查看容器状态命令
-`docker stats 容器名 --no-stream`
-:::
-
-
 
 ## 更新镜像
 直接拉取最新版本的镜像并重启容器即可

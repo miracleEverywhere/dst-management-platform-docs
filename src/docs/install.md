@@ -164,31 +164,9 @@ echo -e "==>dmp@@ 安装完成 @@dmp<=="
 安装过程中请勿刷新页面或者重复安装
 :::
 
-如果出现安装失败，请手动执行`manual_install.sh`脚本
-
-## 手动安装 Steamcmd
-提供手动安装方便大家复制，节省重新检查和下载依赖的时间
-::: warning
-前提是依赖和 `scree` 已经安装完成
-:::
-
+::: important
+如果出现安装失败，请手动执行`manual_install.sh`脚本，需要root用户(不推荐sudo)
 ```shell
-# 手动下载 steamcmd
-wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
-# 解压安装包
-rm -rf "/root/steamcmd"  # 这里假设用户是使用 root 用户，安装目录在 steamcmd 文件夹内
-mkdir -p "/root/steamcmd" # 新建文件夹
-tar -zxvf steamcmd_linux.tar.gz -C "/root/steamcmd" # 解压到 /root/steamcmd 目录下
+cd && ./manual_install.sh
 ```
-
-## 手动安装饥荒联机版
-提供手动安装方便大家复制，节省重新检查和下载依赖的时间
-::: warning
-前提是依赖和 `scree` 已经安装完成，并且 `steamcmd` 安装同样完成安装
 :::
-
-```shell
-cd "/root/steamcmd"  # 假设 steamcmd 安装目录是在 /root/steamcmd 
-# 下面指定的饥荒安装目录是在 /root/dst 不要使用其他目录
-./steamcmd.sh +force_install_dir "/root/dst" +login anonymous +app_update 343050 validate +quit
-```

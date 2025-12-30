@@ -1,7 +1,7 @@
 ---
-title: 玩家
+title: 玩家设置
 icon: user
-order: 2
+order: 3
 date: 2025-06-10
 ---
 
