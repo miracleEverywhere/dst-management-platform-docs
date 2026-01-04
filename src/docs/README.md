@@ -6,30 +6,11 @@ icon: book
 date: 2025-12-27
 ---
 
-```component VPBanner
-title: 阅读前提示
-content: 本页面部署在<strong>Github-Pages</strong>，可能出现网页、图片加载慢，请合理解决。
-```
+::: info
+本节将详细介绍饥荒管理平台的每一个功能，以及运行原理
+:::
 
-## 本节目录
-1. [安装部署](install/README.md)
+::: tip
+如果查看过后，还是有问题，则可以[加群讨论](../faq/group.md)或者前往[Github](https://github.com/miracleEverywhere/dst-management-platform-api/issues)留下issue
+:::
 
-2. [界面简介](ui.md)
-
-3. [用户体系](users.md)
-
-4. [房间总览](rooms.md)
-
-5. [控制面板](dashboard.md)
-
-6. [游戏设置](setting/README.md)
-
-7. [平台工具](tools/README.md)
-
-8. [日志管理](logs.md)
-
-9. [存档导入](import.md)
-
-10. [游戏安装](install.md)
-
-11. [平台管理](platform.md)
