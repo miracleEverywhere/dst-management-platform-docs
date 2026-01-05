@@ -7,13 +7,11 @@ order: 10
 
 进入安装游戏页面，会显示左右两部分内容
 
+![游戏未安装](assets/install-no.png)
+
 左侧为当前服务器的配置信息，如CPU、内存、运行时间等信息
 
-![系统信息](assets/install-system-info.png)
-
 右侧如果未安装会提示安装
-
-![检查安装游戏不存在](assets/install-check-none.png)
 
 如果系统名为`ubuntu`、`Debian`、`rocky`其中的一个，即可进行安装
 
@@ -23,7 +21,7 @@ order: 10
 
 如果平台检测到饥荒已经安装，则会显示重新安装和更新游戏
 
-![检查安装游戏已存在](assets/install-check.png)
+![游戏已安装](assets/install-yes.png)
 
 点击安装或重新安装按钮后，平台会在当前页面开启一个终端，并执行安装脚本
 

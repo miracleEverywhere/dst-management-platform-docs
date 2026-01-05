@@ -11,6 +11,8 @@ export default hopeTheme({
     url: "https://github.com/miracleEverywhere",
   },
 
+  logo: "/logo.svg",
+
   repo: "https://github.com/miracleEverywhere/dst-management-platform-docs",
 
   docsDir: "src",

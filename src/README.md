@@ -7,6 +7,8 @@ bgImageDark: /assets/image/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: 饥荒管理平台
+heroStyle:
+  min-height: 500px
 tagline: 帮助你更好的管理饥荒专用服务器
 actions:
   - text: 快速上手
@@ -36,7 +38,7 @@ highlights:
       - title: 多房间管理
         icon: network-wired
         details: 支持多房间、多世界管理，提供清晰明了的配置选项
-        link: docs/cluster.html
+        link: docs/rooms.html
 
       - title: 日志查看
         icon: bxs:file
@@ -46,7 +48,7 @@ highlights:
       - title: 玩家信息
         icon: streamline:desktop-game-solid
         details: 可快速的查看玩家的信息，并提供一键添加管理员、白名单、黑名单
-        link: docs/tools/statistics.html
+        link: docs/setting/player.html
 
       - title: 用户体系
         icon: fa6-solid:user

@@ -11,22 +11,38 @@ date: 2025-06-10
 
 ## 在线玩家
 
-![player-online.png](assets/player-online.png)
+该页面会展示当前在游戏中的玩家，右侧操作按钮可快捷添加管理员、黑名单、预留位
+
+![在线玩家列表](assets/player-online.png)
 
 ## 管理员
 
-![player-list-add-manual.png](assets/player-list-add-manual.png)
+![管理员](assets/player-list-add-manual.png)
 
 ## 黑名单
 
-![player-list-import.png](assets/player-list-import.png)
+![黑名单导入](assets/player-list-import.png)
+
+::: tip
+管理员、黑名单、预留位均支持批量导入，请上传`txt`文件，格式和官方的`adminlist.txt`，`blocklist.txt`，`whitelist.txt`一样，每行一个`科雷ID`
+:::
 
 ## 历史玩家
 
-![player-history.png](assets/player-history.png)
+在你存档游玩过的玩家会显示在这个页面，，右侧操作按钮可快捷添加管理员、黑名单、预留位
+
+![历史玩家](assets/player-history.png)
 
 ## 玩家统计
 
-![player-statistics-1.png](assets/player-statistics-1.png)
+展示当前房间最近的玩家数量
 
-![player-statistics-2.png](assets/player-statistics-2.png)
+![玩家统计](assets/player-statistics-1.png)
+
+自平台开始运行到现在，当前存档玩家在线时长top-10，8分钟算一天
+
+![玩家统计](assets/player-statistics-2.png)
+
+::: tip
+可能存在玩家进游戏后没有选择角色情况，所以会出现统计显示的天数大于游戏的实际天数
+:::
