@@ -14,6 +14,7 @@ export default hopeTheme({
   repo: "https://github.com/miracleEverywhere/dst-management-platform-docs",
 
   docsDir: "src",
+  docsBranch: "master",
 
   // 导航栏
   navbar,
