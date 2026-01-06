@@ -2,6 +2,7 @@
 title: 如何使用直连代码
 date: 2026-01-04
 order: 1
+icon: circle-question
 ---
 
 首先在饥荒管理平台的控制面板页面，点击该按钮复制

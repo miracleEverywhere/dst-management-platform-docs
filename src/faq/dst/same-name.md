@@ -2,6 +2,7 @@
 title: 搜索到多个相同的房间
 date: 2026-01-04
 order: 2
+icon: circle-question
 ---
 
 ![相同房间](assets/dst-same-room.png)

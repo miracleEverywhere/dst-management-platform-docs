@@ -2,6 +2,7 @@
 title: 更换平台端口
 date: 2026-01-04
 order: 1
+icon: circle-question
 ---
 
 如果你是`启动脚本部署`的饥荒管理平台，其默认端口是`80/tcp`，具体修改方式如下：

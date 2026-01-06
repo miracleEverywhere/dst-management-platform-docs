@@ -2,6 +2,7 @@
 title: 忘记密码
 date: 2026-01-05
 order: 4
+icon: circle-question
 ---
 
 

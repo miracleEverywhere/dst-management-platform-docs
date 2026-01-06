@@ -2,6 +2,7 @@
 title: 如何更新平台
 date: 2026-01-04
 order: 3
+icon: circle-question
 ---
 
 饥荒管理平台也是有版本的，目前大版本已经到`v3`

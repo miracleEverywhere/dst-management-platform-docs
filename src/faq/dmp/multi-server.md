@@ -2,6 +2,7 @@
 title: 多台云服务器串联
 date: 2026-01-04
 order: 2
+icon: circle-question
 ---
 
 ::: important
