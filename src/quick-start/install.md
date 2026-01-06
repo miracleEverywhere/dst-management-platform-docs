@@ -551,6 +551,8 @@ chmod +x run.sh
 ./run.sh
 ```
 
+按下回车键 ⏎
+
 如果无异常，你将会看到如下选项
 
 ![运行中的run.sh脚本](assets/install/run-sh-exec.png)
