@@ -1,43 +1,32 @@
 ---
-title: 如何更新平台
-date: 2026-01-04
-order: 3
+title: 如何更新游戏
+date: 2026-01-08
+order: 7
 icon: circle-question
 ---
 
-饥荒管理平台也是有版本的，目前大版本已经到`v3`
-
-作者建议更新到最新版本，每次平台版本迭代，都会修复一些bug，并对各种功能进行优化
-
-## 更新饥荒管理平台
-
-::: danger
-请确认当前用户是否为root，可输入命令`whoami`进行查看
+::: info
+游戏也是需要更新的，不更新游戏是搜不到房间的
 :::
 
-进入到服务器终端，即快速上手的[服务器登录](../../quick-start/server.md#服务器登录)
+当你发现游戏版本变黄了后，那就说明饥荒需要更新了
 
-运行启动脚本 `./run.sh`
+![需要更新](assets/update-dst-need-update.png)
 
-![运行中的run.sh脚本](../../quick-start/assets/install/run-sh-exec.png)
+你可以点击控制面板的更新游戏按钮
 
-输入 `4` 即可实现自动更新
+![更新游戏](assets/update-dst-button.png)
 
-## 更新run.sh脚本
+更新方式有两种，分别是前台更新与后台更新
 
-::: danger
-请确认当前用户是否为root，可输入命令`whoami`进行查看
-:::
+![更新方式](assets/update-dst-type.png)
 
-当然，`run.sh`启动脚本也是会有更新的，当然更新频率很低
+- 前台更新：会跳转至游戏安装页面，点击更新游戏即可，等待更新，更新完成后会有响应的提示`>=v3.0.5`
 
-同上，需要运行`run.sh`脚本，选择`6`即可
+![前台更新](assets/update-dst-frontend.png)
 
-## 如何得知平台有更新
+- 后台更新：指平台进行静默更新，更新时按钮会进入Loading状态，更新完成后恢复，手动刷新页面即可
 
-1. 可以[加群](../group.md)，获取第一手更新信息
+![后台更新](assets/update-dst-backend.png)
 
-2. 版本号出现红点提示
-
-![新版本](assets/new-version.png)
-
+![更新完成](assets/update-dst-complete.png)
