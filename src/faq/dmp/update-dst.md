@@ -21,7 +21,7 @@ icon: circle-question
 
 ![更新方式](assets/update-dst-type.png)
 
-- 前台更新：会跳转至游戏安装页面，点击更新游戏即可，等待更新，更新完成后会有响应的提示`>=v3.0.5`
+- 前台更新：会跳转至游戏安装页面，点击更新游戏即可，等待更新，更新完成后会有响应的提示(`dmp>=v3.0.5`)
 
 ![前台更新](assets/update-dst-frontend.png)
 
