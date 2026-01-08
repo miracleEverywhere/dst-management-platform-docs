@@ -80,7 +80,7 @@ highlights:
         details: 使用 <code>1.25.4</code> 版本，标准C-S架构，采用Gin轻量级Web框架
 
       - title: Vue
-        details: 使用<code>3.5.13</code> 版本，通过 Axios 与服务端交互，采用Element-Plus作为UI框架
+        details: 使用<code>3.5.13</code> 版本，通过 Axios 与服务端交互，采用Vuetify作为UI框架
 
       - title: 其他
         details: 使用JWT进行接口鉴权，Pinia作为前端缓存，支持多语言、明暗切换、移动端自动布局等
@@ -95,8 +95,8 @@ highlights:
         details: 多个饥荒管理平台，通过令牌的形式进行统一鉴权与管理，无需频繁切换多个网页
         link: https://github.com/miracleEverywhere/dst-management-platform-desktop
 
-      - title: 耳目一新
-        details: 使用Vuetify作为UI框架，提供不一样的视觉体验
+      - title: 跨平台运行
+        details: 支持在Windows、MacOS和Linux运行
         link: https://github.com/miracleEverywhere/dst-management-platform-desktop
 
 copyright: false
