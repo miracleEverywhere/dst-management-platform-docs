@@ -7,19 +7,18 @@ dir:
   order: 7
 ---
 
+::: info
+饥荒管理平台提供多种游戏工具，包含备份管理，定时通知等，让你更好的管理饥荒专用服务器
+:::
+
 ## 本节目录
 1. [备份管理](backup.md)
 
 2. [定时通知](announce.md)
 
-3. [安装游戏](install.md)
+3. [地图预览](map.md)
 
-4. [玩家统计](statistics.md)
+4. [平台令牌](token.md)
 
-5. [世界预览](location.md)
+5. [游戏存档](snapshot.md)
 
-6. [系统监控](metrics.md)
-
-7. [创建令牌](token.md)
-
-8. [远程终端](webssh.md)
