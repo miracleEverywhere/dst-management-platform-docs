@@ -20,7 +20,7 @@ order: 3
 :::
 
 ```component VPBanner
-content: 如果你需要了一些问题，自己无法解决，可以加群大家一起看看
+content: 如果你遇到了一些问题，自己无法解决，可以加群大家一起看看
 actions:
   - text: 1 群(已满)
     icon: fa6-brands:qq
