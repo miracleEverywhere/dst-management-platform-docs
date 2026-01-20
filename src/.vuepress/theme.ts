@@ -4,7 +4,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://miraclesses.top",
+  hostname: "https://docs.miraclesses.top",
 
   author: {
     name: "miracleEverywhere",
