@@ -39,5 +39,5 @@ icon: circle-question
 
 2. 版本号出现红点提示
 
-![新版本](assets/new-version.png)
+![新版本](assets/update-dmp/new-version.png)
 

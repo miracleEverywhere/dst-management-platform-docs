@@ -26,7 +26,7 @@ icon: circle-question
 ./run.sh
 ```
 
-![运行](assets/swap.png)
+![运行](assets/swap/swap.png)
 
 3. 输入`7`，点击回车键即可
 

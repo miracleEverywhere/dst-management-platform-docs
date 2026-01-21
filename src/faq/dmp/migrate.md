@@ -15,21 +15,21 @@ icon: circle-question
 
 点击立即备份按钮
 
-![立即备份](assets/migrate-backup.png)
+![立即备份](assets/migrate/migrate-backup.png)
 
 下载备份文件
 
-![下载备份](assets/migrate-download.png)
+![下载备份](assets/migrate/migrate-download.png)
 
 #### 将备份文件压缩为zip格式
 
 解压下载好的备份文件
 
-![解压](assets/migrate-tar.png)
+![解压](assets/migrate/migrate-tar.png)
 
 压缩为zip格式
 
-![压缩](assets/migrate-zip.png)
+![压缩](assets/migrate/migrate-zip.png)
 
 #### 安装v3版本平台
 
@@ -55,15 +55,15 @@ rm -rf .klei dst/ugc_mods/*
 
 平台和游戏安装完成后，进入[存档导入](../../docs/import.md)页面
 
-![导入](assets/migrate-import.png)
+![导入](assets/migrate/migrate-import.png)
 
 等待上传完成
 
-![上传中](assets/migrate-importing.png)
+![上传中](assets/migrate/migrate-importing.png)
 
 上传完成
 
-![上传完成](assets/migrate-import-success.png)
+![上传完成](assets/migrate/migrate-import-success.png)
 
 #### 模组预下载
 
@@ -71,14 +71,14 @@ rm -rf .klei dst/ugc_mods/*
 
 然后进入[房间设置-模组设置](../../docs/setting/mod.md)页面的添加模组标签页，点击**预下载**
 
-![模组预下载](assets/migrate-mod.png)
+![模组预下载](assets/migrate/migrate-mod.png)
 
 点击开始下载，等待下载结束
 
-![下载中](assets/migrate-downloading.png)
+![下载中](assets/migrate/migrate-downloading.png)
 
 #### 启动游戏
 
 模组预下载完成后，进入[控制面板](../../docs/dashboard.md)页面后，点击**启动游戏**即可
 
-![启动游戏](assets/migrate-startup.png)
+![启动游戏](assets/migrate/migrate-startup.png)

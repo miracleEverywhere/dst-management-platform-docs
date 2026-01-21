@@ -5,7 +5,7 @@ order: 2
 icon: circle-question
 ---
 
-![相同房间](assets/dst-same-room.png)
+![相同房间](assets/same-name/dst-same-room.png)
 
 饥荒官方的问题，无任何影响，选择一个能进的就行，或者使用直连代码
 

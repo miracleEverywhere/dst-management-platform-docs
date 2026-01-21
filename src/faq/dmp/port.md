@@ -9,7 +9,7 @@ icon: circle-question
 
 打开`run.sh`脚本，找到下图中的那一行，修改后重启平台即可
 
-![修改为8972](assets/dmp-port.png)
+![修改为8972](assets/port/dmp-port.png)
 
 或者直接执行命令
 
