@@ -101,6 +101,8 @@ export default hopeTheme({
       prefix: "fa6-solid:",
     },
 
-    slimsearch: true,
+    slimsearch: {
+      indexContent: true,
+    },
   },
 });
