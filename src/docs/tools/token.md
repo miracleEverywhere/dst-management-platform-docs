@@ -43,7 +43,7 @@ sqlite3 data/dmp.db
 
 更新数据库
 
-```sqlite
+```sql
 UPDATE system SET value='你的新秘钥(26个字符)' WHERE key='jwt_secret';
 ```
 
