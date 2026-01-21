@@ -16,6 +16,7 @@
     "markmap-lib": "^0.18.12",
     "markmap-toolbar": "^0.18.12",
     "markmap-view": "^0.18.12",
+    "mermaid": "^11.12.2",
     "sass-embedded": "^1.97.1",
     "sharp": "^0.34.4",
     "svgo": "^4.0.0",
