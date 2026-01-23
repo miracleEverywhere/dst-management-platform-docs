@@ -104,5 +104,14 @@ export default hopeTheme({
     slimsearch: {
       indexContent: true,
     },
+
+    comment: {
+      provider: "Giscus",
+      repo: "miracleEverywhere/dmp-docs-giscus",
+      repoId: "R_kgDOQ-1m6A",
+      category: "Announcements",
+      categoryId: "DIC_kwDOQ-1m6M4C1RQ2",
+      mapping: "pathname",
+    },
   },
 });
