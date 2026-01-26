@@ -1,7 +1,6 @@
 ---
 title: 常见问题
 index: false
-order: 1
 icon: circle-question
 date: 2025-05-28
 ---

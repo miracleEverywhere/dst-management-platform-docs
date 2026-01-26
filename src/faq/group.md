@@ -2,7 +2,7 @@
 title: 欢迎加群
 icon: fa6-brands:qq
 date: 2025-12-30
-order: 3
+order: 1
 ---
 
 ::: tip
