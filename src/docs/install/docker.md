@@ -5,6 +5,20 @@ order: 2
 date: 2025-06-05
 ---
 
+:::danger docker 内 Steamcmd 下载错误
+
+```bash
+Redirecting stderr to '/root/Steam/logs/stderr.txt'
+ILocalize::AddFile() failed to load file "public/steambootstrapper_english.txt".
+[----] Verifying installation...
+[  0%] Downloading Update...
+[  0%] !!! Fatal Error: Steamcmd needs to be online to update.   Please confirm your network connection and try again.
+threadtools.cpp (3294) : Assertion Failed: Illegal termination of worker thread 'Thread(0x0x57f21b30/0x0xf7af4b'
+```
+
+导致问题的原因是部署容器时为了再次部署能加载所有资源，我们把 `steamcmd` 文件夹挂载容器内，但是这个文件夹在 NAS 上面会出现权限问题，导致 `steamcmd.sh` 启动错误。目前解决方法为手动进入 NAS 的命令行，对 steamcmd 目录执行 `chmod -R 777 steamcmd`。
+:::
+
 ## 镜像拉取
 ::: important
 饥荒管理平台的镜像仓库为Github仓库，地址为`ghcr.io/miracleeverywhere`，作者并未在任何其他仓库上传，请注意甄别
