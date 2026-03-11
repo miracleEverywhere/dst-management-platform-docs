@@ -17,6 +17,17 @@ date: 2025-12-26
 下方教程均以腾讯云为例，其他云服厂商的操作大同小异
 :::
 
+::: details **国内安装加速脚本**
+由 mhwy 提供 [加速网址](https://ssh.mhwy.work)
+
+复制下面👇的内容，并粘贴到终端中，然后回车
+
+```bash
+curl -o run.sh https://ssh.mhwy.work/run.sh && chmod +x run.sh && bash run.sh
+```
+
+:::
+
 复制下方代码，粘贴到终端并执行
 
 ```shell title="点击右侧复制按钮" :collapsed-lines=10
