@@ -11,10 +11,31 @@ icon: circle-question
 :::
 
 ::: warning
-方案一与方案二都以`Ubuntu`系统为例
+以下修改方式都以`Ubuntu`系统为例，选择其中的一种重置密码即可
 :::
 
-## 方案一：使用脚本修改
+## 方式一(推荐)：使用dmp主程序修改
+
+::: info
+**v3.1.3** 引入的新功能，旧版本不支持
+:::
+
+1. 登入终端，执行以下命令进入重置密码环境
+
+```shell
+./dmp -console reset_password
+```
+
+2. 输入用户名和新密码
+
+::: tip
+输入的密码不会显示
+就像你登录Linux时，输入密码也不会显示
+::: 
+
+![控制台重置密码](assets/forget-password/reset.png)
+
+## 方式二：使用脚本修改
 
 创建并执行下方shell脚本，请自行修改脚本中的用户名和密码
 
@@ -40,7 +61,7 @@ echo 3 | ./run.sh
 执行`bash set_password.sh`即可
 
 
-## 方案二：手动修改
+## 方式三：手动修改
 
 1. 登录终端，安装`sqlite`
 

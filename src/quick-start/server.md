@@ -36,7 +36,7 @@ date: 2025-05-28
 
 ::: tip
 汉堡云含有饥荒管理平台的系统镜像，小白购买云服务器后可直接开服，省去部署平台和安装游戏的步骤
-详细步骤 [汉堡云操作指南](https://docs.miraclesses.top/quick-start/install.html)
+详细步骤 [汉堡云操作指南](https://docs.hbyidc.com/node/0199dece-884c-7229-9e23-3fc2f39953e0)
 :::
 
 [![作者推荐](assets/server/hbyidc.png)](https://hbyidc.com/recommend/OKkxTzgMP6k7)
