@@ -99,7 +99,7 @@ order: 10
   - 不允许传递`fragment`参数
 - **通知房间**
   - 有哪些房间可以收到订阅的事件
-  - 如果`不选择`，则`订阅所有事件`
+  - 如果`不选择`，则`通知所有房间`
   - 如果选择房间后，则`无法收到房间创建`事件
 - **通知事件**
   - 该webhook订阅的事件，`至少选择一项`
@@ -128,7 +128,7 @@ order: 10
 
 输入名称和URL后，可以点击测试按钮进行测试
 
-```json title="测试消息" :collapsed-lines=10
+```json title="接收到的测试消息" :collapsed-lines=10
 {
   "event": {
     "type": "test",
@@ -139,6 +139,8 @@ order: 10
   "data": "这是一条测试消息 / This is a test message"
 }
 ```
+
+下面是一个使用`python`语言编写的webhook脚本，并附带签名校验
 
 ```python title="一个简单的带验证的webhook脚本" :collapsed-lines=10
 from flask import Flask, request, jsonify

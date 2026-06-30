@@ -326,6 +326,22 @@ Tick Rate还需客户端同步配置，如果服务器为60tick，客户端为15
 
 ![webhook配置](assets/room-system-webhook.png)
 
+可以点击测试按钮进行测试
+
+```json title="接收到的测试消息" :collapsed-lines=10
+{
+  "event": {
+    "type": "test",
+    "zh": "测试",
+    "en": "Test"
+  },
+  "timestamp": 1782805255008,
+  "data": "这是一条测试消息 / This is a test message"
+}
+```
+
+下面是一个使用`python`语言编写的webhook脚本，并附带签名校验
+
 ```python title="一个简单的带验证的webhook脚本" :collapsed-lines=10
 from flask import Flask, request, jsonify
 import hmac
@@ -477,6 +493,69 @@ if __name__ == '__main__':
     print("=" * 50)
     # 启动服务
     app.run(host='0.0.0.0', port=5000, debug=False)
+```
+
+下方是饥荒管理平台调用webhook的请求体示例
+
+```json title="平台设置修改" :collapsed-lines=100
+{
+  "event": {
+    "type": "global_setting_updated",
+    "zh": "平台设置修改",
+    "en": "Platform Settings Updated"
+  },
+  "timestamp": 1782802623354,
+  "name": "QQ-BOT",
+  "data": {
+    "dbUpdated": true
+  }
+}
+```
+
+```json title="在线玩家变化 加入1 离开0" :collapsed-lines=100
+{
+  "event": {
+    "type": "online_player_updated",
+    "zh": "在线玩家变化",
+    "en": "Online Player Updated"
+  },
+  "timestamp": 1782762705716,
+  "name": "QQ-BOT",
+  "data": {
+    "current": [
+      {
+        "uid": "KU_********",
+        "nickname": "花花",
+        "prefab": "wx78"
+      },
+      {
+        "uid": "KU_********",
+        "nickname": "小布尔乔亚",
+        "prefab": ""
+      },
+      {
+        "uid": "KU_********",
+        "nickname": "x_x",
+        "prefab": "wendy"
+      },
+      {
+        "uid": "KU_********",
+        "nickname": ">=<",
+        "prefab": "wx78"
+      }
+    ],
+    "exited": null,
+    "gameID": 1,
+    "gameName": "测试房间",
+    "joined": [
+      {
+        "uid": "KU_********",
+        "nickname": "小布尔乔亚",
+        "prefab": ""
+      }
+    ]
+  }
+}
 ```
 
 ## 设置完成
