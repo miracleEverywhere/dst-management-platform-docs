@@ -4,5 +4,5 @@ export default sidebar({
   "/quick-start/": "structure",
   "/docs/": "structure",
   "/faq/": "structure",
-  "/project/": "structure",
+  // "/project/": "structure",
 });

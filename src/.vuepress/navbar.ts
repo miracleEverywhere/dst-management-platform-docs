@@ -4,6 +4,6 @@ export default navbar([
   "/",
   "/quick-start/",
   "/docs/",
-  "/assist/",
+  // "/assist/",
   "/faq/",
 ])
