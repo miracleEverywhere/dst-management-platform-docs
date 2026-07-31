@@ -392,10 +392,10 @@ if __name__ == '__main__':
 插件安装细节
 
 :::info
-由于`Stex`工具依赖问题，目前`tmi`插件仅支持`ubuntu 24`系统，其他系统在`tmi`页面不会显示物品图片
+由于`Stex`工具依赖问题，目前`tmi`插件仅支持`ubuntu 24.04`系统，其他系统在`tmi`页面不会显示物品图片
 :::
 
-**系统为ubuntu 24**
+**系统为ubuntu 24.04**
 
 1. 安装系统依赖
 2. 安装`Stex`工具
@@ -403,8 +403,43 @@ if __name__ == '__main__':
 4. 将`tex`文件转为`png`文件
 5. 安装`TMIR`模组，并将所有解析到的物品与图片写入数据库
 
-**系统非ubuntu 24**
+**系统非ubuntu 24.04**
 
 1. 安装系统依赖
 2. 安装`TMIR`模组，并将所有解析到的物品写入数据库
+
+安装过程
+
+点击 **操作** - **安装** 按钮
+
+![安装](assets/platform-plugin-install.png)
+
+你将会看到如下对话框
+
+![安装前准备](assets/platform-plugin-install-dialog.png)
+
+如果你是`ubuntu 24.04`系统，安装过程中会额外安装`Stex`工具，此工具从Github下载，因此你需要配置代理
+
+平台会帮你输入一个默认的代理地址 `https://gh-proxy.com/` ，该地址可能不可用，你需要配置一个当前可用的代理
+
+首先打开[https://github.akams.cn/](https://github.akams.cn/)页面，选择一个节点
+
+在页面中文件链接输入框中输入
+```
+https://github.com/oblivioncth/Stexatlaser/releases/download/v0.6/Stex_v0.6_Linux_Static_x64.24.04.g++-14.zip
+```
+
+切换`Direct Download`标签页，点击**打开**按钮
+
+![github加速](assets/platform-plugin-install-akams.png)
+
+如果你能够正常下载这个文件，说明这个代理是可用的
+
+接下来你可以将这个代理节点输入到插件安装的**代理**输入框中
+
+如上图中的`https://gh.b52m.cn/`
+
+点击安装**按钮**即可
+
+![更换代理](assets/platform-plugin-install-change-proxy.png)
 
