@@ -369,15 +369,15 @@ if __name__ == '__main__':
 
 ## 插件配置
 
-:::info
-该功能于`v3.1.6`加入
-:::
-
 你可以在该标签页管理DMP插件
 
 ![插件配置](assets/platform-plugin.png)
 
 #### tmi插件
+
+:::info
+该功能于`v3.1.6`加入
+:::
 
 你可以在此处执行安装、启用、禁用、卸载等操作
 
@@ -441,5 +441,26 @@ https://github.com/oblivioncth/Stexatlaser/releases/download/v0.6/Stex_v0.6_Linu
 
 点击安装**按钮**即可
 
+:::tip
+如果遇到安装失败，请更换代理重新安装
+:::
+
 ![更换代理](assets/platform-plugin-install-change-proxy.png)
 
+#### ai_chat插件
+
+:::info
+该功能于`v3.1.7`加入
+:::
+
+此插件可以在游戏中直接与AI对话，提升游戏体验
+
+与`tmi`插件类似，点击`安装`即可
+
+其中，`ai_chat`插件需要从`github`下载知识文件，需要代理
+
+:::tip
+如果遇到安装失败，请更换代理重新安装
+:::
+
+安装成功后即可前往平台工具-AI对话页面进行配置，配置详情请查看[AI对话](tools/ai_chat.md)页面
