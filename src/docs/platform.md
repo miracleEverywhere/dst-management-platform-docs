@@ -74,6 +74,23 @@ order: 10
 - 定时检测游戏是否有更新，有的话在指定时间自动更新游戏
 - 更新后重启，字面意思，更新完成后重启游戏，让玩家可以加入
 
+### 游戏启动命令
+
+::: info
+该功能由`v3.1.7`版本加入
+:::
+
+- 默认值为`./dontstarve_dedicated_server_nullrenderer`
+- 如果你需要arm转译，可配置`box64 ./dontstarve_dedicated_server_nullrenderer`
+- 如果你需要绑定核心，可以配置`taskset -c 0 ./dontstarve_dedicated_server_nullrenderer`
+- 按需配置
+
+:::tip
+如果是64位启动或LuaJIT启动，系统会自动在末尾添加`_x64`或`_x64_luajit`，无需额外配置
+:::
+
+![游戏启动命令](assets/platform-setting-custom-cmd.png)
+
 ### Webhook 通知
 
 ::: info
@@ -81,6 +98,8 @@ order: 10
 :::
 
 当你的饥荒管理平台主动或自动执行了一些操作后，你希望能够收到通知，那么你可以使用此功能
+
+当然你可以根据webhook功能做一些定制化的自动化功能，一切由你决定
 
 ::: tip
 你可以配置一个或多个webhook

@@ -73,6 +73,10 @@ date: 2025-06-10
 
 ![玩家统计](assets/player-statistics-2.png)
 
+玩家在线时间段gantt图，默认为6小时
+
+![玩家在线时长](assets/player-statistics-3.png)
+
 ::: tip
 可能存在玩家进游戏后没有选择角色情况，所以会出现统计显示的天数大于游戏的实际天数
 :::
