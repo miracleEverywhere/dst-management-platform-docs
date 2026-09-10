@@ -1,7 +1,7 @@
 ---
 title: 非root部署
 icon: gears
-order: 4
+order: 5
 date: 2026-05-18
 ---
 
