@@ -11,8 +11,11 @@
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
+    "@types/markdown-it": "^14.2.0",
     "@vuepress/bundler-vite": "2.0.0-rc.26",
     "@vuepress/plugin-slimsearch": "2.0.0-rc.121",
+    "dompurify": "^3.4.15",
+    "markdown-it": "^14.1.0",
     "markmap-lib": "^0.18.12",
     "markmap-toolbar": "^0.18.12",
     "markmap-view": "^0.18.12",
