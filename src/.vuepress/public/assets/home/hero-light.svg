@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" role="img" aria-labelledby="title">
+    <title id="title">饥荒管理平台控制面板</title>
+    <defs>
+        <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#A78BFA"/>
+            <stop offset="1" stop-color="#6D3FF2"/>
+        </linearGradient>
+        <linearGradient id="window" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#FFFFFF"/>
+            <stop offset="1" stop-color="#FCFAFF"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#8C57FF" stop-opacity=".22"/>
+            <stop offset="0.65" stop-color="#A78BFA" stop-opacity=".08"/>
+            <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="mintGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#2DD4BF" stop-opacity=".2"/>
+            <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+            <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#2B1450" flood-opacity=".16"/>
+        </filter>
+        <filter id="softShadow" x="-40%" y="-40%" width="180%" height="200%">
+            <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#2B1450" flood-opacity=".12"/>
+        </filter>
+        <linearGradient id="spark" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#A78BFA" stop-opacity=".2"/>
+            <stop offset="1" stop-color="#7C5CFF"/>
+        </linearGradient>
+    </defs>
+
+    <ellipse cx="380" cy="270" rx="330" ry="215" fill="url(#glow)"/>
+    <ellipse cx="610" cy="410" rx="150" ry="110" fill="url(#mintGlow)"/>
+
+    <!-- main window -->
+    <rect x="56" y="48" width="608" height="404" rx="26" fill="url(#window)" stroke="#E9E3F8" stroke-width="1.5" filter="url(#shadow)"/>
+    <path d="M56 98h608" stroke="#EEE7F9" stroke-width="1.5"/>
+    <circle cx="82" cy="73" r="4" fill="#F3A7B9"/>
+    <circle cx="96" cy="73" r="4" fill="#F8CF8A"/>
+    <circle cx="110" cy="73" r="4" fill="#9FE3C8"/>
+    <text x="126" y="78" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#5F5878">饥荒管理平台</text>
+    <rect x="514" y="59" width="58" height="22" rx="11" fill="#F1ECFF"/>
+    <text x="543" y="74" text-anchor="middle" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="10.5" font-weight="600" fill="#7C5CFF">DMP</text>
+    <rect x="580" y="59" width="58" height="22" rx="11" fill="#E8FAF2"/>
+    <circle cx="591" cy="70" r="3" fill="#10B981"/>
+    <text x="599" y="74" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="10" font-weight="600" fill="#0F9F6E">运行中</text>
+
+    <!-- sidebar -->
+    <path d="M186 98v354h-104a26 26 0 0 1-26-26V98z" fill="#FBFAFE"/>
+    <rect x="76" y="116" width="34" height="34" rx="11" fill="url(#brand)"/>
+    <path d="M87 135c5-8 12-10 16-10-1 7-4 14-12 15-3 0-4-2-4-5z" fill="#F8F5FF" opacity=".95"/>
+    <text x="120" y="132" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="12.5" font-weight="700" fill="#221A3C">DMP</text>
+    <text x="120" y="146" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="8.5" fill="#8E87A6">Lite / Full</text>
+
+    <rect x="72" y="166" width="102" height="34" rx="10" fill="#EFE9FF"/>
+    <rect x="84" y="178" width="10" height="10" rx="3" fill="#7C5CFF"/>
+    <text x="101" y="188" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#5B3FD6">控制台</text>
+
+    <g fill="#8E87A6" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="11">
+        <text x="101" y="230">房间设置</text>
+        <text x="101" y="266">世界设置</text>
+        <text x="101" y="302">模组设置</text>
+        <text x="101" y="338">日志</text>
+    </g>
+    <g fill="#C4B5FD">
+        <rect x="84" y="219" width="9" height="9" rx="2.5"/>
+        <rect x="84" y="253" width="9" height="9" rx="2.5"/>
+        <rect x="84" y="289" width="9" height="9" rx="2.5"/>
+        <rect x="84" y="325" width="9" height="9" rx="2.5"/>
+    </g>
+
+    <!-- main header -->
+    <text x="206" y="130" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="19" font-weight="700" fill="#221A3C">控制台</text>
+    <text x="206" y="148" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="9.5" fill="#8E87A6">开服、配置与运行状态，一眼掌握</text>
+    <rect x="566" y="116" width="68" height="22" rx="11" fill="#F6F2FF"/>
+    <text x="600" y="131" text-anchor="middle" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="9.5" fill="#7C5CFF">11-02</text>
+
+    <!-- world cards -->
+    <rect x="206" y="164" width="210" height="80" rx="14" fill="#FFFFFF" stroke="#EEE7F9"/>
+    <rect x="220" y="178" width="30" height="30" rx="9" fill="#FFF6E5"/>
+    <circle cx="235" cy="193" r="6" fill="#F59E0B"/>
+    <g stroke="#F59E0B" stroke-width="1.6" stroke-linecap="round">
+        <path d="M235 182v-3"/><path d="M235 207v-3"/><path d="M224 193h-3"/><path d="M249 193h-3"/>
+        <path d="M227 185l-2-2"/><path d="M243 201l-2-2"/><path d="M227 201l-2 2"/><path d="M243 185l-2 2"/>
+    </g>
+    <text x="260" y="186" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#221A3C">地面世界</text>
+    <circle cx="264" cy="199" r="3" fill="#10B981"/>
+    <text x="271" y="202" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="8.5" fill="#0F9F6E">运行中</text>
+    <text x="260" y="222" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="8.5" fill="#8E87A6">端口 11001</text>
+
+    <rect x="428" y="164" width="210" height="80" rx="14" fill="#FFFFFF" stroke="#EEE7F9"/>
+    <rect x="442" y="178" width="30" height="30" rx="9" fill="#EAF7FF"/>
+    <path d="M463 185a7 7 0 1 0 4 12 8 8 0 1 1-4-12z" fill="#38BDF8"/>
+    <text x="482" y="186" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#221A3C">洞穴世界</text>
+    <circle cx="486" cy="199" r="3" fill="#10B981"/>
+    <text x="493" y="202" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="8.5" fill="#0F9F6E">运行中</text>
+    <text x="482" y="222" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="8.5" fill="#8E87A6">端口 11002</text>
+
+    <!-- metrics -->
+    <g>
+        <rect x="206" y="258" width="136" height="76" rx="14" fill="#FFFFFF" stroke="#EEE7F9"/>
+        <text x="220" y="276" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="8.5" fill="#8E87A6">CPU</text>
+        <text x="220" y="298" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="18" font-weight="700" fill="#221A3C">32%</text>
+        <path d="M220 320l14-6 12 3 13-8 12 4 14-9 13 5 14-11" fill="none" stroke="#7C5CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g>
+        <rect x="352" y="258" width="136" height="76" rx="14" fill="#FFFFFF" stroke="#EEE7F9"/>
+        <text x="366" y="276" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="8.5" fill="#8E87A6">内存</text>
+        <text x="366" y="298" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="18" font-weight="700" fill="#221A3C">58%</text>
+        <path d="M366 320l14-3 12-7 13 4 12-9 14 3 13-8 14 2" fill="none" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g>
+        <rect x="498" y="258" width="136" height="76" rx="14" fill="#FFFFFF" stroke="#EEE7F9"/>
+        <text x="512" y="276" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="8.5" fill="#8E87A6">在线玩家</text>
+        <text x="512" y="298" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="18" font-weight="700" fill="#221A3C">6 / 10</text>
+        <circle cx="518" cy="316" r="5" fill="#F472B6" opacity=".85"/>
+        <circle cx="528" cy="316" r="5" fill="#A78BFA"/>
+        <circle cx="538" cy="316" r="5" fill="#38BDF8"/>
+        <circle cx="548" cy="316" r="5" fill="#2DD4BF"/>
+        <circle cx="558" cy="316" r="5" fill="#F59E0B"/>
+        <circle cx="568" cy="316" r="5" fill="#E9E3F8"/>
+    </g>
+
+    <!-- recent panel -->
+    <rect x="206" y="348" width="428" height="84" rx="14" fill="#FBFAFE" stroke="#EEE7F9"/>
+    <text x="220" y="367" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="9.5" font-weight="600" fill="#5F5878">最近日志</text>
+    <rect x="220" y="378" width="44" height="12" rx="6" fill="#E8FAF2"/>
+    <text x="226" y="387" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="7.5" fill="#0F9F6E">游戏</text>
+    <rect x="270" y="378" width="244" height="7" rx="3.5" fill="#EEE7F9"/>
+    <rect x="220" y="398" width="36" height="12" rx="6" fill="#EAF7FF"/>
+    <text x="226" y="407" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="7.5" fill="#0B7CB8">聊天</text>
+    <rect x="262" y="398" width="300" height="7" rx="3.5" fill="#EEE7F9"/>
+    <rect x="220" y="418" width="44" height="12" rx="6" fill="#FDF2F8"/>
+    <text x="226" y="427" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="7.5" fill="#C2417E">备份</text>
+    <rect x="270" y="418" width="196" height="7" rx="3.5" fill="#EEE7F9"/>
+
+    <!-- floating cards -->
+    <g filter="url(#softShadow)">
+        <rect x="14" y="366" width="126" height="46" rx="13" fill="#FFFFFF" stroke="#E9E3F8"/>
+        <circle cx="36" cy="389" r="9" fill="#F1ECFF"/>
+        <path d="M38 383c-3 3-5 7-5 10 3-1 7-3 9-7-1 0-2 0-4-3z" fill="#7C5CFF"/>
+        <text x="52" y="386" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="10" font-weight="700" fill="#221A3C">Lite</text>
+        <text x="52" y="400" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="8" fill="#8E87A6">约 10 MB 内存</text>
+    </g>
+    <g filter="url(#softShadow)">
+        <rect x="532" y="430" width="158" height="42" rx="12" fill="#FFFFFF" stroke="#E9E3F8"/>
+        <circle cx="554" cy="451" r="8" fill="#FFF6E5"/>
+        <path d="M550 451l3 3 5-5" fill="none" stroke="#F59E0B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="568" y="448" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="9" font-weight="600" fill="#221A3C">更新完成</text>
+        <text x="568" y="461" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="7.5" fill="#8E87A6">已是最新</text>
+    </g>
+</svg>

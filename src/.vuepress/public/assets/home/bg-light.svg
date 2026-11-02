@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FEFDFF"/>
+      <stop offset=".55" stop-color="#F9F6FF"/>
+      <stop offset="1" stop-color="#F3EDFF"/>
+    </linearGradient>
+    <radialGradient id="violet" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#D9CCFF" stop-opacity=".75"/>
+      <stop offset=".55" stop-color="#E6DEFF" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#F3EDFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mint" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#B8F3E3" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#B8F3E3" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="peach" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFD9E8" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#FFD9E8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.4" fill="#7C5CFF" opacity=".14"/>
+    </pattern>
+    <radialGradient id="fade" cx="50%" cy="46%" r="58%">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset=".7" stop-color="#FFFFFF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="dotMask">
+      <rect width="1600" height="1000" fill="url(#fade)"/>
+    </mask>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#base)"/>
+  <ellipse cx="1290" cy="120" rx="720" ry="620" fill="url(#violet)"/>
+  <ellipse cx="120" cy="900" rx="640" ry="520" fill="url(#mint)"/>
+  <ellipse cx="900" cy="470" rx="520" ry="420" fill="url(#peach)"/>
+  <rect width="1600" height="1000" fill="url(#dots)" mask="url(#dotMask)"/>
+  <g fill="none" stroke="#8C57FF" opacity=".07">
+    <circle cx="1310" cy="300" r="250"/>
+    <circle cx="1310" cy="300" r="340"/>
+    <circle cx="1310" cy="300" r="430"/>
+  </g>
+</svg>

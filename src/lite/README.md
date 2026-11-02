@@ -1,7 +1,7 @@
 ---
-title: DMP精简版
+title: Lite轻量版
 index: false
-icon: rocket
+icon: feather
 order: 1
 date: 2026-11-02
 ---

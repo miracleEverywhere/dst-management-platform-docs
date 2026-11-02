@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-labelledby="title">
+  <title id="title">一条命令完成部署</title>
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C4B5FD"/>
+      <stop offset="1" stop-color="#8C57FF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#8C57FF" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#8C57FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="170%" height="190%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity=".5"/>
+    </filter>
+    <filter id="soft" x="-40%" y="-40%" width="190%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity=".45"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="250" cy="190" rx="220" ry="150" fill="url(#glow)"/>
+
+  <!-- terminal -->
+  <rect x="26" y="44" width="304" height="250" rx="20" fill="#171126" stroke="#322A4E" stroke-width="1.5" filter="url(#shadow)"/>
+  <path d="M26 82h304" stroke="#2C2444" stroke-width="1.5"/>
+  <circle cx="46" cy="63" r="3.5" fill="#7A4457"/>
+  <circle cx="58" cy="63" r="3.5" fill="#7A5A2E"/>
+  <circle cx="70" cy="63" r="3.5" fill="#2E5E4E"/>
+  <text x="88" y="67" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="10.5" font-weight="600" fill="#B8B0D0">run.sh</text>
+
+  <text x="46" y="112" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="700" fill="#EDE9FE">./run.sh</text>
+  <rect x="124" y="98" width="52" height="18" rx="9" fill="#2A2150"/>
+  <text x="150" y="111" text-anchor="middle" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#C4B5FD">一键部署</text>
+
+  <!-- steps -->
+  <g>
+    <circle cx="58" cy="145" r="8" fill="#123B31"/>
+    <path d="M55 145l2.4 2.4 4-4.2" fill="none" stroke="#34D399" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="76" y="149" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="11.5" fill="#B8B0D0">检查运行环境</text>
+    <rect x="220" y="141" width="86" height="7" rx="3.5" fill="#2C2444"/>
+    <rect x="220" y="141" width="86" height="7" rx="3.5" fill="#1C4A3E"/>
+  </g>
+  <g>
+    <circle cx="58" cy="181" r="8" fill="#123B31"/>
+    <path d="M55 181l2.4 2.4 4-4.2" fill="none" stroke="#34D399" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="76" y="185" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="11.5" fill="#B8B0D0">下载并校验安装包</text>
+    <rect x="220" y="177" width="86" height="7" rx="3.5" fill="#2C2444"/>
+    <rect x="220" y="177" width="86" height="7" rx="3.5" fill="#1C4A3E"/>
+  </g>
+  <g>
+    <circle cx="58" cy="217" r="8" fill="#2A2150"/>
+    <circle cx="58" cy="217" r="10" fill="none" stroke="#C4B5FD" stroke-width="1.4" stroke-dasharray="14 10" stroke-linecap="round"/>
+    <path d="M58 213v5l3 2" fill="none" stroke="#C4B5FD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="76" y="221" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="11.5" fill="#B8B0D0">启动平台服务</text>
+    <rect x="220" y="213" width="86" height="7" rx="3.5" fill="#2C2444"/>
+    <rect x="220" y="213" width="58" height="7" rx="3.5" fill="url(#brand)"/>
+  </g>
+
+  <rect x="46" y="250" width="262" height="18" rx="9" fill="#130F22" stroke="#2C2444"/>
+  <rect x="50" y="254" width="196" height="10" rx="5" fill="url(#brand)"/>
+  <text x="298" y="263" text-anchor="end" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#C4B5FD">80%</text>
+
+  <!-- server -->
+  <g filter="url(#soft)">
+    <rect x="366" y="88" width="92" height="158" rx="16" fill="#130F22" stroke="#322A4E"/>
+    <rect x="378" y="104" width="68" height="34" rx="8" fill="#171126" stroke="#2C2444"/>
+    <rect x="378" y="150" width="68" height="34" rx="8" fill="#171126" stroke="#2C2444"/>
+    <rect x="378" y="196" width="68" height="34" rx="8" fill="#171126" stroke="#2C2444"/>
+    <circle cx="390" cy="121" r="3" fill="#34D399"/>
+    <circle cx="390" cy="167" r="3" fill="#34D399"/>
+    <circle cx="390" cy="213" r="3" fill="#FBBF24"/>
+    <rect x="402" y="118" width="32" height="5" rx="2.5" fill="#2C2444"/>
+    <rect x="402" y="164" width="26" height="5" rx="2.5" fill="#2C2444"/>
+    <rect x="402" y="210" width="36" height="5" rx="2.5" fill="#2C2444"/>
+  </g>
+
+  <!-- arrow -->
+  <path d="M334 172h20" fill="none" stroke="#C4B5FD" stroke-width="1.6" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <path d="M348 166l6 6-6 6" fill="none" stroke="#C4B5FD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- success badge -->
+  <circle cx="390" cy="278" r="27" fill="#34D399"/>
+  <circle cx="390" cy="278" r="36" fill="#34D399" opacity=".12"/>
+  <path d="M378 278l8 8 16-17" fill="none" stroke="#F8F5FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- sparkles -->
+  <g fill="#C4B5FD">
+    <path d="M338 54l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+    <path d="M450 270l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" opacity=".8"/>
+  </g>
+  <circle cx="112" cy="324" r="4" fill="#F9A8D4" opacity=".7"/>
+  <circle cx="338" cy="320" r="3" fill="#93C5FD" opacity=".8"/>
+</svg>
