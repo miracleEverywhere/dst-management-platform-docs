@@ -75,7 +75,7 @@
     <text x="206" y="130" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="19" font-weight="700" fill="#221A3C">控制台</text>
     <text x="206" y="148" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="9.5" fill="#8E87A6">开服、配置与运行状态，一眼掌握</text>
     <rect x="566" y="116" width="68" height="22" rx="11" fill="#F6F2FF"/>
-    <text x="600" y="131" text-anchor="middle" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="9.5" fill="#7C5CFF">11-02</text>
+    <text x="600" y="131" text-anchor="middle" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="9.5" fill="#7C5CFF">Latest</text>
 
     <!-- world cards -->
     <rect x="206" y="164" width="210" height="80" rx="14" fill="#FFFFFF" stroke="#EEE7F9"/>
