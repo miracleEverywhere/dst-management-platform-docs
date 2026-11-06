@@ -11,22 +11,22 @@ icon: circle-question
 
 当你发现游戏版本变黄了后，那就说明饥荒需要更新了
 
-![需要更新](assets/update-dst/update-dst-need-update.png)
+![需要更新](assets/update-dst/update-dst-need-update.webp)
 
 你可以点击控制面板的更新游戏按钮
 
-![更新游戏](assets/update-dst/update-dst-button.png)
+![更新游戏](assets/update-dst/update-dst-button.webp)
 
 更新方式有两种，分别是前台更新与后台更新
 
-![更新方式](assets/update-dst/update-dst-type.png)
+![更新方式](assets/update-dst/update-dst-type.webp)
 
 - 前台更新：会跳转至游戏安装页面，点击更新游戏即可，等待更新，更新完成后会有响应的提示(`dmp>=v3.0.5`)
 
-![前台更新](assets/update-dst/update-dst-frontend.png)
+![前台更新](assets/update-dst/update-dst-frontend.webp)
 
 - 后台更新：指平台进行静默更新，更新时按钮会进入Loading状态，更新完成后恢复，手动刷新页面即可
 
-![后台更新](assets/update-dst/update-dst-backend.png)
+![后台更新](assets/update-dst/update-dst-backend.webp)
 
-![更新完成](assets/update-dst/update-dst-complete.png)
+![更新完成](assets/update-dst/update-dst-complete.webp)

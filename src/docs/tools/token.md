@@ -13,7 +13,7 @@ order: 4
 
 选择令牌时效后，点击创建按钮即可完成创建
 
-![令牌创建](assets/token.png)
+![令牌创建](assets/token.webp)
 
 ## 令牌使用
 

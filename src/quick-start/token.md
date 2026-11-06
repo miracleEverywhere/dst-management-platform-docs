@@ -12,24 +12,24 @@ date: 2025-05-28
 ## 启动游戏
 1. 启动饥荒联机版后，点击左下角的**账号**
 
-![点击账号](./assets/token/account.png)
+![点击账号](./assets/token/account.webp)
 
 ## 进入科雷官网
 1. 点击左上角的**游戏**标签页
 
-![游戏标签页](./assets/token/tab.png)
+![游戏标签页](./assets/token/tab.webp)
 
 ## 创建令牌
 1. 点击 **《饥荒：联机版》的游戏服务器**
 
-![游戏服务器](./assets/token/dedicated-server.png)
+![游戏服务器](./assets/token/dedicated-server.webp)
 
 2. 在页面最下方输入服务器名称后，点击**添加新服务器**
 
-![添加新服务器](./assets/token/server-name.png)
+![添加新服务器](./assets/token/server-name.webp)
 
 3. 这样你就得到了一个游戏的令牌
 
-![令牌](./assets/token/token-created.png)
+![令牌](./assets/token/token-created.webp)
 
 让我们进入下一步[游戏设置](setting.md)

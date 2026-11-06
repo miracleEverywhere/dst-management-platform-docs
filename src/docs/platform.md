@@ -12,7 +12,7 @@ order: 10
 ## 平台总览
 查看平台和服务器的资源占用情况
 
-![平台预览](./assets/platform-overview-info.png)
+![平台预览](./assets/platform-overview-info.webp)
 
 ::: tip
 平台内存占用会根据你最近一段时间执行的操作(打开页面、调用接口等)增加而增加，无操作后会回落
@@ -21,7 +21,7 @@ order: 10
 ## 房间总览
 查看和管理平台的所有房间
 
-![平台预览](./assets/platform-rooms-info.png)
+![平台预览](./assets/platform-rooms-info.webp)
 
 - ID：平台中唯一编号
 - 房间名：房间名称
@@ -42,7 +42,7 @@ order: 10
 
 右侧查看详情展示更多信息，可在此页面手动关闭饥荒进程对应的`screen`
 
-![查看详情](./assets/platform-rooms-details.png)
+![查看详情](./assets/platform-rooms-details.webp)
 
 - ID：平台中唯一编号
 - 房间名：房间名称
@@ -57,7 +57,7 @@ order: 10
 
 一些影响全局功能的设置
 
-![平台预览](./assets/platform-setting-info.png)
+![平台预览](./assets/platform-setting-info.webp)
 
 ### 在线玩家信息
 - 相隔多久进行一次获取，频率越小获取越频繁，对服务器造成一定的负担
@@ -89,7 +89,7 @@ order: 10
 如果是64位启动或LuaJIT启动，系统会自动在末尾添加`_x64`或`_x64_luajit`，无需额外配置
 :::
 
-![游戏启动命令](assets/platform-setting-custom-cmd.png)
+![游戏启动命令](assets/platform-setting-custom-cmd.webp)
 
 ### Webhook 通知
 
@@ -143,7 +143,7 @@ order: 10
   - 使用`HMAC-SHA256`加密算法
   - 配置后会携带`X-DMP-Signature`请求头
 
-![webhook配置](assets/platform-setting-webhook.png)
+![webhook配置](assets/platform-setting-webhook.webp)
 
 输入名称和URL后，可以点击测试按钮进行测试
 
@@ -380,7 +380,7 @@ if __name__ == '__main__':
 ## 系统监控
 可以查看 CPU、内存、硬盘、网络的使用情况
 
-![平台预览](./assets/platform-metrics-info.png)
+![平台预览](./assets/platform-metrics-info.webp)
 
 ::: tip
 如果在平台管理 - 平台设置 没有启用系统监控，这里是无法查看的
@@ -390,7 +390,7 @@ if __name__ == '__main__':
 
 你可以在该标签页管理DMP插件
 
-![插件配置](assets/platform-plugin.png)
+![插件配置](assets/platform-plugin.webp)
 
 #### tmi插件
 
@@ -408,7 +408,7 @@ if __name__ == '__main__':
 
 如果插件处于**禁用**状态，平台工具-更多物品页面会出现以下提示
 
-![插件禁用](assets/platform-plugin-disabled.png)
+![插件禁用](assets/platform-plugin-disabled.webp)
 
 插件安装细节
 
@@ -420,7 +420,7 @@ if __name__ == '__main__':
 
 点击 **操作** - **安装** 按钮
 
-![安装](assets/platform-plugin-install.png)
+![安装](assets/platform-plugin-install.webp)
 
 点击弹出对话框中的安装按钮即可
 

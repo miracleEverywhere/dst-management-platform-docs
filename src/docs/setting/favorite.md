@@ -13,11 +13,11 @@ date: 2026-10-26
 
 可以在房间总览页面收藏
 
-![房间总览收藏](assets/favorite-rooms.png)
+![房间总览收藏](assets/favorite-rooms.webp)
 
 也可以在房间收藏页面收藏，收藏前必须选中一个房间
 
-![房间收藏页面收藏](assets/favorite-current-page.png)
+![房间收藏页面收藏](assets/favorite-current-page.webp)
 
 该页面允许的操作：
 

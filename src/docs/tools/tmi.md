@@ -19,7 +19,7 @@ order: 6
 
 部分命令例如**切换季节**、**切换时间**等无需选择玩家
 
-![更多物品](assets/tmi-overview.png)
+![更多物品](assets/tmi-overview.webp)
 
 页面左侧为物品栏，左键点击可以给玩家一个物品，右键可以选择数量
 
@@ -28,12 +28,12 @@ order: 6
 作者能力不足，无法获取tex包中的图片，欢迎pr
 :::
 
-![给与多个](assets/tmi-right-click.png)
+![给与多个](assets/tmi-right-click.webp)
 
 你也可以切换标签栏，查看不同种类的物品
 
-![切换种类](assets/tmi-more-items.png)
+![切换种类](assets/tmi-more-items.webp)
 
 右侧则为一些预设的命令，点击即可执行
 
-![预设命令](assets/tmi-console.png)
+![预设命令](assets/tmi-console.webp)

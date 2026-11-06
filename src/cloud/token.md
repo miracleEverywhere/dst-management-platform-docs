@@ -17,7 +17,7 @@ date: 2026-11-06
 
 在云端控制台的「游戏令牌」页点击「保存令牌」，填写名称、游戏令牌和备注：
 
-[![云端游戏令牌](assets/cloud-console-tokens.png)](assets/cloud-console-tokens.png)
+![云端游戏令牌](assets/cloud-console-tokens.webp)
 
 令牌值默认隐藏，需要时点击眼睛图标查看或复制。保存后可以编辑、删除。
 
@@ -27,7 +27,7 @@ date: 2026-11-06
 2. 打开「游戏设置 → 房间设置」
 3. 在「游戏令牌」一栏点击「从云端选择」
 
-[![选择云端令牌](assets/dmp-token.png)](assets/dmp-token.png)
+![选择云端令牌](assets/dmp-token.webp)
 
 弹窗会显示当前已使用的令牌数量和配额。选择一条后，令牌会自动填入「游戏令牌」输入框，**保存房间后生效**。
 
@@ -49,7 +49,7 @@ date: 2026-11-06
 - 管理员昵称
 - 备注（可选）
 
-[![云端游戏管理员](assets/cloud-console-game-admins.png)](assets/cloud-console-game-admins.png)
+![云端游戏管理员](assets/cloud-console-game-admins.webp)
 
 ### 在 DMP 中使用
 
@@ -58,7 +58,7 @@ date: 2026-11-06
 3. 切换到「管理员」标签
 4. 点击「从云端选择管理员」
 
-[![选择云端管理员](assets/dmp-admin.png)](assets/dmp-admin.png)
+![选择云端管理员](assets/dmp-admin.webp)
 
 弹窗支持多选：
 
@@ -73,7 +73,7 @@ date: 2026-11-06
 1. 在云端控制台的「游戏预留位」页保存 UID、昵称和备注
 2. 在 DMP 的「玩家设置 → 预留位」标签点击「从云端选择预留位」
 
-[![选择云端预留位](assets/dmp-slot.png)](assets/dmp-slot.png)
+![选择云端预留位](assets/dmp-slot.webp)
 
 ## 配额
 

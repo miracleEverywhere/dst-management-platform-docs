@@ -40,7 +40,7 @@ chmod +x dmp-uninstall-v3.0.0-amd64
 
 确认路径后按 `回车` 开始扫描。
 
-![选择 DMP 安装目录](assets/uninstall/workdir-select.png)
+![选择 DMP 安装目录](assets/uninstall/workdir-select.webp)
 
 #### 选择清理项目
 
@@ -56,13 +56,13 @@ chmod +x dmp-uninstall-v3.0.0-amd64
 
 标记为“必选”的项目无法取消；标记为“默认保留”的数据只有手动选中后才会清理。
 
-![选择清理项目](assets/uninstall/item-select.png)
+![选择清理项目](assets/uninstall/item-select.webp)
 
 #### 确认清理范围
 
 检查最终清单。确认无误后输入大写的 `DELETE`，再按 `回车` 开始卸载。按 `Esc` 可以返回修改选择。
 
-![确认清理范围](assets/uninstall/confirm.png)
+![确认清理范围](assets/uninstall/confirm.webp)
 
 #### 等待卸载完成
 
@@ -74,7 +74,7 @@ chmod +x dmp-uninstall-v3.0.0-amd64
 
 卸载完成后，按 `回车` 或 `Q` 退出。
 
-![卸载完成](assets/uninstall/uninstalled.png)
+![卸载完成](assets/uninstall/uninstalled.webp)
 
 :::tip
 有缘再见

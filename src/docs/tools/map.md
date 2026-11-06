@@ -13,12 +13,12 @@ order: 3
 
 该地图为实时渲染，可以显示关键对象和玩家的坐标
 
-![总览](assets/map-overview.png)
+![总览](assets/map-overview.webp)
 
 右侧可以选择图层和查看一些存档信息
 
-![工具栏](assets/map-tool.png)
+![工具栏](assets/map-tool.webp)
 
 继续放大可查看资源分布、玩家位置等信息
 
-![详细信息](assets/map-detail.png)
+![详细信息](assets/map-detail.webp)

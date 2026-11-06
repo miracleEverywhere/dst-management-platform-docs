@@ -15,6 +15,8 @@ pnpm docs:dev          # Start dev server
 pnpm docs:clean-dev    # Start dev server with clean cache
 pnpm docs:build        # Production build (output: src/.vuepress/dist/)
 pnpm docs:update-package  # Update vuepress packages
+pnpm images:webp       # Convert referenced PNGs to WebP (keeps PNGs, rewrites md refs)
+pnpm images:clean-png  # Delete PNGs that have been replaced by WebP
 ```
 
 Package manager: **pnpm** (required).
@@ -42,5 +44,6 @@ Package manager: **pnpm** (required).
 - Sidebar is auto-generated from directory structure (`"structure"` mode) — folder/file ordering is controlled by frontmatter or file naming
 - Markdown features enabled: markmap, mermaid, code tabs, plantuml, figure, GFM, image lazy-load, shiki syntax highlighting with collapsible lines
 - Comments powered by Giscus (GitHub Discussions)
-- Images are optimized at build time via `vite-plugin-image-optimizer`
+- Content images are WebP: run `pnpm images:webp` after adding PNG screenshots, check `pnpm docs:dev`, then `pnpm images:clean-png` to drop the originals (`scripts/images.mjs`)
+- `vite-plugin-image-optimizer` still runs at build time as a safety net for PNG/SVG, but `.webp` is excluded so already-compressed images are not re-encoded
 - Docs branch is `master`; docs source dir is `src`

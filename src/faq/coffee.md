@@ -10,4 +10,4 @@ order: 4
 [https://afdian.com/a/miracle-dmp](https://afdian.com/a/miracle-dmp)
 :::
 
-![咖啡](assets/coffee.png)
+![咖啡](assets/coffee.webp)

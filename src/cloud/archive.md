@@ -22,7 +22,7 @@ date: 2026-11-06
 3. 切换到「云存档导入」标签
 4. 点击「上传当前房间」
 
-[![DMP 云存档](assets/dmp-archives.png)](assets/dmp-archives.png)
+![DMP 云存档](assets/dmp-archives.webp)
 
 DMP 会自动完成这些事：
 
@@ -57,7 +57,7 @@ DMP 会自动完成这些事：
 
 云端控制台的「云存档」页用于查看、下载和删除：
 
-[![云端云存档](assets/cloud-console-archives.png)](assets/cloud-console-archives.png)
+![云端云存档](assets/cloud-console-archives.webp)
 
 - 每个存档显示名称、文件名、大小、上传时间、最近下载时间、下载次数和 SHA-256
 - 点击「查看模组」可以查看存档中启用的模组

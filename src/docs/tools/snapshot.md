@@ -21,7 +21,7 @@ order: 5
 .klei/DoNotStarveTogether/Cluster_{ID}/Master(世界名)/save/session/8B753C33AD80AE29(session ID)
 ```
 
-![存档文件](assets/snapshot-files.png)
+![存档文件](assets/snapshot-files.webp)
 
 ::: tip
 其实饥荒管理平台中，控制页面的房间概览的信息就是从这里获取的，地图预览信息也是从这里获取的。
@@ -30,7 +30,7 @@ order: 5
 
 这些文件的文件名只是标记，或者说是序号，并不是天数
 
-![存档管理](assets/snapshot-list.png)
+![存档管理](assets/snapshot-list.webp)
 
 ::: tip
 ① 如果你的游戏无法启动，并且不是模组报错，那有可能就是坏档了。
@@ -42,7 +42,7 @@ order: 5
 ① 如果房间中有世界没有部署在当前饥荒管理平台下，请登录对应的饥荒管理平台，同步删除对应的存档文件，保证多台机器下的存档文件一致。
 :::
 
-![删除存档文件](assets/snapshot-delete.png)
+![删除存档文件](assets/snapshot-delete.webp)
 
 ::: info
 做个总结就是，这个工具的功能和饥荒的回档功能一致，区别在于：

@@ -19,7 +19,7 @@ icon: circle-question
 
 运行启动脚本 `./run.sh`
 
-![运行中的run.sh脚本](../../quick-start/assets/install/run-sh-exec.png)
+![运行中的run.sh脚本](../../quick-start/assets/install/run-sh-exec.webp)
 
 输入 `4` 即可实现自动更新
 
@@ -39,5 +39,5 @@ icon: circle-question
 
 2. 版本号出现红点提示
 
-![新版本](assets/update-dmp/new-version.png)
+![新版本](assets/update-dmp/new-version.webp)
 

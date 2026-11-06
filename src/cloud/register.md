@@ -15,7 +15,7 @@ date: 2026-11-06
 
 打开官网，点击「免费注册」，填写用户名、邮箱、邮箱验证码和密码。
 
-[![注册云账号](assets/cloud-register.png)](assets/cloud-register.png)
+![注册云账号](assets/cloud-register.webp)
 
 各字段要求：
 
@@ -34,7 +34,7 @@ date: 2026-11-06
 
 ## 登录
 
-[![登录云账号](assets/cloud-login.png)](assets/cloud-login.png)
+![登录云账号](assets/cloud-login.webp)
 
 - 账号位置可以填**云用户名**，也可以填**注册邮箱**
 - 云账号与 DST Block 使用同一套身份数据，可以用同一套用户名/邮箱和密码登录
@@ -44,7 +44,7 @@ date: 2026-11-06
 
 在登录页点击「忘记密码」，通过注册邮箱验证码重置密码。
 
-[![找回密码](assets/cloud-forgot.png)](assets/cloud-forgot.png)
+![找回密码](assets/cloud-forgot.webp)
 
 重置成功后：
 

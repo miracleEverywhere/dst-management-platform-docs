@@ -9,16 +9,16 @@ order: 5
 
 未选择房间时会提示前往[房间总览](./rooms.md)页面，选择房间
 
-![未选择房间](./assets/dashboard-none.png)
+![未选择房间](./assets/dashboard-none.webp)
 
 选择房间后会展示对应的功能
 
-![房间控制功能展示](./assets/dashboard-info.png)
+![房间控制功能展示](./assets/dashboard-info.webp)
 
 ## 房间概览
 展示房间的游戏内信息
 
-![房间控制功能展示](./assets/dashboard-overview.png)
+![房间控制功能展示](./assets/dashboard-overview.webp)
 
 ::: tip
 如果是新档，部分数据会获取失败，因为游戏还没有更新元数据
@@ -35,14 +35,14 @@ order: 5
 - 游戏阶段：展示房间当前的阶段
 - 游戏玩家：展示房间当前玩家数量/最大玩家数量
 
-![游戏模组](./assets/dashboard-overview-mod.png)
+![游戏模组](./assets/dashboard-overview-mod.webp)
 
 - 预览图：模组的图片
 - 名称：模组的名称
 - 大小：模组的大小
 - ID：模组的ID
 
-![自定义直连代码](./assets/dashboard-overview-connection.png)
+![自定义直连代码](./assets/dashboard-overview-connection.webp)
 
 - IP：外部访问的地址
 - 端口：外部访问的端口
@@ -50,7 +50,7 @@ order: 5
 ## 系统信息
 展示服务器的 CPU 和内存状态
 
-![自定义直连代码](./assets/dashboard-sysinfo.png)
+![自定义直连代码](./assets/dashboard-sysinfo.webp)
 
 ::: tip
 游戏刚启动时 CPU 和内存占用会升高，等启动完成后 CPU 会降低，但是内存不会
@@ -59,7 +59,7 @@ order: 5
 ## 房间控制
 控制游戏的一些功能
 
-![自定义直连代码](./assets/dashboard-control.png)
+![自定义直连代码](./assets/dashboard-control.webp)
 
 - 启动游戏：启动当前房间饥荒服务器
 - 关闭游戏：关闭当前房间饥荒服务器
@@ -76,7 +76,7 @@ order: 5
 ### 快捷指令
 提供对玩家和世界的一些常用指令操作，类似于游戏内 T 键的功能
 
-![自定义直连代码](./assets/dashboard-cmd.png)
+![自定义直连代码](./assets/dashboard-cmd.webp)
 
 - 玩家：只能对在线玩家进行操作，在线玩家会展示在界面
   - 玩家命令：点击玩家，可以在下拉框选择对应的玩家命令，选择后点击右下角插入按钮
@@ -93,9 +93,9 @@ order: 5
 ### 公告
 在游戏中发送公告信息，输入要发送的内容后，点击右侧小飞机按钮或按下回车键进行发送
 
-![公告内容](./assets/dashboard-console-announce.png)
+![公告内容](./assets/dashboard-console-announce.webp)
 
-![游戏截图](./assets/dashboard-console-announce-game.png)
+![游戏截图](./assets/dashboard-console-announce-game.webp)
 
 ### 命令
 可以执行命令，达到在游戏中使用控制台通用的效果，可以使用[快捷指令](#快捷指令)来快速输入常用命令
@@ -114,9 +114,9 @@ TheNet:Announce('猎犬巢：'..c_countprefabs('houndmound')..'窝')
 TheNet:Announce('电羊：'..c_countprefabs('lightninggoatherd')..'群（需选角色进图才可查询）')
 ```
 
-![执行命令](./assets/dashboard-console-command.png)
+![执行命令](./assets/dashboard-console-command.webp)
 
-![命令执行游戏截图](./assets/dashboard-console-command-game.png)
+![命令执行游戏截图](./assets/dashboard-console-command-game.webp)
 
 ::: tip
 个别世界命令是不区分世界的，如保存游戏，回档游戏，无论在那个世界执行都会对所有世界产生影响
@@ -125,7 +125,7 @@ TheNet:Announce('电羊：'..c_countprefabs('lightninggoatherd')..'群（需选�
 ## 世界信息
 展示房间内的世界，可以对世界进行启动、关闭操作
 
-![世界信息展示](./assets/dashboard-world-info.png)
+![世界信息展示](./assets/dashboard-world-info.webp)
 
 - 世界名：标准存档分为地面（Master）和洞穴（Caves）
 - 主节点：一个房间只能有一个主节点其他都是从节点，标注 `是` 就是主节点，`否` 是从节点

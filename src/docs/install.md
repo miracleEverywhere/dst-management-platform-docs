@@ -7,7 +7,7 @@ order: 10
 
 进入安装游戏页面，会显示左右两部分内容
 
-![游戏未安装](assets/install-no.png)
+![游戏未安装](assets/install-no.webp)
 
 左侧为当前服务器的配置信息，如CPU、内存、运行时间等信息
 
@@ -21,7 +21,7 @@ order: 10
 
 如果平台检测到饥荒已经安装，则会显示重新安装和更新游戏
 
-![游戏已安装](assets/install-yes.png)
+![游戏已安装](assets/install-yes.webp)
 
 点击安装或重新安装按钮后，平台会在当前页面开启一个终端，并执行安装脚本
 
@@ -172,7 +172,7 @@ echo -e "==>dmp@@ 安装完成 @@dmp<=="**
 
 11. 执行安装清理
 
-![游戏安装中](assets/install-ing.png)
+![游戏安装中](assets/install-ing.webp)
 
 ::: tip
 安装速度取决于当前的网络环境以及服务器的性能，请耐心等待
@@ -191,8 +191,8 @@ cd && ./manual_install.sh
 
 安装完成后会有相应的提示
 
-![安装完成](assets/install-completed.png)
+![安装完成](assets/install-completed.webp)
 
 更新完成也会有相应的提示
 
-![更新完成](assets/install-update-completed.png)
+![更新完成](assets/install-update-completed.webp)

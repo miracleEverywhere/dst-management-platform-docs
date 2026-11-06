@@ -25,7 +25,7 @@ timedatectl set-timezone Asia/Shanghai
 timedatectl
 ```
 
-![设置时区](assets/time-issue/timezone.png)
+![设置时区](assets/time-issue/timezone.webp)
 
 ::: warning
 饥荒管理平台的所有定时任务都采用本地时区，因此，请确保本地时区正确设置，否则就会出现定时任务在错误的时间执行

@@ -43,7 +43,7 @@ date: 2025-05-28
 详细步骤 [汉堡云操作指南](https://docs.hbyidc.com/node/0199dece-884c-7229-9e23-3fc2f39953e0)
 :::
 
-[![汉堡云](assets/server/hbyidc.png)](https://hbyidc.com/recommend/OKkxTzgMP6k7)
+[![汉堡云](assets/server/hbyidc.webp)](https://hbyidc.com/recommend/OKkxTzgMP6k7)
 
 ---
 
@@ -69,17 +69,17 @@ date: 2025-05-28
 #### 镜像选择
 注意购买过程中，服务器的镜像(系统)要选择 <code>Ubuntu 24.04 LTS</code> 及以上版本
 
-![镜像选择](./assets/server/system.png)
+![镜像选择](./assets/server/system.webp)
 
 完成购买后，点击右上角的<strong>控制台</strong>，找到自己已购买的云服务器(轻量应用服务器)，点击登录，如果忘记了密码可以点击重置密码
 
-![管理页面](./assets/server/dashboard.png)
+![管理页面](./assets/server/dashboard.webp)
 
 ## 服务器登录
 也可以直接免密登录，注意选择root用户(重要，后续的操作都需要使用root用户)
 
-![登录](./assets/server/login.png)
+![登录](./assets/server/login.webp)
 
 完成登录后，你将会看到如下界面，也意味着你完成了本节教程，可以进入下一节了
 
-![终端](./assets/server/terminal.png)
+![终端](./assets/server/terminal.webp)

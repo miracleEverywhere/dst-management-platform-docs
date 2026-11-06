@@ -11,11 +11,11 @@ Lite 采用**单账号**设计：整个平台只有一个用户，首次使用�
 
 浏览器打开 `http://服务器IP:9999`（端口以 `PORT` 为准），未登录时会跳转到登录页 `/login`：
 
-![登录页](./assets/login.png)
+![登录页](./assets/login.webp)
 
 首次访问时，卡片上会出现"首次使用，请先注册一个账号。"的提示，点击 **注册账号**：
 
-![注册](assets/register.png)
+![注册](assets/register.webp)
 
 - 只需填写**用户名**和**密码**，没有邮箱、昵称等字段
 - 用户名不能为空，密码不能为空，密码使用 bcrypt 加密后保存在 `dmp-lite.sdb`
@@ -30,7 +30,7 @@ Lite 采用**单账号**设计：整个平台只有一个用户，首次使用�
 2. 前端拉取菜单，固定为 7 个页面
 3. 跳转到 [控制面板](./dashboard.md)
 
-![控制面板全貌](assets/dashboard.png)
+![控制面板全貌](assets/dashboard.webp)
 
 ## 界面构成
 

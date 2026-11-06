@@ -36,7 +36,7 @@ flowchart TD
 
 接下来说一个游戏是否真正启动的判断标准，前往控制面板，最下方的世界信息的状态**均为**绿色开启状态，则我们认为游戏是**启动**的，如果有任意一个，尤其是主节点为关闭状态，则认为游戏是**未启动**的
 
-![游戏启动](assets/game-down/world-stat.png)
+![游戏启动](assets/game-down/world-stat.webp)
 
 ## 游戏未启动
 
@@ -77,7 +77,7 @@ flowchart TD
 
 这类情况通常表现为：世界内存占用很低，如下图仅占用200多MB，正常占用应该大于400MB
 
-![内存占用](assets/game-down/token-mem-low.png)
+![内存占用](assets/game-down/token-mem-low.webp)
 
 #### 令牌异常
 
@@ -160,6 +160,6 @@ return {["workshop-2937640068"]={active=true}}
 
 上述日志中的游戏存档文件为`0000000005`
 
-![删除游戏存档文件](assets/game-down/delete-snapshot.png)
+![删除游戏存档文件](assets/game-down/delete-snapshot.webp)
 
 删除完成后重启游戏即可

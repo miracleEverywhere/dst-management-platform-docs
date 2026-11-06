@@ -13,7 +13,7 @@ date: 2025-06-10
 
 该页面会展示当前在游戏中的玩家，右侧操作按钮可快捷添加管理员、黑名单、预留位
 
-![在线玩家列表](assets/player-online.png)
+![在线玩家列表](assets/player-online.webp)
 
 ## 管理员
 
@@ -21,7 +21,7 @@ date: 2025-06-10
 
 此页面添加的管理员玩家在游戏中拥有管理员权限
 
-![管理员](assets/player-list-add-manual.png)
+![管理员](assets/player-list-add-manual.webp)
 
 ::: tip
 添加或删除后，需要重启游戏才能生效
@@ -33,7 +33,7 @@ date: 2025-06-10
 
 该页面添加的玩家无法进入游戏
 
-![黑名单导入](assets/player-list-import.png)
+![黑名单导入](assets/player-list-import.webp)
 
 ::: tip
 添加或删除后，需要重启游戏才能生效
@@ -55,27 +55,27 @@ date: 2025-06-10
 
 可以在右上角进行消息类型筛选及时间预测
 
-![聊天信息](assets/player-chat.png)
+![聊天信息](assets/player-chat.webp)
 
 ## 历史玩家
 
 在你存档游玩过的玩家会显示在这个页面，，右侧操作按钮可快捷添加管理员、黑名单、预留位
 
-![历史玩家](assets/player-history.png)
+![历史玩家](assets/player-history.webp)
 
 ## 玩家统计
 
 展示当前房间最近的玩家数量
 
-![玩家统计](assets/player-statistics-1.png)
+![玩家统计](assets/player-statistics-1.webp)
 
 自平台开始运行到现在，当前存档玩家在线时长top-10，8分钟算一天
 
-![玩家统计](assets/player-statistics-2.png)
+![玩家统计](assets/player-statistics-2.webp)
 
 玩家在线时间段gantt图，默认为6小时
 
-![玩家在线时长](assets/player-statistics-3.png)
+![玩家在线时长](assets/player-statistics-3.webp)
 
 ::: tip
 可能存在玩家进游戏后没有选择角色情况，所以会出现统计显示的天数大于游戏的实际天数

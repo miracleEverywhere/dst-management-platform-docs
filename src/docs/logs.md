@@ -17,7 +17,7 @@ order: 8
 
 首先需要选择一个房间，可以在右上角选择查看那个**世界**的日志，在右下角可以选择展示的**行数量**
 
-![世界日志](assets/logs-world-current.png)
+![世界日志](assets/logs-world-current.webp)
 
 ::: tip
 世界日志是饥荒产生的日志，可以查看当前世界的运行状态，如果出现异常，也可从该日志进行排查
@@ -25,7 +25,7 @@ order: 8
 
 点击第二个标签页：历史日志，即可查看所有的历史世界日志，在右上角的下拉菜单中进行选择
 
-![历史日志](assets/logs-world-history.png)
+![历史日志](assets/logs-world-history.webp)
 
 ## 聊天日志
 
@@ -59,6 +59,6 @@ order: 8
 
 该页面会对日志进行统计，统计日志总大小
 
-![清理日志](assets/logs-clean.png)
+![清理日志](assets/logs-clean.webp)
 
 选择要清理的日志，也可以选择右上角**全选**按钮，点击右上角**删除**按钮即可

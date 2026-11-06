@@ -24,12 +24,12 @@ order: 12
 ./dmp -console help
 ```
 
-![所有用法](assets/console-help.png)
+![所有用法](assets/console-help.webp)
 
 :::warning
 如果出现以下报错，是dmp无法读取到默认路径(`data/dmp.db`)下的数据库，需要指定数据库路径
 
-![连接数据库失败](assets/console-db-fail.png)
+![连接数据库失败](assets/console-db-fail.webp)
 
 ```shell
 ./dmp -dbpath 路径 -console 命令
@@ -44,7 +44,7 @@ order: 12
 
 输入用户名，新密码即可
 
-![重置用户密码](../faq/dmp/assets/forget-password/reset.png)
+![重置用户密码](../faq/dmp/assets/forget-password/reset.webp)
 
 ::: tip
 输入的密码不会显示
@@ -57,7 +57,7 @@ order: 12
 ./dmp -console list_user
 ```
 
-![列出所有用户](assets/console-list_user.png)
+![列出所有用户](assets/console-list_user.webp)
 
 ## 查看数据库统计
 
@@ -65,5 +65,5 @@ order: 12
 ./dmp -console db_stats
 ```
 
-![查看数据库统计](assets/console-db-stats.png)
+![查看数据库统计](assets/console-db-stats.webp)
 

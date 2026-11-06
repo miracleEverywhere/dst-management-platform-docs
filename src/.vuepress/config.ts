@@ -17,7 +17,9 @@ export default defineUserConfig({
     viteOptions: {
       plugins: [
         ViteImageOptimizer({
-          logStats:true,
+          logStats: true,
+          // pnpm images:webp 已经把内容图压成 WebP，构建时不再对 webp 二次有损重编码
+          exclude: /\.webp$/,
           png: {
             quality: 90,
             compressionLevel: 9,

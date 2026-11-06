@@ -32,7 +32,7 @@ icon: circle-question
 
 新建房间，配置好房间名、令牌等
 
-![基础配置](assets/multi-server/multi-A-base.png)
+![基础配置](assets/multi-server/multi-A-base.webp)
 
 `主世界IP`、`端口`保持不变，记录随机生成的`世界认证密码`，我们记录一下
 
@@ -46,7 +46,7 @@ icon: circle-question
 |------|----------------|-----|-----------|-------|----------------|--------|------|-------|-----------|-----------|
 | 腾讯云A | 43.142.128.218 | 是   | 127.0.0.1 | 21001 | wkpitceheefiye | Master | 101  | 11001 | 31001     | 41001     |
 
-![世界配置](assets/multi-server/multi-A-world.png)
+![世界配置](assets/multi-server/multi-A-world.webp)
 
 接下来我们需要对剩余的两台服务器进行规划
 
@@ -152,11 +152,11 @@ return {
 
 创建一个房间，房间的基础配置与`主节点-腾讯云A`一致
 
-![基础配置](assets/multi-server/multi-A-base.png)
+![基础配置](assets/multi-server/multi-A-base.webp)
 
 主世界IP设置为`腾讯云A`的IP
 
-![主世界IP](assets/multi-server/multi-B-base.png)
+![主世界IP](assets/multi-server/multi-B-base.webp)
 
 设置`从节点-腾讯云B`的洞穴世界
 
@@ -164,7 +164,7 @@ return {
 注意要按照我们之前规划的表格进行设置
 :::
 
-![世界设置](assets/multi-server/multi-B-world.png)
+![世界设置](assets/multi-server/multi-B-world.webp)
 
 模组配置复制`主节点-腾讯云A`的模组配置即可，也就是说三台云服的模组配置均一致
 
@@ -176,7 +176,7 @@ return {
 
 C节点的配置与B大同小异，只是我们需要添加一个地面世界
 
-![世界设置](assets/multi-server/multi-C-world.png)
+![世界设置](assets/multi-server/multi-C-world.webp)
 
 然后就是配置模组，一路下一步，保存，启动游戏
 

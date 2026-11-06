@@ -13,7 +13,7 @@ date: 2025-06-11
 
 房间设置需要用户输入一些必填项和非必填项
 
-![房间设置](assets/room-cluster.png)
+![房间设置](assets/room-cluster.webp)
 
 以下加粗项为为必填
 
@@ -54,13 +54,13 @@ date: 2025-06-11
 
 该步骤将对当前存档的世界进行配置
 
-![世界设置](assets/room-world.png)
+![世界设置](assets/room-world.webp)
 
 ### 基本配置
 
 下图中的基本配置平台会自动填入，不建议修改，否则可能产生冲突
 
-![基本配置](assets/room-world-ini.png)
+![基本配置](assets/room-world-ini.webp)
 
 - **主世界**：是否为主世界，请注意，一个集群中，只能包含一个主世界，对应`is_master`
 - **用户路径编码**：建议打开，饥荒会对用户的存档路径目录进行编码，降低识别失败的概率，对应`encode_user_path`
@@ -74,7 +74,7 @@ date: 2025-06-11
 
 点击右上角的**添加世界**按钮，即可完成世界的添加，代码配置需要使用[世界设置](#世界设置)完成添加
 
-![添加世界](assets/room-world-add.png)
+![添加世界](assets/room-world-add.webp)
 
 ::: warning
 如果是手动从本地复制，平台会自动检测输入的配置是否合法，并给出相应的提示
@@ -89,15 +89,15 @@ date: 2025-06-11
 
 添加新的世界**代码配置**是空的，点击上方的添加配置代码，选择对应的选项，会自动填入世界设置的`lua`配置文件，
 
-![一键填入配置](assets/room-world-one-click.png)
+![一键填入配置](assets/room-world-one-click.webp)
 
 正确填入配置后，**可视化配置**标签页出现，可以进行可视化配置
 
-![可视化配置标签页](assets/room-world-visualization-button.png)
+![可视化配置标签页](assets/room-world-visualization-button.webp)
 
 点击标签页切换后，即可进行可视化配置
 
-![可视化配置](assets/room-world-visualization.png)
+![可视化配置](assets/room-world-visualization.webp)
 
 可视化配置中，与默认生存不一样的配置项会高亮显示
 
@@ -105,7 +105,7 @@ date: 2025-06-11
 
 点击世界标签页右边的 ::trash-can:: 即可
 
-![删除世界](assets/room-world-delete.png)
+![删除世界](assets/room-world-delete.webp)
 
 ::: tip
 删除世界会有二次确认
@@ -129,13 +129,13 @@ date: 2025-06-11
 ### 统一设置
 是大家常用的设置，所有世界模组配置相同，如果你不知道选那个，那就是用这个
 
-![统一设置](assets/room-mod.png)
+![统一设置](assets/room-mod.webp)
 
 
 ### 单独设置
 针对有特殊需求的玩家，需要单独设置世界的模组功能选项，使用单独设置会改变[模组设置](mod.md)页面的样式，详细可以查看文档说明
 
-![单独设置](assets/room-mod-individual.png)
+![单独设置](assets/room-mod-individual.webp)
 
 ::: tip
 如果你添加了模组配置，平台会自动校验模组配置的格式，并给出对应的提示
@@ -149,7 +149,7 @@ date: 2025-06-11
 ## 系统设置
 平台针对房间的一些功能设置
 
-![系统设置](assets/room-system-setting.png)
+![系统设置](assets/room-system-setting.webp)
 
 ### 自动备份
 在指定时间，备份当前饥荒服务器，该功能默认开启
@@ -226,7 +226,7 @@ date: 2025-06-11
 
 开启该功能后，可在平台工具-房间监控中查看当前房间的资源占用情况
 
-![房间监控](assets/room-system-room-monitor.png)
+![房间监控](assets/room-system-room-monitor.webp)
 
 ### Tick Rate
 
@@ -344,7 +344,7 @@ Tick Rate还需客户端同步配置，如果服务器为60tick，客户端为15
   - 使用`HMAC-SHA256`加密算法
   - 配置后会携带`X-DMP-Signature`请求头
 
-![webhook配置](assets/room-system-webhook.png)
+![webhook配置](assets/room-system-webhook.webp)
 
 可以点击测试按钮进行测试
 
@@ -585,5 +585,5 @@ if __name__ == '__main__':
 点击 **保存** 才会保存当前的配置，保存完后会跳转到 **房间设置** 页面，这是可以去 **模组设置** 添加模组，或者去 **控制面板** 启动游戏
 
 
-![执行操作](assets/room-finish.png)
+![执行操作](assets/room-finish.webp)
 

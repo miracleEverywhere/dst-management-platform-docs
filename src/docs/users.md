@@ -13,7 +13,7 @@ order: 3
 每个平台只能注册一次，且登录页面大概率暴露在公网，请在安装完成后尽快注册
 :::
 
-![注册](assets/user-registy-button.png)
+![注册](assets/user-registy-button.webp)
 
 ::: tip
 通过注册创建的用户默认为管理员角色
@@ -35,7 +35,7 @@ order: 3
 
 输入要更改的密码后，点击页面的 `更新` 按钮进行更新密码操作，更新后会自动跳转至登录页面
 
-![修改密码](assets/user-update-password.png)
+![修改密码](assets/user-update-password.webp)
 
 
 ## 用户管理
@@ -46,7 +46,7 @@ order: 3
 
 1. 点击创建按钮
 
-![用户创建](assets/user-create-button.png)
+![用户创建](assets/user-create-button.webp)
 
 2. 填写必要的信息
 
@@ -61,7 +61,7 @@ order: 3
 - **最大玩家数**：在某个房间内，用户最多可设置的玩家数(管理员不受限制)
 - **最大世界数**：在某个房间内，用户最多可创建的世界数(管理员不受限制)
 
-![填写用户信息](assets/user-create-form.png)
+![填写用户信息](assets/user-create-form.webp)
 
 1. 点击提交即可完成创建
 
@@ -69,7 +69,7 @@ order: 3
 #### 用户修改
 点击用户列表右侧的**操作**下拉菜单，即可对用户进行修改或删除
 
-![用户修改](assets/user-update.png)
+![用户修改](assets/user-update.webp)
 
 
 ::: tip

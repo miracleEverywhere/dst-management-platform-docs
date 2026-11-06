@@ -22,7 +22,7 @@ date: 2026-11-06
 
 ## 房间收藏
 
-[![云端房间收藏](assets/cloud-console-favorites.png)](assets/cloud-console-favorites.png)
+![云端房间收藏](assets/cloud-console-favorites.webp)
 
 房间收藏保存的是 **DMP 收藏房间的完整快照**：房间、世界列表与房间设置。
 
@@ -41,7 +41,7 @@ date: 2026-11-06
 
 ## 游戏令牌
 
-[![云端游戏令牌](assets/cloud-console-tokens.png)](assets/cloud-console-tokens.png)
+![云端游戏令牌](assets/cloud-console-tokens.webp)
 
 保存常用的饥荒游戏令牌，换设备后不用再翻找。
 
@@ -56,7 +56,7 @@ date: 2026-11-06
 
 云端可以保存游戏管理员的 UID / 昵称，以及预留位的 UID / 昵称。
 
-[![云端游戏管理员](assets/cloud-console-game-admins.png)](assets/cloud-console-game-admins.png)
+![云端游戏管理员](assets/cloud-console-game-admins.webp)
 
 - 新增时填写 UID、昵称和备注（可选）
 - 支持编辑、删除和复制 UID
@@ -66,7 +66,7 @@ date: 2026-11-06
 
 ## 云存档
 
-[![云端云存档](assets/cloud-console-archives.png)](assets/cloud-console-archives.png)
+![云端云存档](assets/cloud-console-archives.webp)
 
 云存档是旗舰版专属功能，最多保存 `5` 个 zip，单个不超过 `50MB`。
 
@@ -92,7 +92,7 @@ DMP 内的上传与导入步骤详见[云存档](archive.md)。
 
 ## 账号设置
 
-[![云端账号设置](assets/cloud-console-account.png)](assets/cloud-console-account.png)
+![云端账号设置](assets/cloud-console-account.webp)
 
 账号设置页展示：
 

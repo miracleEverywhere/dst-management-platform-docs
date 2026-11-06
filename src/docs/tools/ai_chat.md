@@ -26,7 +26,7 @@ order: 7
 普通用户可修改房间配置
 :::
 
-![房间配置](assets/ai_chat-room-setting.png)
+![房间配置](assets/ai_chat-room-setting.webp)
 
 - **启用游戏内AI对话**
   - 关闭后，当前房间不会触发任何AI对话
@@ -55,7 +55,7 @@ order: 7
 仅管理员可修改基础配置
 :::
 
-![基础配置](assets/ai_chat-base-setting.png)
+![基础配置](assets/ai_chat-base-setting.webp)
 
 - **对话模型Base URL**
   - **必填**
@@ -223,9 +223,9 @@ flowchart TD
 
 ## 使用
 
-![游戏中对话1](assets/ai_chat-chat-1.png)
+![游戏中对话1](assets/ai_chat-chat-1.webp)
 
-![游戏中对话2](assets/ai_chat-chat-2.png)
+![游戏中对话2](assets/ai_chat-chat-2.webp)
 
 ## 欢迎贡献
 

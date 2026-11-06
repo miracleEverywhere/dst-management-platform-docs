@@ -20,14 +20,14 @@ date: 2025-12-26
 
 首先打开 **平台管理** 页面，并切换到**房间总览**标签页
 
-![直连端口](assets/firewall/room_ports.png)
+![直连端口](assets/firewall/room_ports.webp)
 
 这个页面会展示你需要开通的所有饥荒端口，如上图中的: 
 **11001,11002**
 
 我们回到腾讯云控制台页面，点击**防火墙**
 
-![点击防火墙](assets/firewall/txcloud_firewall.png)
+![点击防火墙](assets/firewall/txcloud_firewall.webp)
 
 点击左侧的**添加规则按钮**，在弹出对话框中填入对应的端口
 
@@ -37,7 +37,7 @@ date: 2025-12-26
 端口就是平台中，集群端口页面的所有端口，可以单个输入，也可以输入范围(例如 11000-21000) !!，也可以开放所有UDP端口(1-65535)(不推荐但有用)!!
 :::
 
-![添加策略](assets/firewall/txcloud_firewall_setting.png)
+![添加策略](assets/firewall/txcloud_firewall_setting.webp)
 
 添加完成后，就可以通过直连代码进入游戏了，对应的延迟也会变低(大多数情况)
 

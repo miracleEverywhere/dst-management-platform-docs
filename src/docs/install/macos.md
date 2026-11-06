@@ -11,7 +11,7 @@ date: 2026-05-18
 
 MacOS开服过程与Linux开服没有区别，仅`run.sh`脚本中删除了一些选项
 
-![MacOS run.sh脚本](assets/macos-run-sh.png)
+![MacOS run.sh脚本](assets/macos-run-sh.webp)
 
 上图中的功能与Linux一致
 
@@ -25,15 +25,15 @@ MacOS开服过程与Linux开服没有区别，仅`run.sh`脚本中删除了一�
 
 点击`+`，添加dmp程序即可
 
-![添加完全磁盘访问权限](assets/macos-full-disk-privileges.png)
+![添加完全磁盘访问权限](assets/macos-full-disk-privileges.webp)
 
-![添加完全磁盘访问权限完成](assets/macos-full-disk-privileges-completed.png)
+![添加完全磁盘访问权限完成](assets/macos-full-disk-privileges-completed.webp)
 
 **系统设置 - 隐私与安全性 - App管理** 中添加dmp
 
 添加方式同上
 
-![添加App管理完成](assets/macos-app-manage.png)
+![添加App管理完成](assets/macos-app-manage.webp)
 
 以上操作完成后，使用`run.sh`脚本重启饥荒管理平台即可 (`echo 3 | ./run.sh`)
 

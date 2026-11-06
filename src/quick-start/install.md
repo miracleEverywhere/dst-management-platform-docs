@@ -60,15 +60,15 @@ rm -f /tmp/run.sh.b64
 
 如果无异常，你将会看到如下选项
 
-![运行中的run.sh脚本](assets/install/run-sh-exec.png)
+![运行中的run.sh脚本](assets/install/run-sh-exec.webp)
 
 输入`0`安装饥荒管理平台
 
-![选择一个加速节点](assets/install/acc-select.png)
+![选择一个加速节点](assets/install/acc-select.webp)
 
 这里我们输入`1`，选择1号加速节点
 
-![安装完成](assets/install/install-complete.png)
+![安装完成](assets/install/install-complete.webp)
 
 如果看到**启动成功**字样，那就代表安装完成了，可以进入下一步[令牌申请](token.md)了
 
@@ -91,16 +91,16 @@ run.sh文件是https://raw.githubusercontent.com/miracleEverywhere/dst-managemen
 
 **示例报错1**
 
-![报错](assets/install/error1-console.png)
+![报错](assets/install/error1-console.webp)
 
-![提问](assets/install/error1-deepseek-q.png)
+![提问](assets/install/error1-deepseek-q.webp)
 
-![回答](assets/install/error1-deepseek-a.png)
+![回答](assets/install/error1-deepseek-a.webp)
 
 **示例报错2**
 
-![报错](assets/install/error2-console.png)
+![报错](assets/install/error2-console.webp)
 
-![提问](assets/install/error2-deepseek-q.png)
+![提问](assets/install/error2-deepseek-q.webp)
 
-![回答](assets/install/error2-deepseek-a.png)
+![回答](assets/install/error2-deepseek-a.webp)

@@ -15,7 +15,7 @@ date: 2026-11-06
 
 打开「房间收藏」页面，在「本地收藏」标签的工具栏右侧可以看到三个按钮：
 
-[![收藏同步按钮](assets/dmp-favorites-local.png)](assets/dmp-favorites-local.png)
+![收藏同步按钮](assets/dmp-favorites-local.webp)
 
 | 按钮 | 名称    | 作用                    |
 |----|-------|-----------------------|
@@ -27,7 +27,7 @@ date: 2026-11-06
 
 切换到「云端收藏」标签，可以看到云端保存的收藏和本地状态：
 
-[![云端收藏列表](assets/dmp-favorites-cloud.png)](assets/dmp-favorites-cloud.png)
+![云端收藏列表](assets/dmp-favorites-cloud.webp)
 
 「本地状态」显示这条收藏是否已经下载到本地。
 
@@ -79,7 +79,7 @@ date: 2026-11-06
 
 同步完成后，右上角会显示本次的变化数量：
 
-[![同步结果](assets/dmp-sync-result.png)](assets/dmp-sync-result.png)
+![同步结果](assets/dmp-sync-result.webp)
 
 统计项包括：
 

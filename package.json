@@ -8,7 +8,9 @@
     "docs:build": "vuepress-vite build src",
     "docs:clean-dev": "vuepress-vite dev src --clean-cache",
     "docs:dev": "vuepress-vite dev src",
-    "docs:update-package": "pnpm dlx vp-update"
+    "docs:update-package": "pnpm dlx vp-update",
+    "images:webp": "node scripts/images.mjs convert",
+    "images:clean-png": "node scripts/images.mjs clean"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.2.0",

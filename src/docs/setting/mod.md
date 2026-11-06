@@ -19,24 +19,24 @@ date: 2025-06-12
 
 点击**下载**按钮可以进行下载，下载完成后会有弹窗提醒
 
-![下载模组](assets/mod-download.png)
+![下载模组](assets/mod-download.webp)
 
 点击**详情**可以查看模组的介绍页
 
-![详情](assets/mod-download-detail.png)
+![详情](assets/mod-download-detail.webp)
 
 ## 添加模组
 
 下载好的模组会在这个表格中显示
 
-![下载好的模组](assets/mod-add.png)
+![下载好的模组](assets/mod-add.webp)
 
 点击右侧操作菜单可以执行：
 - **启用**：将这个模组添加到你的房间中，类似于游戏中开服时的勾选操作
 - **更新**：顾名思义，旧版本模组升级到新版本
 - **删除**：嗯，没用的删除功能，不知道为什么都想要这个功能
 
-![模组操作](assets/mod-add-actions.png)
+![模组操作](assets/mod-add-actions.webp)
 
 右上角的模组操作菜单提供了三项功能：
 - **预下载**：将你模组配置文件(modoverride.lua)用到的模组下载下来，否则无法配置，进游戏还要下载，下载不成功你的游戏就缺模组啦🥳
@@ -48,7 +48,7 @@ date: 2025-06-12
 添加后可在**配置模组**页面禁用
 :::
 
-![模组操作](assets/mod-add-actions-all.png)
+![模组操作](assets/mod-add-actions-all.webp)
 
 ## 配置模组
 
@@ -58,7 +58,7 @@ date: 2025-06-12
 仅下载好的模组才能进行可视化配置
 :::
 
-![配置模组](assets/mod-setting.png)
+![配置模组](assets/mod-setting.webp)
 
 ::: tip
 修改模组的配置后，需要重启饥荒专用服务器才能生效

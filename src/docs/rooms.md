@@ -55,9 +55,9 @@ markmap:
 
 如果房间不存在会提示创建房间，如果存在房间会展示房间的简要信息
 
-![房间页面为空](./assets/room-none.png)
+![房间页面为空](./assets/room-none.webp)
 
-![房间页面展示](./assets/room-info.png)
+![房间页面展示](./assets/room-info.webp)
 
 - 搜索：房间较多时可以搜索指定房间名称，输入要搜索的房间名称，点击搜索按钮
 - 新建房间：创建一个新的存档/房间

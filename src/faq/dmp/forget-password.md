@@ -27,7 +27,7 @@ icon: circle-question
 就像你登录Linux时，输入密码也不会显示
 ::: 
 
-![控制台重置密码](assets/forget-password/reset.png)
+![控制台重置密码](assets/forget-password/reset.webp)
 
 ::: tip
 如果忘记了用户名，可使用`console`功能列出所有用户
@@ -37,4 +37,4 @@ icon: circle-question
 ./dmp -console list_user
 ```
 
-![列出所有用户](assets/forget-password/list_user.png)
+![列出所有用户](assets/forget-password/list_user.webp)

@@ -7,11 +7,11 @@ order: 1
 
 为了进一步的解决熊孩子和游戏坏档的问题，饥荒管理平台提供备份功能
 
-![备份管理](assets/backup.png)
+![备份管理](assets/backup.webp)
 
 在该页面你可以管理由平台[自动](../setting/room.md#自动备份)或手动创建(立即备份按钮)的备份文件
 
-![备份操作](assets/backup-actions.png)
+![备份操作](assets/backup-actions.webp)
 
 点击**恢复**即可将游戏回退到创建备份的那一刻
 

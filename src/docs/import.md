@@ -17,22 +17,22 @@ date: 2025-12-29
 1. 本地新建存档（跳过），大家都会不浪费流量
    1. 包含地面和洞穴
    2. 模组两个：`showme`，`全球同步(完全同步)`
-   ![游戏展示](./assets/import-local-game.png)
+   ![游戏展示](./assets/import-local-game.webp)
 2. 回到创建游戏界面，点击设置，点击打开世界文件夹
-   ![打开世界文件夹](./assets/import-local-setting.png)
+   ![打开世界文件夹](./assets/import-local-setting.webp)
 3. 选择所有文件，压缩成 zip 文件，名称随意你开心就好
    1. win11 折叠菜单，选择文件夹后右键选择压缩到
    2. win10 非折叠菜单，选择文件夹后右键选择压缩到
    3. Mac 你应该自己会搞了
 
-![创建压缩文件](assets/import-zip.png)
+![创建压缩文件](assets/import-zip.webp)
 
 4. 转到 DMP 的存档导入页面，点击**点我上传**按钮，至于是**创建新房间**，还是**覆盖当前房间**看你情况，我这里选择创建新房间，把刚刚的文件拖到提示的位置
-   ![导入存档](./assets/import-dmp-update.png)
+   ![导入存档](./assets/import-dmp-update.webp)
 5. 等待导入成功
-   ![等待导入](./assets/import-dmp-sleep.png)
+   ![等待导入](./assets/import-dmp-sleep.webp)
 6. 导入完成后，转到房间总览查看
-   ![房间总览](./assets/import-dmp-rooms.png)
+   ![房间总览](./assets/import-dmp-rooms.webp)
 7. 模组相关的可以查看👉[模组设置](./setting/mod.md)
 8. 设置完后，点击启动游戏，等待启动完成就可以开始玩了
 

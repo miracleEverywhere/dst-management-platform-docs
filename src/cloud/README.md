@@ -18,7 +18,7 @@ DMP 本身可以完全离线使用。云账号解决的是另一类问题：换�
 
 云账号不是 DMP 本地账号的替代品。本地账号决定你能在这台 DMP 上做什么，云账号负责把数据带到下一台 DMP。
 
-[![云账号首页](assets/cloud-home.png)](assets/cloud-home.png)
+![云账号首页](assets/cloud-home.webp)
 
 ## 云端保存什么
 
@@ -49,7 +49,7 @@ DMP 本身可以完全离线使用。云账号解决的是另一类问题：换�
 2. **在 DMP 中关联云账号**：登录页可以直接用云账号登录；已有本地账号时，到「个人中心 → 云账号」绑定
 3. **在 DMP 中使用云端数据**：同步收藏、在房间设置里选择云端令牌、在玩家设置里选择云端管理员/预留位、导入云存档
 
-[![云端控制台](assets/cloud-console-overview.png)](assets/cloud-console-overview.png)
+![云端控制台](assets/cloud-console-overview.webp)
 
 ## 数据怎么走
 

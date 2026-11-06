@@ -19,7 +19,7 @@ DMP 提供两种使用云账号的方式：直接用云账号登录，或把云�
 
 在 DMP 登录页切换到「云账号」标签。
 
-[![DMP 云账号登录](assets/dmp-login.png)](assets/dmp-login.png)
+![DMP 云账号登录](assets/dmp-login.webp)
 
 - 账号位置填云用户名或注册邮箱
 - 密码填云账号密码
@@ -50,9 +50,9 @@ DMP 提供两种使用云账号的方式：直接用云账号登录，或把云�
 
 绑定前，页面会提示当前账号尚未绑定：
 
-[![未绑定云账号](assets/dmp-unbound.png)](assets/dmp-unbound.png)
+![未绑定云账号](assets/dmp-unbound.png)
 
-[![绑定云账号](assets/dmp-bind-dialog.png)](assets/dmp-bind-dialog.png)
+![绑定云账号](assets/dmp-bind-dialog.webp)
 
 | 字段     | 说明                |
 |--------|-------------------|
@@ -69,7 +69,7 @@ DMP 提供两种使用云账号的方式：直接用云账号登录，或把云�
 
 绑定成功后，「个人中心 → 云账号」会显示云账号信息和配额：
 
-[![已绑定云账号](assets/dmp-bound.png)](assets/dmp-bound.png)
+![已绑定云账号](assets/dmp-bound.webp)
 
 | 项目     | 说明                    |
 |--------|-----------------------|

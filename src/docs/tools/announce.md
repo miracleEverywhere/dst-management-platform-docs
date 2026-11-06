@@ -9,6 +9,6 @@ order: 2
 
 关闭状态的公告不会触发
 
-![定时通知](assets/announce.png)
+![定时通知](assets/announce.webp)
 
 其他的没什么好说的

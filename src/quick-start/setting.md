@@ -15,7 +15,7 @@ date: 2025-12-27
 
 1. 首先，我们回到腾讯云的控制面板，点击下方图片中的IPv4右边的复制按钮
 
-![IPv4](./assets/setting/ipv4.png)
+![IPv4](./assets/setting/ipv4.webp)
 
 2. 将复制好的IP粘贴进浏览器的地址栏并进入
 ::: tip
@@ -29,27 +29,27 @@ date: 2025-12-27
 
 2.1 点击下图中的防火墙标签页，并点击添加规则按钮
 
-![防火墙](./assets/setting/firewall.png)
+![防火墙](./assets/setting/firewall.webp)
 
 2.2 按照下图配置规则并点击确定
 
-![80端口开放](./assets/setting/port-80.png)
+![80端口开放](./assets/setting/port-80.webp)
 
 #### 用户注册
 1. 如果你顺利打开了饥荒管理平台的页面，恭喜你，已经成功了一半，接下来我们将进行用户的注册
 
-![点击注册](./assets/setting/registy-button.png)
+![点击注册](./assets/setting/registy-button.webp)
 
 2. 填写好用户名，用户昵称还有密码，点击提交即可完成注册
 ::: tip
 一个平台只能注册一次，请快速完成注册操作，防止坏人捣乱
 :::
 
-![填写用户信息](./assets/setting/user-info.png)
+![填写用户信息](./assets/setting/user-info.webp)
 
 3. 使用注册好的用户名密码进行登录
 
-![登录](./assets/setting/login.png)
+![登录](./assets/setting/login.webp)
 
 ## 安装游戏
 初次登录会提示游戏未安装，根据提示进行安装游戏或点击左侧 `安装游戏` 菜单，左边会显示系统的基本信息，点击右侧的 安装 按钮进行游戏安装
@@ -58,11 +58,11 @@ date: 2025-12-27
 饥荒游戏大概有4个多GB，安装时间取决于你的云服务器的下载速度和当时的网络环境，要耐心等待，并且不要重复安装和刷新页面（玩会儿手机吧👉🤳😎
 :::
 
-![游戏未安装](./assets/setting/home-download.png)
+![游戏未安装](./assets/setting/home-download.webp)
 
-![安装游戏](./assets/setting/install-game.png)
+![安装游戏](./assets/setting/install-game.webp)
 
-![安装完成🎊](./assets/setting/install-game-fully.png)
+![安装完成🎊](./assets/setting/install-game-fully.webp)
 
 如果出现了上图中的弹窗，恭喜，那就代表游戏安装完成了！
 
@@ -71,11 +71,11 @@ date: 2025-12-27
 
 1. 游戏安装完成之后点击左侧 `房间总览`，会提示没有发现房间，点击左上角的新建按钮创建，根据提示点击按钮进入创建房间页面
 
-![新建房间](./assets/setting/create-room.png)
+![新建房间](./assets/setting/create-room.webp)
 
 2. 输入房间名、房间描述、选择游戏模式、玩家数量、回档天数，输入 [令牌申请](./token.md) 中申请的令牌，或者使用默认令牌（😁默认令牌是 `Miracle` 的，进游戏你不是管理员哦），点击右下角的 `下一步`
 
-![房间设置](./assets/setting/room-1.png)
+![房间设置](./assets/setting/room-1.webp)
 
 ::: tip
 详细设置说明查看👉 [房间设置](/docs/setting/room.md#房间设置) 
@@ -83,7 +83,7 @@ date: 2025-12-27
 
 3. 可以点击 `可视化配置`，进行世界设置调整，选择地面或者洞穴，在可视化配置中进行选项设置
 
-![房间可视化配置](./assets/setting/room-2.png)
+![房间可视化配置](./assets/setting/room-2.webp)
 
 4. 🙂模组设置可以先不管，点击 `下一步`
 ::: tip
@@ -97,11 +97,11 @@ date: 2025-12-27
 
 1. 🥳到这一步就完成了配置，点击 `保存` 完成配置
 
-![保存](./assets/setting/room-4-save.png)
+![保存](./assets/setting/room-4-save.webp)
 
 7. 保存完成后，点击左侧 `控制面板` 进入房间管理页面，如果不需要配置模组就可以跳转到 [启动游戏](#启动游戏)
 
-![房间管理](./assets/setting/home-hasWorld.png)
+![房间管理](./assets/setting/home-hasWorld.webp)
 
 ## 配置模组
 模组是在单独的页面进行管理，包含了**下载模组**、**添加模组**和**配置模组**，文档以 `showme` 和 `全球定位` 作为演示
@@ -112,7 +112,7 @@ date: 2025-12-27
 点击下载后会有下载提示，可同时下载多个模组，但不要重复下载
 :::
 
-![下载模组](./assets/setting/mod-1.png)
+![下载模组](./assets/setting/mod-1.webp)
 
 2. 下载好的模组会出现在添加模组标签页中的表格中，点击右侧 操作 - 启用，即可添加对应的模组，分别启用showme和全球定位
 
@@ -120,7 +120,7 @@ date: 2025-12-27
 点击下载之后，在添加模组页面没有显示，可能是还在下载中，等待一段时间点击刷新按钮😁
 :::
 
-![下载模组](./assets/setting/mod-enable.png)
+![下载模组](./assets/setting/mod-enable.webp)
 
 3. 添加的模组会出现在配置模组标签页中，点击对应的模组，即可进行配置
 
@@ -128,17 +128,17 @@ date: 2025-12-27
 配置选择后就会自动保存，不用找保存在那里啦~😂
 :::
 
-![配置模组](./assets/setting/mod-setting.png)
+![配置模组](./assets/setting/mod-setting.webp)
 
 ## 启动游戏  
 
 模组配置完成后，所有的设置都已经完成了，可以查看一下自动生成的模组配置文件：点击 `游戏设置` - `房间设置`，这次就不用点击保存了
 
-![查看模组配置](./assets/setting/mod-setting-check.png)
+![查看模组配置](./assets/setting/mod-setting-check.webp)
 
 也再来看一下 `控制面板`
 
-![控制面板](./assets/setting/home-mod.png)
+![控制面板](./assets/setting/home-mod.webp)
 
 点击 `控制面板` 的 `启动游戏` 按钮，等待专用服务器启动完成，就可以进入游戏愉快的玩耍了
 
@@ -146,10 +146,10 @@ date: 2025-12-27
 首页的天数、阶段、季节获取失败的原因是无法读取游戏的核心文件，等待游戏自动保存后，就可以正常显示了，也可以手动保存 👉 [游戏指令](/src/docs/dashboard.md#游戏指令)
 :::
 
-![保存后的效果](./assets/setting/home-finish.png)
+![保存后的效果](./assets/setting/home-finish.webp)
 
 查房结果，可以看到房间名、描述、模组、最大玩家数量都与之前设置的一致
 
-![查房结果](./assets/setting/lobby.png)
+![查房结果](./assets/setting/lobby.webp)
 
 接下来进入[开通防火墙](./firewall.md)

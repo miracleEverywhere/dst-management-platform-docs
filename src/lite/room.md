@@ -15,7 +15,7 @@ Lite 固定只有一个房间（`Cluster_1`），房间设置页面的内容在�
 ~/.klei/DoNotStarveTogether/Cluster_1/blocklist.txt
 ```
 
-![房间设置](assets/room.png)
+![房间设置](assets/room.webp)
 
 ## 字段说明
 
