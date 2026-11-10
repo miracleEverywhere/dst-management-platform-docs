@@ -10,7 +10,7 @@ heroImageDark: /assets/home/hero-dark.svg
 bgImage: /assets/home/bg-light.svg
 bgImageDark: /assets/home/bg-dark.svg
 actions:
-  - text: 快速上手
+  - text: 完整版
     icon: wand-magic-sparkles
     link: ./quick-start/
     type: primary
@@ -59,6 +59,25 @@ highlights:
       - title: 不止 Linux
         details: 支持 Linux、macOS 与 Windows（WSL），按文档选择合适的方式。
         link: docs/install/
+        
+  - header: 配置跟着账号走
+    description: 绑定云账号后，房间收藏、游戏令牌和管理员名单都会存到云端。重装、迁移或换一台机器，登录后同步一次就能取回。
+    image: /assets/home/cloud-light.svg
+    imageDark: /assets/home/cloud-dark.svg
+    highlights:
+      - title: 房间收藏同步
+        details: 房间、世界与设置打包成快照，新设备可以一键拉取，也可以双向同步。
+        link: cloud/sync.html
+      - title: 云端令牌与名单
+        details: 常用的游戏令牌、管理员和预留位保存在云端，开服时直接选用，不用再翻记录。
+        link: cloud/token.html
+      - title: 云存档
+        details: 完整存档上传云端，换台服务器也能导入继续开。
+        link: cloud/archive.html
+      - title: 不绑定也能用
+        details: DMP 本身可以完全离线运行，云服务不可用时照常用本地账号登录。
+        link: cloud/
+
   - header: 轻量，还是全能？
     description: 两种形态，同样的操作习惯。按服务器配置和开服规模选择即可。
     image: /assets/home/modes-light.svg
