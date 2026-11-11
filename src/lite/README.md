@@ -1,5 +1,5 @@
 ---
-title: Lite轻量版
+title: 轻量版
 index: false
 icon: feather
 order: 1

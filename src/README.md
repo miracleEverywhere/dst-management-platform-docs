@@ -10,11 +10,11 @@ heroImageDark: /assets/home/hero-dark.svg
 bgImage: /assets/home/bg-light.svg
 bgImageDark: /assets/home/bg-dark.svg
 actions:
-  - text: 完整版
+  - text: 安装完整版
     icon: wand-magic-sparkles
     link: ./quick-start/
     type: primary
-  - text: Lite 轻量版
+  - text: 安装轻量版
     icon: feather
     link: ./lite/
 highlights:
@@ -83,27 +83,24 @@ highlights:
     image: /assets/home/modes-light.svg
     imageDark: /assets/home/modes-dark.svg
     highlights:
-      - title: Lite 轻量版 · 约 10MB
+      - title: 轻量版 · 低资源占用
         details: 单房间、地面 + 洞穴双世界，保留开服、配置与日志等核心能力。
         link: lite/
       - title: 完整版 · 全功能
-        details: 多房间、多用户、自动备份、地图、控制台与平台工具。
+        details: 云账号、多房间、多用户、自动备份、地图、控制台与平台工具。
         link: docs/
-      - title: 桌面 App
-        details: Windows、macOS、Linux 客户端，用令牌统一管理多个平台。
-        link: https://github.com/miracleEverywhere/dst-management-platform-desktop
-  - header: 开源、透明、可自托管
-    description: Go + Vue 构建，数据与存档都留在你自己的服务器上。
+  - header: 开源、透明、安全
+    description: 所有安装包均由Github Actions自动打包，杜绝投毒和夹带私货。<br >MIT协议，任意修改，允许商用，欢迎提交 Issue 与 PR。
     features:
-      - title: Go 1.27.3
+      - title: 主项目
         icon: server
-        details: 标准 C/S 架构，Gin 1.12.0，编译为单个可执行文件。
-      - title: Vue 3.5.22
+        details: 包含后端源码与前端编译产物，安装包、docker镜像、run.sh都在这里。
+      - title: 桌面软件
         icon: code
-        details: Vuetify 3.12.1，支持明暗主题、移动端布局与多语言。
-      - title: MIT 协议
+        details: 桌面端软件，帮助你管理多个饥荒管理平台，支持Windows、MacOS和Linux。
+      - title: 前端项目
         icon: code-branch
-        details: 任意修改，允许商用，欢迎提交 Issue 与 PR。
+        details: 使用Vue3框架的纯前端项目，组件框架使用vuetify3。
         link: https://github.com/miracleEverywhere/dst-management-platform-api
 copyright: false
 footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议
