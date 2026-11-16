@@ -30,14 +30,15 @@ order: 10
 1. 生成安装脚本
 
 ```shell  title="manual_install.sh"
-**#!/bin/bash
+#!/bin/bash
 
 # 设置错误处理
 set -e
 
 # 定义变量
-STEAM_DIR="$HOME/steamcmd"
-DST_DIR="$HOME/dst"
+WORK_DIR=$(pwd)
+STEAM_DIR="$WORK_DIR/steamcmd"
+DST_DIR="$WORK_DIR/dst"
 
 # 错误处理函数
 function error_exit() {
@@ -51,12 +52,13 @@ trap error_exit ERR
 # 工具函数
 function install_ubuntu() {
     dpkg --add-architecture i386
-    apt update -y
-    apt install -y screen wget
-    apt install -y lib32gcc1 || true
-    apt install -y lib32gcc-s1 || true
-    apt install -y libcurl4-gnutls-dev:i386 || error_exit
-    apt install -y libcurl4-gnutls-dev || true
+    apt-get update -y
+    apt-get install -y screen wget
+    apt-get install -y lib32gcc1 || true	# ubuntu ≤ 22
+    apt-get install -y lib32gcc-s1 || true
+    apt-get install -y libcurl4-gnutls-dev:i386 || error_exit
+    apt-get install -y libcurl4-gnutls-dev || true
+    apt-get install -y lib32stdc++6 || error_exit
 }
 
 function install_rhel() {
@@ -64,7 +66,7 @@ function install_rhel() {
     yum -y install glibc.i686 libstdc++.i686 libcurl.i686
     yum -y install glibc libstdc++ libcurl
     yum -y install screen wget
-    ln -s /usr/lib/libcurl.so.4 /usr/lib/libcurl-gnutls.so.4
+    ln -sf /usr/lib/libcurl.so.4 /usr/lib/libcurl-gnutls.so.4
 }
 
 function check_screen() {
@@ -100,19 +102,16 @@ check_screen
 # 检查wget命令
 check_wget
 
-# 下载安装包
-cd "$HOME" || error_exit
-rm -f steamcmd_linux.tar.gz
-wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
-
-# 清理，容器中不删除steamcmd
+# 清理并安装steamcmd
+# 容器中不安装steamcmd
 if [[ "${DMP_IN_CONTAINER}" != "1" ]] ;then
+	cd "$WORK_DIR" || error_exit
+    rm -f steamcmd_linux.tar.gz
+    wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 	rm -rf "$STEAM_DIR"
+	mkdir -p "$STEAM_DIR"
+	tar -zxvf steamcmd_linux.tar.gz -C "$STEAM_DIR"
 fi
-mkdir -p "$STEAM_DIR"
-
-# 解压安装包
-tar -zxvf steamcmd_linux.tar.gz -C "$STEAM_DIR"
 
 # 安装DST
 cd "$STEAM_DIR" || error_exit
@@ -124,18 +123,31 @@ cd "$STEAM_DIR" || error_exit
 rm -rf "$DST_DIR/steamapps/appmanifest_343050.acf"
 
 # 一些必要的so文件
-cd "$HOME" || error_exit
-cp steamcmd/linux32/libstdc++.so.6 dst/bin/lib32/
+cd "$WORK_DIR" || error_exit
+# 2026年10月09日 新版本dst不兼容steam自带的GNU Standard C++ Library
+# cp steamcmd/linux32/libstdc++.so.6 dst/bin/lib32/
+
+# 2026年11月10日 取消PR166的软连接
+#if [[ "${OS}" == "ubuntu" || "${OS}" == "debian" ]]; then
+#	LIBSTDCPP32=/usr/lib/i386-linux-gnu/libstdc++.so.6
+#else
+#	LIBSTDCPP32=/usr/lib/libstdc++.so.6
+#fi
+#if [[ ! -f "$LIBSTDCPP32" ]]; then
+#	error_exit
+#fi
+#
+#ln -sfn "$LIBSTDCPP32" "$DST_DIR/bin/lib32/libstdc++.so.6"
 if [[ "${OS}" == "ubuntu" || "${OS}" == "debian" ]]; then
-	[ ! -L "dst/bin64/lib64/libcurl-gnutls.so.4" ] && ln -s /usr/lib/x86_64-linux-gnu/libcurl-gnutls.so.4 dst/bin64/lib64/libcurl-gnutls.so.4
-	[ ! -L "dst/bin/lib32/libcurl-gnutls.so.4" ] && ln -s /usr/lib/i386-linux-gnu/libcurl-gnutls.so.4 dst/bin/lib32/libcurl-gnutls.so.4
+	[ ! -L "dst/bin64/lib64/libcurl-gnutls.so.4" ] && ln -sf /usr/lib/x86_64-linux-gnu/libcurl-gnutls.so.4 dst/bin64/lib64/libcurl-gnutls.so.4
+	[ ! -L "dst/bin/lib32/libcurl-gnutls.so.4" ] && ln -sf /usr/lib/i386-linux-gnu/libcurl-gnutls.so.4 dst/bin/lib32/libcurl-gnutls.so.4
 else
-	[ ! -L "dst/bin64/lib64/libcurl-gnutls.so.4" ] && ln -s /usr/lib64/libcurl.so.4 dst/bin64/lib64/libcurl-gnutls.so.4
-	[ ! -L "dst/bin/lib32/libcurl-gnutls.so.4" ] && ln -s /usr/lib/libcurl.so.4 dst/bin/lib32/libcurl-gnutls.so.4
+	[ ! -L "dst/bin64/lib64/libcurl-gnutls.so.4" ] && ln -sf /usr/lib64/libcurl.so.4 dst/bin64/lib64/libcurl-gnutls.so.4
+	[ ! -L "dst/bin/lib32/libcurl-gnutls.so.4" ] && ln -sf /usr/lib/libcurl.so.4 dst/bin/lib32/libcurl-gnutls.so.4
 fi
 
 # luajit
-cd "$HOME" || error_exit
+cd "$WORK_DIR" || error_exit
 cp dmp_files/luajit/* dst/bin64/
 cat >dst/bin64/dontstarve_dedicated_server_nullrenderer_x64_luajit <<-"EOF"
 export LD_PRELOAD=./libpreload.so
@@ -145,32 +157,28 @@ EOF
 chmod --reference=dst/bin64/dontstarve_dedicated_server_nullrenderer_x64 dst/bin64/dontstarve_dedicated_server_nullrenderer_x64_luajit
 
 # 清理
-cd "$HOME" || error_exit
+cd "$WORK_DIR" || error_exit
 rm -f steamcmd_linux.tar.gz
 
 # 安装完成
-echo -e "==>dmp@@ 安装完成 @@dmp<=="**
+echo -e "==>dmp@@ 安装完成 @@dmp<=="
 ```
 
 2. 安装对应依赖
 
 3. 检查`screen`命令与`wget`命令
 
-4. 下载`steamcmd`: **耗时操作，耐心等待😘👉🤳**
+4. 下载并解压`steamcmd`
 
-5. 安装`steamcmd`
+5. 通过`steamcmd`下载并安装饥荒联机版: **耗时操作，耐心等待😘👉🤳**
 
-6. 安装`steam`
+6. 清理可能损坏的`acf`文件
 
-7. 下载饥荒联机版: **耗时操作，耐心等待😘👉🤳**
+7. 链接一些必要的库文件
 
-8. 安装饥荒联机版
+8. 生成`LuaJIT`启动脚本
 
-9. 链接一些必要的库文件
-
-10. 生成`LuaJIT`启动脚本
-
-11. 执行安装清理
+9. 清理安装文件
 
 ![游戏安装中](assets/install-ing.webp)
 

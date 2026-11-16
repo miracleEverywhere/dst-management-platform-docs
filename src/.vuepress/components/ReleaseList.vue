@@ -232,7 +232,7 @@ function getRenderer(): Promise<(body: string) => string> {
         tokens[0]?.type === "heading_open" &&
         tokens[0].tag === "h1" &&
         tokens[1]?.type === "inline" &&
-        /^\d{4}-\d{2}-\d{2}$/.test(tokens[1].content.trim())
+        /^\d{4}-\d{1,2}-\d{1,2}$/.test(tokens[1].content.trim())
       )
         tokens.splice(0, 3);
 

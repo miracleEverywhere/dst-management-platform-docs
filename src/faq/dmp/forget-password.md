@@ -20,6 +20,14 @@ icon: circle-question
 ./dmp -console reset_password
 ```
 
+::: tip
+如果使用 Docker 部署，请进入容器执行：
+
+```shell
+docker exec -it dmp /root/dmp -console reset_password
+```
+:::
+
 2. 输入用户名和新密码
 
 ::: tip

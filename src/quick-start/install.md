@@ -19,6 +19,14 @@ date: 2025-12-26
 由于Rocky 10不再支持32位应用，因此无法安装饥荒依赖
 :::
 
+::: tip
+Debian 系统的 `run.sh` 不会自动安装 `jq` 和 `curl`，请先手动安装：
+
+```shell
+apt install -y jq curl
+```
+:::
+
 ::: danger
 安装需root用户(sudo也不推荐)，安装前请再次确认当前用户是否为root，可输入命令`whoami`进行查看
 

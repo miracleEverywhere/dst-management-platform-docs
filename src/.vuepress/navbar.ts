@@ -6,7 +6,6 @@ export default navbar([
   "/docs/",
   "/cloud/",
   "/lite/",
-  // "/assist/",
   "/faq/",
   "/changelog/",
 ])

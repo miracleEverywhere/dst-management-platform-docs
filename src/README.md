@@ -101,7 +101,7 @@ highlights:
       - title: 前端项目
         icon: code-branch
         details: 使用Vue3框架的纯前端项目，组件框架使用vuetify3。
-        link: https://github.com/miracleEverywhere/dst-management-platform-api
+        link: https://github.com/miracleEverywhere/dst-management-platform-web
 copyright: false
 footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议
 ---

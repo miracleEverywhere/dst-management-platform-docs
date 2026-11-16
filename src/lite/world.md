@@ -17,7 +17,7 @@ Lite 固定两个世界：**地面（Master）** 与 **洞穴（Caves）**，分
 | Steam连接端口 | `[STEAM] master_server_port`  | 如无特殊用途不要修改                               |
 | Steam认证端口 | `[STEAM] authentication_port` | 如无特殊用途不要修改                               |
 
-这三个端口在页面上是**只读**的，Lite 不提供修改入口。端口确实需要调整时，请参考[修改端口](#修改端口)。
+这三个端口在页面上是**只读**的，Lite 不提供修改入口。端口确实需要调整时，请先关闭世界，再直接编辑 `~/.klei/DoNotStarveTogether/Cluster_1/Master`（或 `Caves`）下的 `server.ini`；下次在页面保存世界设置时，端口会被平台重新写入。
 
 ::: tip
 Lite 默认使用 `11001`（地面）和 `11002`（洞穴）。云服务器安全组需要放行这两个 UDP 端口，否则玩家无法直连。

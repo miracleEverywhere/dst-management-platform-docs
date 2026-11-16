@@ -13,3 +13,7 @@ dir:
 2. [Docker部署](docker.md)
 
 3. [Win 11 开服](win11.md)
+
+4. [MacOS 开服](macos.md)
+
+5. [非root部署](no-root.md)

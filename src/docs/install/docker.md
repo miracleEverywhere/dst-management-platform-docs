@@ -20,7 +20,7 @@ docker pull ghcr.io/miracleeverywhere/dst-management-platform-api:latest
 也可以通过版本号进行拉取 (**推荐**)
 
 ```shell
-docker pull ghcr.io/miracleeverywhere/dst-management-platform-api:v3.0.2
+docker pull ghcr.io/miracleeverywhere/dst-management-platform-api:v3.2.3
 ```
 
 ## 启动容器
@@ -36,6 +36,7 @@ docker pull ghcr.io/miracleeverywhere/dst-management-platform-api:v3.0.2
 - `/root/dst`: 饥荒专用服务器
 - `/root/.klei`: 游戏房间目录
 - `/root/dmp_files`: 管理平台生成的一些文件，包含备份文件、LuaJIT、临时ugc模组和临时上传目录
+- `/root/logs`: 平台运行日志与请求日志目录，建议映射出来方便排查问题
 - `/etc/localtime:ro`: 本地时区，不要改
 - `/etc/timezone:ro`: 本地时区，不要改
 
@@ -44,20 +45,24 @@ docker pull ghcr.io/miracleeverywhere/dst-management-platform-api:v3.0.2
 - `DMP_PORT`: 平台启动端口，默认：`80`，无需额外修改
 - `DMP_IN_CONTAINER`: 让平台知道自己是以容器方式启动，会影响游戏安装，无需额外修改
 - `LEVEL`: 日志等级，默认`info` (debug | info | warning | error)，无需额外修改
+- `TLS`: 设置为 `true` 时启用 HTTPS，需要同时挂载证书并配置 `TLS_CERT`、`TLS_KEY`
+- `TLS_CERT`: 证书路径，默认 `/etc/ssl/dmp/fullchain.pem`
+- `TLS_KEY`: 私钥路径，默认 `/etc/ssl/dmp/privkey.pem`
 
 绑定宿主机80端口，并映射一些必要的目录
 
 ```shell title="将容器内部的目录映射到/app目录下"
 docker run -itd \
 --name dmp \
--p 80:80 \ 
+-p 80:80 \
 -p 11000-22000:11000-22000/udp \
--v /app/data:/root/data \ 
--v /app/dst:/root/dst \  
--v /app/.klei:/root/.klei \ 
--v /app/dmp_files:/root/dmp_files \ 
--v /etc/localtime:/etc/localtime:ro \ 
--v /etc/timezone:/etc/timezone:ro \ 
+-v /app/data:/root/data \
+-v /app/dst:/root/dst \
+-v /app/.klei:/root/.klei \
+-v /app/dmp_files:/root/dmp_files \
+-v /app/logs:/root/logs \
+-v /etc/localtime:/etc/localtime:ro \
+-v /etc/timezone:/etc/timezone:ro \
 ghcr.io/miracleeverywhere/dst-management-platform-api:latest
 ```
 
@@ -70,6 +75,7 @@ docker run -itd --name dmp --net=host \
 -v /app/dst:/root/dst \
 -v /app/.klei:/root/.klei \
 -v /app/dmp_files:/root/dmp_files \
+-v /app/logs:/root/logs \
 -v /etc/localtime:/etc/localtime:ro \
 -v /etc/timezone:/etc/timezone:ro \
 ghcr.io/miracleeverywhere/dst-management-platform-api:latest
@@ -99,6 +105,10 @@ services:
        - DMP_IN_CONTAINER=1
        # 日志等级设置为info (debug | info | warning | error)
        - LEVEL=info
+       # 启用 HTTPS，需同时挂载证书目录
+       # - TLS=true
+       # - TLS_CERT=/etc/ssl/dmp/fullchain.pem
+       # - TLS_KEY=/etc/ssl/dmp/privkey.pem
     volumes:
       # dmp 数据库目录
       - /app/data:/root/data
@@ -110,6 +120,8 @@ services:
       - /app/dmp_files:/root/dmp_files
       # dmp 日志所在目录
       - /app/logs:/root/logs
+      # HTTPS 证书目录（启用 TLS 时取消注释）
+      # - /app/ssl:/etc/ssl/dmp:ro
       # Steam 文件目录
       - /app/Steam:/root/Steam
       # 使用物理机的时区
@@ -117,12 +129,37 @@ services:
       - /etc/timezone:/etc/timezone:ro
 ```
 
+## 启用 HTTPS
+
+如果需要直接通过 HTTPS 访问平台，把证书和私钥挂载到容器内，并设置环境变量：
+
+```shell
+docker run -itd --name dmp --net=host \
+-e DMP_PORT=8082 \
+-e TLS=true \
+-e TLS_CERT=/etc/ssl/dmp/fullchain.pem \
+-e TLS_KEY=/etc/ssl/dmp/privkey.pem \
+-v /app/data:/root/data \
+-v /app/dst:/root/dst \
+-v /app/.klei:/root/.klei \
+-v /app/dmp_files:/root/dmp_files \
+-v /app/logs:/root/logs \
+-v /app/ssl:/etc/ssl/dmp:ro \
+-v /etc/localtime:/etc/localtime:ro \
+-v /etc/timezone:/etc/timezone:ro \
+ghcr.io/miracleeverywhere/dst-management-platform-api:latest
+```
+
+::: tip
+不设置 `TLS_CERT` 和 `TLS_KEY` 时，平台会使用默认路径 `/etc/ssl/dmp/fullchain.pem` 和 `/etc/ssl/dmp/privkey.pem`
+:::
+
 ## 更新镜像
 
 1. 拉取最新版本的镜像
 
 ```shell
-docker pull ghcr.io/miracleeverywhere/dst-management-platform-api:v3.0.3
+docker pull ghcr.io/miracleeverywhere/dst-management-platform-api:v3.2.3
 ```
 
 1. 停止旧容器
@@ -140,13 +177,14 @@ docker rm -f dmp
 ```shell title="例如"
 docker run -itd \
 --name dmp \
--p 80:80 \ 
+-p 80:80 \
 -p 11000-22000:11000-22000/udp \
--v /app/data:/root/data \ 
--v /app/dst:/root/dst \  
--v /app/.klei:/root/.klei \ 
--v /app/dmp_files:/root/dmp_files \ 
--v /etc/localtime:/etc/localtime:ro \ 
--v /etc/timezone:/etc/timezone:ro \ 
-ghcr.io/miracleeverywhere/dst-management-platform-api:v3.0.3
+-v /app/data:/root/data \
+-v /app/dst:/root/dst \
+-v /app/.klei:/root/.klei \
+-v /app/dmp_files:/root/dmp_files \
+-v /app/logs:/root/logs \
+-v /etc/localtime:/etc/localtime:ro \
+-v /etc/timezone:/etc/timezone:ro \
+ghcr.io/miracleeverywhere/dst-management-platform-api:v3.2.3
 ```

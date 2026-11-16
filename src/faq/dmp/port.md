@@ -19,4 +19,4 @@ sed -i 's/^PORT=.*/PORT=8972/' run.sh
 
 即可修改端口为`8972`
 
-`docker部署`的同学可查看[深度文档-安装部署-Docker部署](../docs/install/docker.md)，修改对应的启动端口即可
+`docker部署`的同学可查看[深度文档-安装部署-Docker部署](../../docs/install/docker.md)，修改对应的启动端口即可

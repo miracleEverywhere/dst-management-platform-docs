@@ -13,6 +13,8 @@ icon: circle-question
 
 ::: danger
 请确认当前用户是否为root，可输入命令`whoami`进行查看
+
+非 root 用户可以使用 `./run.sh no-root` 更新，macOS 无需 root
 :::
 
 进入到服务器终端，即快速上手的[服务器登录](../../quick-start/server.md#服务器登录)
@@ -27,11 +29,22 @@ icon: circle-question
 
 ::: danger
 请确认当前用户是否为root，可输入命令`whoami`进行查看
+
+非 root 用户可以使用 `./run.sh no-root`，macOS 无需 root
 :::
 
 当然，`run.sh`启动脚本也是会有更新的，当然更新频率很低
 
 同上，需要运行`run.sh`脚本，选择`6`即可
+
+## 升级到 v3.2.3 后云账号提示需要重新绑定？
+
+从 `v3.2.3` 开始，云凭据的加密密钥改为保存在数据库 `system` 表（键名 `cloud_key`），不再使用 `dmp_files/cloud.key`
+
+从 `v3.2.2` 及更早版本升级时，旧密钥不会自动迁移，已保存的云 token 会无法解密
+
+- 云端数据（收藏、令牌、管理员、预留位、云存档）不受影响
+- 到「个人中心 → 云账号」重新绑定，或重新用云账号登录一次即可恢复同步
 
 ## 如何得知平台有更新
 

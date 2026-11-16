@@ -13,3 +13,5 @@ dir:
 2. [玩家](player.md)
 
 3. [模组](mod.md)
+
+4. [房间收藏](favorite.md)

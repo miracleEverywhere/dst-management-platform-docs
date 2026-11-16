@@ -83,11 +83,17 @@ screen -ls
 | 提示未检测到 `screen` | 未安装依赖 | 执行 `bash manual_install.sh` |
 | 提示未检测到 `dst` / `steamcmd` | 未安装游戏依赖 | 执行 `bash manual_install.sh`，或复用完整版的目录 |
 | 日志提示缺少 `libcurl`、`lib32` 等 | 缺少 32 位运行库 | 重新执行 `bash manual_install.sh` |
-| 日志提示端口被占用 | 端口冲突 | 关闭占用端口的进程，或按[世界设置](./world.md#修改端口)调整端口 |
+| 日志提示端口被占用 | 端口冲突 | 关闭占用端口的进程；Lite 不提供端口修改入口，确需调整请参考下方说明 |
 | 日志提示 Lua 语法错误 | `leveldataoverride.lua` / `modoverrides.lua` 写错 | 修正语法后重新保存 |
 
 ::: tip
-Lite 默认调用的是 32 位饥荒服务端（`dontstarve_dedicated_server_nullrenderer`）。Rocky 10 等不再支持 32 位应用的系统无法使用。
+Lite 默认调用的是 64 位饥荒服务端（`dontstarve_dedicated_server_nullrenderer_x64`），只有把启动类型改为 32 位时才会调用 32 位程序。
+
+`manual_install.sh` 仍会安装 32 位运行库，Rocky 10 等不再支持 32 位应用的系统可能在安装依赖时失败。
+:::
+
+::: info
+Lite 的端口在地面设置、洞穴设置中只读。确实需要调整时，请先关闭世界，再直接编辑 `~/.klei/DoNotStarveTogether/Cluster_1/Master`（或 `Caves`）下的 `server.ini`；注意下次在页面保存世界设置时，端口会被平台重新写入。
 :::
 
 ## 顶部游戏版本是红色或黄色？
@@ -95,7 +101,7 @@ Lite 默认调用的是 32 位饥荒服务端（`dontstarve_dedicated_server_nul
 | 颜色 | 含义 | 处理 |
 | --- | --- | --- |
 | 红色（版本 `0`） | 未读到本地版本 | 检查 `dst/version.txt` 是否存在，即游戏依赖是否安装 |
-| 黄色 | 本地版本落后 | 在控制面板点击 **更新游戏**，或执行 `bash manual_update.sh` |
+| 黄色 | 本地版本与平台已获取的最新版本不一致（也可能只是还没取到最新版本） | 在控制面板点击 **更新游戏**，或执行 `bash manual_update.sh`；若已是最新版本，刷新页面后重新获取版本信息 |
 | 绿色 | 已是最新版本 | 无需处理 |
 
 最新版本由后台每 2 小时拉取一次，刚启动时可能还没取到，稍等后刷新页面即可。

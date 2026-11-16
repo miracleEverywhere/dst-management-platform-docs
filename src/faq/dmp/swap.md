@@ -34,3 +34,9 @@ icon: circle-question
 虚拟内存设置完成后即时生效，无需重启等操作
 :::
 
+::: warning
+该功能仅适用于 Linux
+
+MacOS 的 `run.sh` 菜单中没有虚拟内存选项，输入 `7` 会直接退出脚本
+:::
+

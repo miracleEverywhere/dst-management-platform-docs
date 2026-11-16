@@ -20,10 +20,11 @@ ubuntu 依赖
 ```shell
 dpkg --add-architecture i386
 apt install -y jq screen wget curl
-apt install -y lib32gcc1
+apt install -y lib32gcc1 || true
 apt install -y lib32gcc-s1
 apt install -y libcurl4-gnutls-dev:i386
 apt install -y libcurl4-gnutls-dev
+apt install -y lib32stdc++6
 ```
 
 redhat 依赖
@@ -66,6 +67,8 @@ cd "$STEAM_DIR"
 
 cd "$HOME"
 cp dmp_files/luajit/* dst/bin64/
+[ ! -L "dst/bin64/lib64/libcurl-gnutls.so.4" ] && ln -s /usr/lib/x86_64-linux-gnu/libcurl-gnutls.so.4 dst/bin64/lib64/libcurl-gnutls.so.4
+[ ! -L "dst/bin/lib32/libcurl-gnutls.so.4" ] && ln -s /usr/lib/i386-linux-gnu/libcurl-gnutls.so.4 dst/bin/lib32/libcurl-gnutls.so.4
 cat >dst/bin64/dontstarve_dedicated_server_nullrenderer_x64_luajit <<-"EOF"
 export LD_PRELOAD=./libpreload.so
 ./dontstarve_dedicated_server_nullrenderer_x64 "$@"
@@ -79,7 +82,9 @@ rm -f steamcmd_linux.tar.gz
 
 #### 设置开机自启(可选)
 
-echo 8 | ./run.sh
+```shell
+echo 8 | ./run.sh no-root
+```
 
 ::: info
 完成上述步骤，即可打开页面进行用户注册和开服

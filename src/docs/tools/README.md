@@ -22,3 +22,9 @@ dir:
 
 5. [游戏存档](snapshot.md)
 
+6. [更多物品](tmi.md)
+
+7. [AI对话](ai_chat.md)
+
+8. [房间监控](room_metrics.md)
+

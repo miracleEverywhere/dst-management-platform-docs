@@ -102,12 +102,13 @@ sqlite3 data/dmp.db
 更新数据库
 
 ```sql
-UPDATE system SET value='你的新秘钥(26个字符)' WHERE key='jwt_secret';
+UPDATE system SET value='你的新秘钥' WHERE key='jwt_secret';
 ```
 
 ::: caution
-上述`sql`中的`value`必须为**26**个字符，不能多也不能少
-秘钥内容包含**大写字母**、**小写字母**、**数字**
+默认的 `jwt_secret` 是 `32` 字节随机数的 Base64URL 编码（`43` 个字符，可能包含 `-` 和 `_`）。
+
+手动修改时也请生成 `32` 字节随机数并做 Base64URL 编码，不要使用短密钥或可猜测的字符串
 :::
 
 4. 启动平台

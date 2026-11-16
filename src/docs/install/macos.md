@@ -9,11 +9,13 @@ date: 2026-05-18
 在`v3`版本中，饥荒管理平台从`v3.2.0`开始支持MacOS
 :::
 
-MacOS开服过程与Linux开服没有区别，仅`run.sh`脚本中删除了一些选项
+MacOS 开服流程与 Linux 基本一致，但 `run.sh` 有一些区别：
+
+- 需要先安装 [Homebrew](https://brew.sh/)，`run.sh` 会检查 `brew`，未安装会直接退出
+- `PORT` 必须大于 `1024`。脚本中默认的 `80` 在 macOS 下会直接退出，请先把 `PORT` 改为 `8080` 等大于 `1024` 的端口
+- 菜单只有 `[0]` 到 `[7]`，其中 `[7]` 是退出脚本，没有设置虚拟内存和开机自启选项
 
 ![MacOS run.sh脚本](assets/macos-run-sh.webp)
-
-上图中的功能与Linux一致
 
 ::: important
 下方操作要记得做

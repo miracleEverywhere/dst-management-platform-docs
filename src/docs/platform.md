@@ -32,6 +32,7 @@ order: 10
 - 直连端口：外部连接的端口号，防火墙需要开发这里显示的端口号
 - 操作：对房间的操作
   - 查看详情：查看房间端口号的详细信息，可以关闭房间内指定的世界
+  - 启动命令：为房间内每个世界设置自定义启动命令前缀
   - 激活房间：启动房间所有的世界
   - 关闭房间：关闭房间所有的世界
   - 删除房间：删除这个存档
@@ -49,6 +50,25 @@ order: 10
 - 游戏模式：房间的游戏模式
 - 端口占用：使用的端口号，不需要全部开放
 - DMP_Cluster_房间ID_世界名：平台启动的 `Screen` 的名称，即正在运行的世界；点击关闭，可以关闭对应的世界
+
+### 启动命令
+
+::: info
+该功能由`v3.1.7`版本加入
+:::
+
+在房间列表的**操作**菜单中选择**启动命令**，即可为该房间的每个世界单独设置自定义启动命令前缀
+
+- 默认值为`./dontstarve_dedicated_server_nullrenderer`
+- 如果你需要arm转译，可配置`box64 ./dontstarve_dedicated_server_nullrenderer`
+- 如果你需要绑定核心，可以配置`taskset -c 0 ./dontstarve_dedicated_server_nullrenderer`
+- 按需配置
+
+:::tip
+如果是64位启动或LuaJIT启动，系统会自动在末尾添加`_x64`或`_x64_luajit`，无需额外配置
+:::
+
+![游戏启动命令](assets/platform-setting-custom-cmd.webp)
 
 ## 用户设置
 创建和修改用户信息，详情查看👉[用户管理](./users.md#用户管理)
@@ -73,23 +93,6 @@ order: 10
 ### 自动更新游戏
 - 定时检测游戏是否有更新，有的话在指定时间自动更新游戏
 - 更新后重启，字面意思，更新完成后重启游戏，让玩家可以加入
-
-### 游戏启动命令
-
-::: info
-该功能由`v3.1.7`版本加入
-:::
-
-- 默认值为`./dontstarve_dedicated_server_nullrenderer`
-- 如果你需要arm转译，可配置`box64 ./dontstarve_dedicated_server_nullrenderer`
-- 如果你需要绑定核心，可以配置`taskset -c 0 ./dontstarve_dedicated_server_nullrenderer`
-- 按需配置
-
-:::tip
-如果是64位启动或LuaJIT启动，系统会自动在末尾添加`_x64`或`_x64_luajit`，无需额外配置
-:::
-
-![游戏启动命令](assets/platform-setting-custom-cmd.webp)
 
 ### Webhook 通知
 
@@ -137,6 +140,9 @@ order: 10
   - 平台设置修改
   - 虚拟终端连接
   - 在线玩家变化
+  - 插件配置修改
+  - 房间 AI 设置修改
+  - AI 基础设置修改
 - 签名密钥
   - 可选项
   - 你的webhook可能暴露在公网上，需要鉴权，不能让所有人都能调用
