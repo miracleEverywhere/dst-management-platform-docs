@@ -83,8 +83,8 @@
   </g>
 
   <!-- connector -->
-  <circle cx="232" cy="168" r="17" fill="#FFFFFF" stroke="#E9E3F8" filter="url(#soft)"/>
-  <text x="232" y="173" text-anchor="middle" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="10" font-weight="700" fill="#7C5CFF">或</text>
+  <!-- <circle cx="232" cy="168" r="17" fill="#FFFFFF" stroke="#E9E3F8" filter="url(#soft)"/>
+  <text x="232" y="173" text-anchor="middle" font-family="Inter, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif" font-size="10" font-weight="700" fill="#7C5CFF">或</text> -->
 
   <!-- sparkles -->
   <g fill="#C4B5FD">

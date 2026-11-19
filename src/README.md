@@ -205,14 +205,19 @@ footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VueP
   background: var(--vp-c-bg);
 }
 
-.vp-project-home .vp-hero-action.primary {
+/* 与 CTA 的 .dmp-cta-btn--primary 保持同一配色：实色主紫 + 白色文字/图标 */
+.vp-project-home .vp-hero-action.primary,
+.vp-project-home .vp-hero-action.primary:visited {
   border-color: transparent;
-  background: linear-gradient(135deg, #8c57ff, #6d3ff2);
-  box-shadow: 0 12px 28px rgba(124, 92, 255, 0.32);
+  background: var(--dmp-accent);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(124, 92, 255, 0.28);
 }
 
 .vp-project-home .vp-hero-action.primary:hover {
-  background: linear-gradient(135deg, #9b6bff, #7c5cff);
+  border-color: transparent;
+  background: var(--dmp-accent-strong);
+  color: #fff;
 }
 
 .vp-project-home .vp-hero-image {
@@ -332,8 +337,9 @@ footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VueP
 }
 
 .vp-project-home .vp-highlight-image {
-  width: 20rem;
-  margin: 1rem 3rem;
+  width: 24rem;
+  max-width: 100%;
+  margin: 1rem 2.5rem;
   filter: drop-shadow(0 18px 34px rgba(43, 20, 80, 0.1));
 }
 
@@ -561,7 +567,7 @@ footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VueP
   }
 
   .vp-project-home .vp-highlight-image {
-    width: 13rem;
+    width: 15rem;
     margin: 0 auto 1.5rem;
   }
 
@@ -585,7 +591,7 @@ footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VueP
   }
 
   .vp-project-home .vp-highlight-image {
-    width: 11rem;
+    width: 13rem;
   }
 
   .vp-project-home .dmp-cta {
