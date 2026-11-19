@@ -24,7 +24,9 @@ dir:
 
 6. [更多物品](tmi.md)
 
-7. [AI对话](ai_chat.md)
+7. [AI诊断](ai_diagnosis.md)
 
-8. [房间监控](room_metrics.md)
+8. [AI对话](ai_chat.md)
+
+9. [房间监控](room_metrics.md)
 

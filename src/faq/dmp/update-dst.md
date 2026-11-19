@@ -21,12 +21,17 @@ icon: circle-question
 
 ![更新方式](assets/update-dst/update-dst-type.webp)
 
-- 前台更新：会跳转至游戏安装页面，点击更新游戏即可，等待更新，更新完成后会有响应的提示(`dmp>=v3.0.5`)
+- 前台更新：会跳转至游戏安装页面，点击更新游戏即可，页面会实时显示更新进度，更新完成后会有相应的提示(`dmp>=v3.0.5`)
 
 ![前台更新](assets/update-dst/update-dst-frontend.webp)
 
 - 后台更新：指平台进行静默更新，更新时按钮会进入Loading状态，更新完成后恢复，手动刷新页面即可
 
 ![后台更新](assets/update-dst/update-dst-backend.webp)
+
+::: tip
+两种方式最终都是在平台后台执行 SteamCMD，任务一旦开始就不会因为刷新或关闭网页而中断
+更新期间重新打开「安装游戏」页面会自动接回实时日志；如果任务是由后台更新、定时更新或 AI 诊断修复触发的，页面只会提示已有任务正在进行
+:::
 
 ![更新完成](assets/update-dst/update-dst-complete.webp)
